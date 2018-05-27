@@ -4,6 +4,7 @@
 <br></br>
 ### 1
 #### 課題： emailアドレスをパーツに分けよう
+#### レベル： Normal 
 <br></br>
 ### pseudo code (疑似コード)
 1. ユーザーに"What is your email address?: " と聞く
