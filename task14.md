@@ -12,7 +12,7 @@ mydict = {}
 
 print(mydict)
 ```
-出力
+**出力**
 ```python:
 {'Tom': 30}
 ```
