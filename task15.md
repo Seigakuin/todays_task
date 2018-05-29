@@ -71,3 +71,5 @@ while True:
 1. `while`から抜けるために `if` `break` をうまく使うこと
 2. `data`そのデータがない場合 ex.`{'黒': ?? }` とある場合 ex. `{'黒': 2 }` とではdictionary へのデータの足し方が違う。`data`の中にそのキーがあるかを確認する `if`が必要。 ( `in`をうまく使うこと)
 
+
+[back home](https://github.com/Seigakuin/todays_task)

@@ -68,3 +68,5 @@ Do you want to continue? (y/n) n
 1. `range()` `len()` をうまく使うこと
 2. `while` ループを使うこと
 
+
+[back home](https://github.com/Seigakuin/todays_task)
