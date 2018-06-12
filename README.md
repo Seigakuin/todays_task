@@ -18,12 +18,15 @@
 
 [task16](https://github.com/Seigakuin/todays_task/blob/master/task16_List.md)
 
+### Function 
 [task17](https://github.com/Seigakuin/todays_task/blob/master/task17_Function.md)
 
-[task18](https://github.com/Seigakuin/todays_task/blob/master/task18_Class.md)
+### Class 
+[task18](https://github.com/Seigakuin/todays_task/blob/master/task18_Class1.md)
 
-[task19](https://github.com/Seigakuin/todays_task/blob/master/task19_Movies.md)
+[task19](https://github.com/Seigakuin/todays_task/blob/master/task19_Class2.md)
 
+[task20](https://github.com/Seigakuin/todays_task/blob/master/task19_Class3_Cards.md)
 
 
 
