@@ -14,11 +14,11 @@
 [task14](https://github.com/Seigakuin/todays_task/blob/master/task14.md)
 ### Dictionary
 [task15](https://github.com/Seigakuin/todays_task/blob/master/task15_Dictionary.md)
-
+### List
 [task16](https://github.com/Seigakuin/todays_task/blob/master/task16_List.md)
-
+### Function
 [task17](https://github.com/Seigakuin/todays_task/blob/master/task17_Function.md)
-
+### Class
 [task18](https://github.com/Seigakuin/todays_task/blob/master/task18_Class1.md)
 
 [task19](https://github.com/Seigakuin/todays_task/blob/master/task19_Movies.md)
