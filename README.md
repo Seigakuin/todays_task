@@ -1,7 +1,7 @@
 # 聖学院プログラミング部
 ## 本日の課題
 
-[task7-9](https://github.com/Seigakuin/todays_task/blob/master/task7-9.md)
+[task7-9](https://github.com/Seigakuin/todays_task/blob/master/task07-09.md)
 
 [task10](https://github.com/Seigakuin/todays_task/blob/master/task10.md)
 
@@ -13,11 +13,13 @@
 
 [task14](https://github.com/Seigakuin/todays_task/blob/master/task14.md)
 
-[task15](https://github.com/Seigakuin/todays_task/blob/master/task15.md)
+[task15](https://github.com/Seigakuin/todays_task/blob/master/task15_Dictionary.md)
 
-[task16](https://github.com/Seigakuin/todays_task/blob/master/task16.md)
+[task16](https://github.com/Seigakuin/todays_task/blob/master/task16_List.md)
 
-[task17](https://github.com/Seigakuin/todays_task/blob/master/task17.md)
+[task17](https://github.com/Seigakuin/todays_task/blob/master/task17_Function.md)
+
+[task18](https://github.com/Seigakuin/todays_task/blob/master/task17_Movies.md)
 
 
 
