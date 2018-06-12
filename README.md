@@ -12,9 +12,9 @@
 [task13](https://github.com/Seigakuin/todays_task/blob/master/task13.md)
 
 [task14](https://github.com/Seigakuin/todays_task/blob/master/task14.md)
-
+#### Dictionary
 [task15](https://github.com/Seigakuin/todays_task/blob/master/task15_Dictionary.md)
-## Dictionary
+
 [task16](https://github.com/Seigakuin/todays_task/blob/master/task16_List.md)
 
 [task17](https://github.com/Seigakuin/todays_task/blob/master/task17_Function.md)
