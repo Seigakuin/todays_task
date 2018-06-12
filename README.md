@@ -26,7 +26,7 @@
 
 [task19](https://github.com/Seigakuin/todays_task/blob/master/task19_Class2.md)
 
-[task20](https://github.com/Seigakuin/todays_task/blob/master/task19_Class3_Cards.md)
+[task20](https://github.com/Seigakuin/todays_task/blob/master/task19_Class3_Cards.md) カードゲームを作ろう
 
 
 
