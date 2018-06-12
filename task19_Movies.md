@@ -1,5 +1,5 @@
 # 課題  Level 16
-## テーマ： Dictionary を使ったデータ保存
+9# テーマ： Dictionary を使ったデータ保存
 
 <br></br>
 ### 1
