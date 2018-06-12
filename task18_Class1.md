@@ -7,9 +7,9 @@
 #### レベル： Easy 
 <br></br>
 ### pseudo code (疑似コード)
-1. `Animal`クラスを書く
-2. `Animal`クラスには`cry`ファンクションがあり、`print("Ahhhh!!!!")`が実装されている。
-3. `Animal`クラスのインスタンスを変数`myAnimal`に作成し、`cry`ファンクションを呼びなさい。
+1. `Animal` クラスを書く
+2. `Animal` クラスには `cry` ファンクションがあり、 `print("Ahhhh!!!!")` が実装されている。
+3. `Animal` クラスのインスタンスを変数 `myAnimal` に作成し、 `cry` ファンクションを呼びなさい。
 
 例
 ```python
