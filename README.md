@@ -28,11 +28,13 @@
 ### Function 
 [task17](https://github.com/Seigakuin/todays_task/blob/master/task17_Function.md)
 
-### Class 
+### Class1
 [task18](https://github.com/Seigakuin/todays_task/blob/master/task18_Class1.md)
 
+### Class2
 [task19](https://github.com/Seigakuin/todays_task/blob/master/task19_Class2.md)
 
+### Class3
 [task20](https://github.com/Seigakuin/todays_task/blob/master/task20_Class3_Cards.md) カードゲームを作ろう
 
 
