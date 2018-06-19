@@ -7,14 +7,14 @@
 #### レベル： Hard
 <br></br>
 ### pseudo code (疑似コード)
-- カードゲームの `Player` クラスを作成しなさい `Player` クラスは `hand` と `name` というプロパティを持っている 
+- カードゲームの `Player` クラスを作成しなさい `Player` クラスは `hand` と `name` というプロパティを持っている
   - `hand` は空の配列を初期値として入れる ex. []
-  - `name` は好きな名前をクラス作成時に引数として受け取る
+  - `name` は好きな名前をクラス作成時に引数として受け取る
 - `add_card_to_hand(self, card)` を作成
-  - `card` を受け取って、自分のプロパティ `hand` に保存する (`.append()` を使用する)
+  - `card` を受け取って、自分のプロパティ `hand` に保存する (`.append()` を使用する)
   - `card` が `None` (空)だった場合はなにもしないようにする (`if` を使用する)
 - `remove_card_from_hand(self, card)` を作成
-  - `card` を受け取って、自分のプロパティ `hand` にそれがある場合はその`card` を消す (`.remove()` を使用する)
+  - `card` を受け取って、自分のプロパティ `hand` にそれがある場合はその`card` を消す (`.remove()` を使用する)
 
 
 ベース
@@ -37,10 +37,10 @@ class Player:
 #### レベル： Difficult
 <br></br>
 ### pseudo code (疑似コード)
-- カードゲームの `CardDeck` クラスを作成しなさい `CardDeck` クラスは `deck` というプロパティを持っている 
+- カードゲームの `CardDeck` クラスを作成しなさい `CardDeck` クラスは `deck` というプロパティを持っている
   - `deck` は List である。初期値はベタ打ちで良い
 - `get_card(self)` を作成
-  - `card` を `deck` のなかからランダムに選ぶ (`choice()`を使用する) * `import random` をファイルの上部に書く必要あり!!
+  - `card` を `deck` のなかからランダムに選ぶ (`choice()`を使用する) * `import random` をファイルの上部に書く必要あり!!
   - 選ばれた `card` を`deck` の中から消す
   - その選ばれたカードを返す (`return`)
 
