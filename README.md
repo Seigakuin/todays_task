@@ -3,23 +3,25 @@
 
 [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task07-09.md)
 
+### Lists1
 [task10](https://github.com/Seigakuin/todays_task/blob/master/task10.md)
 
+### Dictionary1
 [task11](https://github.com/Seigakuin/todays_task/blob/master/task11.md)
 
-### Dictionary1
+### Dictionary2
 [task12](https://github.com/Seigakuin/todays_task/blob/master/task12.md)
 
 ### Tuples
 [task13](https://github.com/Seigakuin/todays_task/blob/master/task13.md)
 
-### Dictionary2
+### Dictionary3
 [task14](https://github.com/Seigakuin/todays_task/blob/master/task14.md)
 
-### Dictionary3
+### Dictionary4
 [task15](https://github.com/Seigakuin/todays_task/blob/master/task15_Dictionary.md)
 
-### Lists
+### Lists2
 [task16](https://github.com/Seigakuin/todays_task/blob/master/task16_List.md)
 
 ### Function 
