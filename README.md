@@ -1,7 +1,7 @@
 # 聖学院プログラミング部
 ## 本日の課題
 
-### Lists1 ### [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task07-09.md)
+### Lists1 - [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task07-09.md)
 
 ### Lists2
 [task10](https://github.com/Seigakuin/todays_task/blob/master/task10.md)
