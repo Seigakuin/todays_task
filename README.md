@@ -7,13 +7,16 @@
 
 [task11](https://github.com/Seigakuin/todays_task/blob/master/task11.md)
 
+### Dictionary1
 [task12](https://github.com/Seigakuin/todays_task/blob/master/task12.md)
 
 ### Tuples
 [task13](https://github.com/Seigakuin/todays_task/blob/master/task13.md)
 
-### Dictionary
+### Dictionary2
 [task14](https://github.com/Seigakuin/todays_task/blob/master/task14.md)
+
+### Dictionary3
 [task15](https://github.com/Seigakuin/todays_task/blob/master/task15_Dictionary.md)
 
 ### Lists
