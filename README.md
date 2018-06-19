@@ -1,9 +1,10 @@
 # 聖学院プログラミング部
 ## 本日の課題
 
+### Lists1
 [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task07-09.md)
 
-### Lists1
+### Lists2
 [task10](https://github.com/Seigakuin/todays_task/blob/master/task10.md)
 
 ### Dictionary1
@@ -21,7 +22,7 @@
 ### Dictionary4
 [task15](https://github.com/Seigakuin/todays_task/blob/master/task15_Dictionary.md)
 
-### Lists2
+### Lists3
 [task16](https://github.com/Seigakuin/todays_task/blob/master/task16_List.md)
 
 ### Function 
