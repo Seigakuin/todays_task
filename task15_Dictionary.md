@@ -71,5 +71,14 @@ while True:
 1. `while`から抜けるために `if` `break` をうまく使うこと
 2. `data`そのデータがない場合 ex.`{'黒': ?? }` とある場合 ex. `{'黒': 2 }` とではdictionary へのデータの足し方が違う。`data`の中にそのキーがあるかを確認する `if`が必要。 ( `in`をうまく使うこと)
 
+`in` を使った例
+```python
+dict = {'a': 1, 'b': 2, 'c': 3 }
+
+is_a_in_dict = 'a' in dict
+
+```
+`is_a_in_dict`は`True`になります。
+
 
 [back home](https://github.com/Seigakuin/todays_task)
