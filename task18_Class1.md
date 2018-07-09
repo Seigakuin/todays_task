@@ -17,7 +17,8 @@ class Person:
     def sleep(self):
         printf("I'm sleeping...")
 
-sleep()
+myPerson = Person()
+myPerson.sleep()
 ```
 <br></br>
 ### 2
@@ -32,6 +33,7 @@ sleep()
 実行例
 ```python
 """
+>>> myAnimal = Animal()
 >>> myAnimal.eat("Meat") 
 I'm eating Meat
 
