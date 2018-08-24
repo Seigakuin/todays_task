@@ -1,4 +1,11 @@
-
+# :computer: SEIG PROGRAMMING CLUB :computer:
+## BOUNCING RECTANGLE
+### 目標：
+    * pygame の基本を理解
+    * 変数の理解（色の変数）
+    * フレームの理解　`pygame.time.Clock()
+    * メインループの理解 `while done is False: `
+    * イベントの理解 `for event in pygame.event.get():`
 
 ```python
 import pygame
@@ -61,3 +68,12 @@ while done is False:
 
 pygame.quit()
 ```
+
+
+
+## :sparkles: チャレンジ :sparkles: 
+1. 上ボタンを押すとスピードが上がるようにしよう。
+    * ブロックが進んでいる方向に合わせてスピードを上げないと、イメージ通りに進みません
+    * ヒント：https://www.programcreek.com/python/example/6891/pygame.KEYUP
+2. 複数の自由に動き回るブロックを作ろう
+    * 初期設定を変えないと（ランダマイズ）全く同じ動きをしてしまいます。
