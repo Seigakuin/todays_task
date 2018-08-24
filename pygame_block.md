@@ -1,5 +1,5 @@
 # :computer: SEIG PROGRAMMING CLUB :computer:
-## BLOCK 1
+## BLOCK
 ### 目標：
 - classの理解 `class Block`
     - コンストラクタ(初期化)の理解 `def __init__(self, color, width, height):`
