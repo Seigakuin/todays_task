@@ -36,6 +36,8 @@
 
 + ### [Block](https://github.com/Seigakuin/todays_task/blob/master/pygame_block.md) 
 
++ ### [Block Inheritance](https://github.com/Seigakuin/todays_task/blob/master/pygame_block_inheritance.md) 
+
 + ### [Sprite](https://github.com/Seigakuin/todays_task/blob/master/pygame_sprite.md) 
 
 + ### [Start End](https://github.com/Seigakuin/todays_task/blob/master/pygame_startend.md) 
