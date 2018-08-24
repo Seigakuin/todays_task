@@ -1,5 +1,5 @@
 # :computer: SEIG PROGRAMMING CLUB :computer:
-## BOUNCING RECTANGLE
+## ANIMATING SNOW
 ### 目標：
     * pygame の基本を理解
     * List の理解 `snow_list[1][1]`
