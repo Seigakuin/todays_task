@@ -1,5 +1,5 @@
-# **聖学院プログラミング部**
-## 本日の課題
+# :computer: 聖学院プログラミング部 :computer:
+## :sparkles: 本日の課題
 
 + ### Lists1        [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task07-09.md)
 
@@ -25,12 +25,11 @@
 
 + ### Class3        [task20](https://github.com/Seigakuin/todays_task/blob/master/task20_Class3_Cards.md) カードゲームを作ろう
 
+## :snake: Pygame
 
++ ### [Bouncing Rectangle](https://github.com/Seigakuin/todays_task/blob/master/pygame_bouncingrectangle.md) 
 
-
-
-
-
++ ### [Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/pygame_animatingsnow.md) 
 
 
 
