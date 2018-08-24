@@ -20,8 +20,7 @@ RED = (255, 0, 0)
 
 # CLASS
 class Block:
-    change_x = 0
-    change_y = 0
+    
 
     # コンストラクタ
     # アトリビュート(属性)に`color, width, height`を設定
@@ -33,6 +32,10 @@ class Block:
         self.image.fill(color)
         # ブロックSurfaceのRectをself.rectに設定
         self.rect = self.image.get_rect()
+        
+        # スピードを設定
+        self.change_x = 0
+        self.change_y = 0
 
     # 画面を描く前に状況を更新するfunction
     def update(self):
