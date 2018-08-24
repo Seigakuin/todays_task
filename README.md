@@ -34,7 +34,7 @@
 
 + ### [Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/pygame_animatingsnow.md) 
 
-+ ### [Block1](https://github.com/Seigakuin/todays_task/blob/master/pygame_block_1.md) 
++ ### [Block](https://github.com/Seigakuin/todays_task/blob/master/pygame_block.md) 
 
 
 
