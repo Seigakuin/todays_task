@@ -102,8 +102,6 @@ while not done:
     # NEW!!!
     # Playerクラスの更新functionを呼び出す
     player.update()
-    print(player.change_x)
-    print(player.change_y)
 
     # --- DRAW ---
     # ブロッククラスを描くfunctionを呼び出す
