@@ -36,7 +36,9 @@
 
 + ### [Block](https://github.com/Seigakuin/todays_task/blob/master/pygame_block.md) 
 
++ ### [Sprite](https://github.com/Seigakuin/todays_task/blob/master/pygame_sprite.md) 
 
++ ### [Start End](https://github.com/Seigakuin/todays_task/blob/master/pygame_startend.md) 
 
 
 
