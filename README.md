@@ -25,6 +25,9 @@
 
 + ### Class3        [task20](https://github.com/Seigakuin/todays_task/blob/master/task20_Class3_Cards.md) カードゲームを作ろう
 
+
+<br></br>
+
 ## :snake: Pygame
 
 + ### [Bouncing Rectangle](https://github.com/Seigakuin/todays_task/blob/master/pygame_bouncingrectangle.md) 
