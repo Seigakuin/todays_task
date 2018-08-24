@@ -67,7 +67,7 @@ class Player(Block):
 
 #  NEW!!
 # 画面に文字を書くためのfunction
-def drawText(text, font, surface, x, y):
+def draw_text(text, font, surface, x, y):
     textobj = font.render(text, 1, BLACK)
     textrect = textobj.get_rect()
     textrect.center = (x, y)
@@ -76,7 +76,7 @@ def drawText(text, font, surface, x, y):
 
 #  NEW!!
 # ユーザーがボタンを押したのを確認するfunction
-def waitForPlayerToPressKey():
+def wait_for_player_to_press_key():
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -141,13 +141,13 @@ score = 0
 # スタート画面
 # 画面を白く塗る
 screen.fill(WHITE)
-# drawText functionを呼び出す
+# draw_text functionを呼び出す
 # 属性(テキスト, フォント, 画面Surface, x, y)
-drawText("BLOCKS!!", font, screen, screen_width // 2, screen_height // 2)
+draw_text("BLOCKS!!", font, screen, screen_width // 2, screen_height // 2)
 # 画面を描画する
 pygame.display.update()
 # ユーザーがボタンを押すまで待つ
-waitForPlayerToPressKey()
+wait_for_player_to_press_key()
 
 
 # ----- MAIN LOOP -----
@@ -185,14 +185,14 @@ while not done:
     #  NEW!!
     # スコアを画面に表示
     # スコアをupdate
-    drawText(f"Score: {score}", pygame.font.SysFont(None, 24), screen, 100, 20)
+    draw_text(f"Score: {score}", pygame.font.SysFont(None, 24), screen, 100, 20)
     
     #  NEW!!
     # 終了判定
     # 全てのブロックを消したらゲームオーバーを表示
     if score >= 5:
         screen.fill(WHITE)
-        drawText("GAME OVER!!", font, screen, screen_width // 2, screen_height // 2)
+        draw_text("GAME OVER!!", font, screen, screen_width // 2, screen_height // 2)
 
     # pygame 全体の画面を描く
     pygame.display.flip()
