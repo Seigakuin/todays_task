@@ -1,11 +1,11 @@
 # :computer: SEIG PROGRAMMING CLUB :computer:
 ## BOUNCING RECTANGLE
 ### 目標：
-    * pygame の基本を理解
-    * 変数の理解（色の変数）
-    * フレームの理解　`pygame.time.Clock()
-    * メインループの理解 `while done is False: `
-    * イベントの理解 `for event in pygame.event.get():`
+* pygame の基本を理解
+* 変数の理解（色の変数）
+* フレームの理解　`pygame.time.Clock()
+* メインループの理解 `while done is False: `
+* イベントの理解 `for event in pygame.event.get():`
 
 ```python
 import pygame
