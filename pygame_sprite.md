@@ -25,7 +25,7 @@ class Block(pygame.sprite.Sprite):
     # コンストラクタ
     def __init__(self, color, width, height):
         # Spriteクラスのコンストラクタを呼び出し、初期化
-        pygame.sprite.Sprite.__init__(self)
+        super().__init__()
 
         # ブロックのSurfaceを設定
         self.image = pygame.Surface([width, height])
