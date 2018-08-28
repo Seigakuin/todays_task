@@ -1,46 +1,46 @@
 # :computer: 聖学院プログラミング部 :computer:
 ## :sparkles: 本日の課題
 
-+ ### Lists1        [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task_project/task07-09.md)
++ ### Lists1        [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task07-09.md)
 
-* ### Lists2        [task10](https://github.com/Seigakuin/todays_task/blob/master/task_project/task10.md)
+* ### Lists2        [task10](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task10.md)
 
-+ ### Dictionary1   [task11](https://github.com/Seigakuin/todays_task/blob/master/task_project/task11.md)
++ ### Dictionary1   [task11](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task11.md)
 
-+ ### Dictionary2   [task12](https://github.com/Seigakuin/todays_task/blob/master/task_project/task12.md)
++ ### Dictionary2   [task12](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task12.md)
 
-+ ### Tuples        [task13](https://github.com/Seigakuin/todays_task/blob/master/task_project/task13.md)
++ ### Tuples        [task13](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task13.md)
 
-+ ### Dictionary3   [task14](https://github.com/Seigakuin/todays_task/blob/master/task_project/task14.md)
++ ### Dictionary3   [task14](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task14.md)
 
-+ ### Dictionary4   [task15](https://github.com/Seigakuin/todays_task/blob/master/task_project/task15_Dictionary.md)
++ ### Dictionary4   [task15](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task15_Dictionary.md)
 
-+ ### Lists3        [task16](https://github.com/Seigakuin/todays_task/blob/master/task_project/task16_List.md)
++ ### Lists3        [task16](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task16_List.md)
 
-+ ### Function      [task17](https://github.com/Seigakuin/todays_task/blob/master/task_project/task17_Function.md)
++ ### Function      [task17](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task17_Function.md)
 
-+ ### Class1        [task18](https://github.com/Seigakuin/todays_task/blob/master/task_project/task18_Class1.md)
++ ### Class1        [task18](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task18_Class1.md)
 
-+ ### Class2        [task19](https://github.com/Seigakuin/todays_task/blob/master/task_project/task19_Class2.md)
++ ### Class2        [task19](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task19_Class2.md)
 
-+ ### Class3        [task20](https://github.com/Seigakuin/todays_task/blob/master/task_project/task20_Class3_Cards.md) カードゲームを作ろう
++ ### Class3        [task20](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task20_Class3_Cards.md) カードゲームを作ろう
 
 
 <br></br>
 
 ## :snake: Pygame
 
-+ ### [Bouncing Rectangle](https://github.com/Seigakuin/todays_task/blob/master/pygame_project/pygame_bouncingrectangle.md) 
++ ### [Bouncing Rectangle](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_bouncingrectangle.md) 
 
-+ ### [Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/pygame_project/pygame_animatingsnow.md) 
++ ### [Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_animatingsnow.md) 
 
-+ ### [Block](https://github.com/Seigakuin/todays_task/blob/master/pygame_project/pygame_block.md) 
++ ### [Block](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_block.md) 
 
-+ ### [Block Inheritance](https://github.com/Seigakuin/todays_task/blob/master/pygame_project/pygame_block_inheritance.md) 
++ ### [Block Inheritance](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_block_inheritance.md) 
 
-+ ### [Sprite](https://github.com/Seigakuin/todays_task/blob/master/pygame_project/pygame_sprite.md) 
++ ### [Sprite](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_sprite.md) 
 
-+ ### [Start End](https://github.com/Seigakuin/todays_task/blob/master/pygame_project/pygame_startend.md) 
++ ### [Start End](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_startend.md) 
 
 
 
