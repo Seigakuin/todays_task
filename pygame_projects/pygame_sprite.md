@@ -54,7 +54,7 @@ class Block(pygame.sprite.Sprite):
 class Player(Block):
     def __init__(self, color, width, height):
         # 継承元のBlockクラスのコンストラクタを呼び出す
-        super(Block, self).__init__()
+        super().__init__(color, width, height)
 
     # 画面を描く前に状況を更新するfunction/method
     def update(self):
