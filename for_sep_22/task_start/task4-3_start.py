@@ -2,6 +2,7 @@
 # Task4-3: 数字が同じかどうかを確認しよう！
 # -----------------------------
 
+# [[前Taskからのコード]]
 answer = 9
 userinput = input("数字を当ててください")
 userinput = int(userinput)
