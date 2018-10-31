@@ -42,6 +42,8 @@
 
 + ### [Start End](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_startend.md) 
 
++ ### [Start End 2](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/blocks_sf.py) 
+    #### (スコア表示とハイスコア表示 / グローバル変数の扱い)
 
 
 
