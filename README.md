@@ -52,6 +52,19 @@
 
 + ### [Start End 2](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/blocks_sf.py) 
     #### (スコア表示とハイスコア表示 / グローバル変数の扱い)
+    
+<br></br>
+
+## :snake: Pygame Platformer :cat: :dog: :mouse: :hamster:
++ ### [Pygame - Platform ゲーム - [1]](https://qiita.com/sf_/items/bccd0df2416571e2a937) 
++ ### [Pygame - Platform ゲーム - [2]](https://qiita.com/sf_/items/f635870e2d2d2921becf) 
++ ### [Pygame - Platform ゲーム - [3]](https://qiita.com/sf_/items/cbef581265e490f5c58d) 
++ ### [Pygame - Platform ゲーム - [4]](https://qiita.com/sf_/items/fe11d6cf4929694121a1) 
++ ### [Pygame - Platform ゲーム - [5]](https://qiita.com/sf_/items/71fd105b95670cb3028f) 
++ ### [Pygame - Platform ゲーム - [6]](https://qiita.com/sf_/items/d9c51ba4c67bfdd1448f) 
++ ### [Pygame - Platform ゲーム - [7]](https://qiita.com/sf_/items/aa41e26ae099c532f752) 
++ ### [Pygame - Platform ゲーム - [8]](https://qiita.com/sf_/items/3e47f856459da7909fa9) 
+
 
 
 
