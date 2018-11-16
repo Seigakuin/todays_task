@@ -64,6 +64,13 @@
 + ### [Pygame - Platform ゲーム - [6]](https://qiita.com/sf_/items/d9c51ba4c67bfdd1448f) 
 + ### [Pygame - Platform ゲーム - [7]](https://qiita.com/sf_/items/aa41e26ae099c532f752) 
 + ### [Pygame - Platform ゲーム - [8]](https://qiita.com/sf_/items/3e47f856459da7909fa9) 
++ ### [Pygame - Platform ゲーム - [9]](https://qiita.com/sf_/items/aa85bff48cc99ff503d7)
++ ### [Pygame - Platform ゲーム - [10]](https://qiita.com/sf_/items/c2616693902088740c10)
++ ### [Pygame - Platform ゲーム - [11]](https://qiita.com/sf_/items/a9114bb8aaeba62fef48)
++ ### [Pygame - Platform ゲーム - [12]](https://qiita.com/sf_/items/36d4270043829072c181)
+
+
+
 
 
 
