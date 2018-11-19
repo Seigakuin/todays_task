@@ -24,3 +24,11 @@
   * コマンド:   `idle`
   
 * 
+
+### Pycharm 設定
+
+    - Pycharm Community Editionをダウンロード/インスール ([Pycharm Community Edition](https://www.jetbrains.com/pycharm/download))
+    - "Create New Project"
+    - "Pure Python" -> "Location" に保存したい場所とフォルダー名を設定
+    - 左Paneにある"Project"以下にある自分で名付けたフォルダ名を選択し、画面上部の「ファイル」メニューから"New"を選択
+    - "Python File"を選択し、ファイル名を設定する
