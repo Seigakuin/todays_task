@@ -1,4 +1,23 @@
 # :computer: 聖学院プログラミング部 :computer:
+
+## :sparkles: 始め方 :smiling_imp:
++ **Windowsメニュー** &rarr; **全てのプログラム** &rarr; **Anaconda** &rarr; **Anaconda Prompt** を開く
++ `python` と打ち(pythonソフトを起動)、`Python 3.7.0 (anaconda ~~ ` と出力されるのを確認する
++ `>>` という文字の横に `import pygame` と打ち、`pygame` がインストールされているかを確認する（エラーがでなければOK)
++ **Ctrl** + **D** を2回打てば、pythonソフトから抜けることができる
++ 抜け出たあと、 `idle`と打てばidleが起動する
+
+### :smile: VSCode編 :smiley:
++ デスクトップに今日、使うフォルダを用意(日本語は使わない)
++ プログラムの中から **VSCode** を起動
++ **ファイル** &rarr; **開く** &rarr; **[自分がデスクトップに作ったフォルダを選択]**
++ **ファイル** &rarr; **新規ファイル** で新しいファイルをフォルダに作成
+#### プログラムの走らせ方
+* **ターミナル** &rarr; **New Terminal** で画面したにターミナル画面が出る(Powershellのようなもの)
++ `python main.py`と打つとプログラムが走る(`main.py`のファイル名は自分のつけたファイル名に変更)
+
+<br></br>
+
 ## :sparkles: 本日の課題
 
 
