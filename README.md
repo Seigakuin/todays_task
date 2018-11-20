@@ -24,7 +24,7 @@
 
 ### :smile: はじめから勉強 :smiley:
 
-+ [Codecademy](https://www.codecademy.com/) に登録し、 **Pythonコース** で特訓
++ [Progate](https://prog-8.com/) に登録し、 **Pythonコース** で特訓
 
 <br></br>
 ### :smile: その次に勉強 :smiley:
