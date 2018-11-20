@@ -7,6 +7,8 @@
 + **Ctrl** + **D** を2回打てば、pythonソフトから抜けることができる
 + 抜け出たあと、 `idle`と打てばidleが起動する
 
+<br></br>
+
 ### :smile: VSCode編 :smiley:
 + デスクトップに今日、使うフォルダを用意(日本語は使わない)
 + プログラムの中から **VSCode** を起動
@@ -20,8 +22,12 @@
 
 ## :sparkles: 本日の課題
 
+### :smile: はじめから勉強 :smiley:
 
++ [Codecademy](https://www.codecademy.com/) に登録し、 **Pythonコース** で特訓
 
+<br></br>
+### :smile: その次に勉強 :smiley:
 + ### Lists1        [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task07-09.md)
 
 * ### Lists2        [task10](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task10.md)
