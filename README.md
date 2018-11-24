@@ -32,17 +32,20 @@
 
 <br></br>
 ### :smile: その次に勉強 :smiley:
-+ ### Lists1        [task7-9](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task07-09.md)
-
-* ### Lists2        [task10](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task10.md)
-
-+ ### Dictionary1   [task11](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task11.md)
-
-+ ### Dictionary2   [task12](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task12.md)
-
-+ ### Tuples        [task13](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task13.md)
-
-+ ### Dictionary3   [task14](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task14.md)
++ ### [task01](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task01.md)
++ ### [task02](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task02.md)
++ ### [task03](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task03.md)
++ ### [task04](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task04.md)
++ ### [task05](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task05.md)
++ ### [task06](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task06.md)
++ ### [task07](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task07.md) Lists
++ ### [task08](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task08.md) Lists
++ ### [task09](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task09.md) Lists
++ ### [task10](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task10.md) Lists
++ ### [task11](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task11.md) Dictionary
++ ### [task12](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task12.md) Dictionary
++ ### [task13](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task13.md) Dictionary
++ ### [task14](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task14.md) Tuple
 
 + ### Dictionary4   [task15](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task15_Dictionary.md)
 
