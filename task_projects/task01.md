@@ -3,7 +3,7 @@
 "Hello world" を出力
 
 コード
-```python:
+```python
 
 
 ```
