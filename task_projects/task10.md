@@ -1,33 +1,29 @@
-# 課題
-## Level 10
-### テーマ： Lists
+# Task10
+## テーマ：　Listの出力(応用)
+### 複数形にしよう
+以下のような出力になるようにコードを完成しなさい
 
-* 以下にあるリストから「出力」のようにデータを表示しなさい。
-```python:
-mylist = [
-    'A', ['B', 'C'],
-    'D', ['E', 'F'],
-    'G', ['H', 'I']
-]
-```
-出力
-```python:
-------
-A 
-B
-C
-D
-E
-F
-G
-H
-I
+注意
+- `new_list`に新しい要素を足していく
+
+#### スタートコード (これはコピペしても良い)    *  **???** の箇所を自分のコードに置き換えること
+```python
+mylist = ["person", "teacher", "student"]
+
+new_list = []
+for item in mylist:
+    if ???:
+        ???
+    else:
+        ???
+print(new_list)
+
 ```
 
+#### 出力
+```python
+['people', 'teachers', 'students']
 
-ヒント
-1. for ループのなかにfor ループを使うこと
-
-<a href="https://repl.it/@unicoshun/task10" target="_blank">ANSWER</a>
+```
 
 [back home](https://github.com/Seigakuin/todays_task)
