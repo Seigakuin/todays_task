@@ -1,6 +1,5 @@
 # Task11
 ### テーマ： Dictionary
-### 足し算のプログラムの作成
 
 * 以下にあるのは、あるクラスの点数です。
 1. 以下のDictionary から、Tom の点数だけを表示しなさい。
@@ -44,8 +43,8 @@ for ???:
     print(???)
     
 print("3人の点数を文字列と共に出力")
-for ???:
-    print(??? + ???)
+for ???, ??? in enumerate(???):
+    print(??? + "'s score is " + str(???))
 
 
 
