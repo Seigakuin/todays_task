@@ -1,5 +1,5 @@
 # Task11
-### テーマ： Dictionary
+### テーマ： Dictionaryの基本
 
 * 以下にあるのは、あるクラスの点数です。
 1. 以下のDictionary から、Tom の点数だけを表示しなさい。
@@ -7,24 +7,6 @@
 3. `for`ループを使って、クラスの平均を出しなさい。
 4. 以下のような結果が出るようにしなさい。
 
-
-* ３つ目の題は`enumerate()`を使う
-
-使用例
-```python
-my_list = {'a': 1, 'b': 2, 'c': 3}
-
-for key, value in enumerate(my_list):
-    print(key, value)
-
-```
-出力
-
-```python
-0 a
-1 b
-2 c
-```
 
 
 #### スタートコード (これはコピペしても良い)    *  **???** の箇所を自分のコードに置き換えること
@@ -43,7 +25,7 @@ for ???:
     print(???)
     
 print("3人の点数を文字列と共に出力")
-for ???, ??? in enumerate(???):
+for ??? in ???:
     print(??? + "'s score is " + str(???))
 
 
