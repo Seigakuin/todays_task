@@ -1,17 +1,31 @@
-# 課題
-## Level 12
-### テーマ： Dictionary
+# Task12
+## テーマ：　Dictionaryをforループ2
 
 * 以下にあるリストから「出力」のようにデータを表示しなさい。
-```python:
+
+
+注意
+- for ループのなかにfor ループを使うこと
+
+#### スタートコード (これはコピペしても良い)    *  **???** の箇所を自分のコードに置き換えること
+```python
 myclass = {
     'A': ['Tom', 'John'],
     'B': ['Cathy', 'Ben'],
     'C': ['Karen', 'George']
 }
+
+for item in myclass:
+    print("------")
+    print(???)
+    for ??? in ???:
+        print(???)
+        
+
 ```
-出力
-```python:
+
+#### 出力
+```python
 ------
 A: 
 Tom
@@ -24,14 +38,7 @@ Ben
 C:
 Karen
 George
-
 ```
 
-
-ヒント
-1. for ループのなかにfor ループを使うこと
-
-
-<a href="https://repl.it/@unicoshun/task11" target="_blank">ANSWER</a>
 
 [back home](https://github.com/Seigakuin/todays_task)
