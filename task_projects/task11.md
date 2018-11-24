@@ -1,6 +1,6 @@
-# 課題
-## Level 11
+# Task11
 ### テーマ： Dictionary
+### 足し算のプログラムの作成
 
 * 以下にあるのは、あるクラスの点数です。
 1. 以下のDictionary から、Tom の点数だけを表示しなさい。
@@ -8,46 +8,64 @@
 3. `for`ループを使って、クラスの平均を出しなさい。
 4. 以下のような結果が出るようにしなさい。
 
-1
-```python:
+
+* ３つ目の題は`enumerate()`を使う
+
+使用例
+```python
+my_list = {'a': 1, 'b': 2, 'c': 3}
+
+for key, value in enumerate(my_list):
+    print(key, value)
+
+```
+出力
+
+```python
+0 a
+1 b
+2 c
+```
+
+
+#### スタートコード (これはコピペしても良い)    *  **???** の箇所を自分のコードに置き換えること
+```python
 my_class = {
   "Tom": 95,
   "Garnet": 76,
   "Jason": 69
  }
- 
- ?????
- > 95
- ```
-2
-```python:
-for ????
 
-> 95
-> 76
-> 69
-```
-3
-```python:
-for ???
+print("Tomの点数だけを出力")
+print(???)
 
-> 80.0
-```
-ヒント
-* `len()`を使うこと
-* 合計を貯められる変数を用意しておくこと
-
-4
-```python:
-?????
+print("3人の点数を出力")
+for ???:
+    print(???)
+    
+print("3人の点数を文字列と共に出力")
+for ???:
+    print(??? + ???)
 
 
-> Tom's score is 99
-> Garnet's score is 76
-> Jason's score is 69
+
+
 ```
 
+#### 出力
+```python
+Tomの点数だけを出力
+95
+3人の点数を出力
+95
+76
+69
+3人の点数を文字列と共に出力
+Tom's score is 99
+Garnet's score is 76
+Jason's score is 69
 
-<a href="https://repl.it/@unicoshun/task11">ANSWER</a>
+```
+
 
 [back home](https://github.com/Seigakuin/todays_task)
