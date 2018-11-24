@@ -29,7 +29,4 @@ end:  com
 ```
 
 
-
-[back home](https://github.com/Seigakuin/todays_task)
-
 [back home](https://github.com/Seigakuin/todays_task)
