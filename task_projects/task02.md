@@ -1,10 +1,11 @@
 # Task02
-## テーマ：　range() の練習
+## テーマ：　range() / for loop の練習
 1 - 100 の数字を出力
 
 コード
 ```python
-
+for ??? in range(???):
+    print(???)
 
 ```
 
