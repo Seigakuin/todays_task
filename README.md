@@ -32,32 +32,32 @@
 
 <br></br>
 ### :smile: その次に勉強 :smiley:
-+ ### [task01](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task01.md)
-+ ### [task02](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task02.md)
-+ ### [task03](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task03.md)
-+ ### [task04](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task04.md)
-+ ### [task05](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task05.md)
-+ ### [task06](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task06.md)
-+ ### [task07](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task07.md) Lists
-+ ### [task08](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task08.md) Lists
-+ ### [task09](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task09.md) Lists
-+ ### [task10](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task10.md) Lists
-+ ### [task11](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task11.md) Dictionary
-+ ### [task12](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task12.md) Dictionary
-+ ### [task13](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task13.md) Dictionary
-+ ### [task14](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task14.md) Tuple
++ ### [Task01](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task01.md) Hello, world!
++ ### [Task02](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task02.md) 1-100
++ ### [Task03](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task03.md) for loop
++ ### [Task04](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task04.md) input()
++ ### [Task05](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task05.md) while
++ ### [Task06](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task06.md) input()/int()/str()
++ ### [Task07](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task07.md) Lists
++ ### [Task08](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task08.md) Lists
++ ### [Task09](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task09.md) Lists
++ ### [Task10](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task10.md) Lists
++ ### [Task11](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task11.md) Dictionary
++ ### [Task12](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task12.md) Dictionary
++ ### [Task13](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task13.md) Dictionary
++ ### [Task14](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task14.md) Tuple
 
-+ ### Dictionary4   [task15](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task15_Dictionary.md)
++ ### [Task15](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task15_Dictionary.md) Dictionary4   
 
-+ ### Lists3        [task16](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task16_List.md)
++ ### [Task16](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task16_List.md) Lists3        
 
-+ ### Function      [task17](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task17_Function.md)
++ ### [Task17](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task17_Function.md) Function      
 
-+ ### Class1        [task18](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task18_Class1.md)
++ ### [Task18](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task18_Class1.md) Class1        
 
-+ ### Class2        [task19](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task19_Class2.md)
++ ### [Task19](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task19_Class2.md) Class2        
 
-+ ### Class3        [task20](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task20_Class3_Cards.md) カードゲームを作ろう
++ ### [Task20](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task20_Class3_Cards.md) カードゲームを作ろう
 
 
 <br></br>
