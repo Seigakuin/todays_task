@@ -1,7 +1,11 @@
 # :computer: 聖学院プログラミング部 :computer:
 
-## <details><summary> :imp: 始め方 :smiling_imp:</summary>
+<details>
+ 
+<summary>  :imp: <b> 始め方 </b> :smiling_imp:  </summary>
+ 
 <p>
+ 
 + **Windowsメニュー** &rarr; **全てのプログラム** &rarr; **Anaconda** &rarr; **Anaconda Prompt** を開く
 + `python` と打ち(pythonソフトを起動)、`Python 3.7.0 (anaconda ~~ ` と出力されるのを確認する
 + `>>` という文字の横に `import pygame` と打ち、`pygame` がインストールされているかを確認する（エラーがでなければOK)
@@ -9,11 +13,18 @@
 + 抜け出たあと、 `idle`と打てばidleが起動する
 
 </p>
+
 </details>
 
 <br></br>
+<br></br>
 
-### :smile: VSCode編 :smiley:
+<details>
+ 
+<summary>  :smile: <b> VSCode編 </b> :smiley:  </summary>
+ 
+<p>
+
 + デスクトップに今日、使うフォルダを用意(日本語は使わない)
 + プログラムの中から **VSCode** を起動
 + **ファイル** &rarr; **フォルダを開く** &rarr; **[自分がデスクトップに作ったフォルダを選択]**
@@ -26,7 +37,13 @@
 + `python main.py`と打つとプログラムが走る(`main.py`のファイル名は自分のつけたファイル名に変更)
 + ターミナル画面の **powershell** を押す
 
+</p>
+
+</details>
+
 <br></br>
+
+
 
 ## :sparkles: 本日の課題
 
@@ -35,7 +52,18 @@
 + [Progate](https://prog-8.com/) に登録し、 **Pythonコース** で特訓
 
 <br></br>
-### :boom: その次に勉強 :smiley:
+
+
+<br></br>
+<br></br>
+
+<details>
+ 
+<summary>  :boom: <b>その次に勉強</b> :smiley:  </summary>
+ 
+<p>
+
+### 
 + ### :whale2:[Task01](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task01.md) Hello, world!
 + ### :dolphin:[Task02](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task02.md) 1-100
 + ### :dragon:[Task03](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task03.md) for loop
@@ -57,10 +85,26 @@
 + ### :bug:[Task19](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task19_Class2.md) Class2        
 + ### :mouse:[Task20](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task20_Class3_Cards.md) カードゲームを作ろう
 
+</p>
+
+</details>
+
 
 <br></br>
 
-## :snake: Pygame
+
+<br></br>
+
+
+
+
+<details>
+ 
+<summary>  :snake: <b>Pygame</> :snake:  </summary>
+ 
+<p>
+
+## 
 
 + ### [Bouncing Rectangle](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_bouncingrectangle.md) 
 
@@ -77,9 +121,25 @@
 + ### [Start End 2](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/blocks_sf.py) 
     #### (スコア表示とハイスコア表示 / グローバル変数の扱い)
     
+    
+</p>
+
+</details>
+
+
 <br></br>
 
-## :snake: Pygame Platformer :cat: :dog: :mouse: :hamster:
+<br></br>
+
+
+
+
+<details>
+ 
+<summary>  :snake: <b>Pygame Platformer</b> :cat: :dog: :mouse: :hamster:  </summary>
+ 
+<p>
+ 
 + ### [Pygame - Platform ゲーム - [1]](https://qiita.com/sf_/items/bccd0df2416571e2a937) 
 + ### [Pygame - Platform ゲーム - [2]](https://qiita.com/sf_/items/f635870e2d2d2921becf) 
 + ### [Pygame - Platform ゲーム - [3]](https://qiita.com/sf_/items/cbef581265e490f5c58d) 
@@ -97,6 +157,10 @@
 + ### [Pygame - Platform ゲーム - [15]](https://qiita.com/sf_/items/43a97c8681516f68aa8a)
 
 
+    
+</p>
+
+</details>
 
 
 
