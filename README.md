@@ -101,7 +101,7 @@
 
 <details>
  
-<summary>  :snake: <b>Pygame</> :snake:  </summary>
+<summary>  :snake: <b>Pygameの基本</> :snake:  </summary>
  
 <p>
 
