@@ -17,7 +17,6 @@
 </details>
 
 <br></br>
-<br></br>
 
 <details>
  
@@ -51,11 +50,9 @@
 
 + [Progate](https://prog-8.com/) に登録し、 **Pythonコース** で特訓
 
-<br></br>
-
 
 <br></br>
-<br></br>
+
 
 <details>
  
@@ -88,9 +85,6 @@
 </p>
 
 </details>
-
-
-<br></br>
 
 
 <br></br>
@@ -129,7 +123,6 @@
 
 <br></br>
 
-<br></br>
 
 
 
