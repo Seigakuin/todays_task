@@ -1,11 +1,15 @@
 # :computer: 聖学院プログラミング部 :computer:
 
-## :imp: 始め方 :smiling_imp:
+## <details><summary> :imp: 始め方 :smiling_imp:</summary>
+<p>
 + **Windowsメニュー** &rarr; **全てのプログラム** &rarr; **Anaconda** &rarr; **Anaconda Prompt** を開く
 + `python` と打ち(pythonソフトを起動)、`Python 3.7.0 (anaconda ~~ ` と出力されるのを確認する
 + `>>` という文字の横に `import pygame` と打ち、`pygame` がインストールされているかを確認する（エラーがでなければOK)
 + **Ctrl** + **D** を2回打てば、pythonソフトから抜けることができる
 + 抜け出たあと、 `idle`と打てばidleが起動する
+
+</p>
+</details>
 
 <br></br>
 
