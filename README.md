@@ -46,17 +46,24 @@
 
 ## :sparkles: 本日の課題
 
-### :hatching_chick: はじめから勉強 :dash:
+<details>
+ 
+<summary>  :hatching_chick: <b> 学習サイト </b> :dash:  </summary>
+ 
+<p>
 
 + [Progate](https://prog-8.com/) に登録し、 **Pythonコース** で特訓
 
+</p>
+
+</details>
 
 <br></br>
 
 
 <details>
  
-<summary>  :boom: <b>その次に勉強</b> :smiley:  </summary>
+<summary>  :boom: <b>基本Task</b> :smiley:  </summary>
  
 <p>
 
