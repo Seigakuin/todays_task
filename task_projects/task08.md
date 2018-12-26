@@ -11,7 +11,7 @@ mylist = ["apple", "orange", "banana"]
 
 for ??? in ???:
     if ???:
-        print(??? + is my favorite fruit)
+        print(??? + " is my favorite fruit")
     else:
         ???
 
