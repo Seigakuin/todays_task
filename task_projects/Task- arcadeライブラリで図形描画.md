@@ -5,8 +5,8 @@
 
 ### 準備: PyCharmでの設定
 
-* PyCharm -> Preference -> Project -> Project Interpreter -> '+' -> 'arcade'を検索 -> Install Package -> OK
-* 
+* PyCharm -> Settings -> Project -> Project Interpreter -> '+' -> 'arcade'を検索 -> Install Package -> OK
+
 
 ### Activity1: 画面を描く, 長方形を描く
 
