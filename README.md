@@ -179,6 +179,9 @@
 
 + ### [Arcadeライブラリのクラスの勉強](https://github.com/Seigakuin/todays_task/blob/master/task_projects/arcade_proj/arcade02.md)
 
+
++ ### [Arcadeライブラリのクラスの勉強2](https://github.com/Seigakuin/todays_task/blob/master/task_projects/arcade_proj/arcade03.md)
+
 </p>
 
 </details>
