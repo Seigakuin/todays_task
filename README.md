@@ -182,6 +182,8 @@
 
 + ### [Arcadeライブラリのクラスの勉強2](https://github.com/Seigakuin/todays_task/blob/master/task_projects/arcade_proj/arcade03.md)
 
++ ### [ユーザーインプットを受け取る](https://github.com/Seigakuin/todays_task/blob/master/task_projects/arcade_proj/arcade04.md)
+
 </p>
 
 </details>
