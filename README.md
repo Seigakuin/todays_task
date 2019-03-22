@@ -166,7 +166,7 @@
 
 <details>
  
-<summary> :cat: <b> Today's Tasks </b> :mouse: </summary>
+<summary> :cat: <b> Arcade Project </b> :mouse: </summary>
 
 <p>
  
