@@ -2,13 +2,9 @@
 ## テーマ：　スプライトを扱い、衝突判定をかつようする
 file: ch18_1.py
 
-### Acitivity1: まずはMyGameのテンプレートをコピー・ペーストする
 
-- ??? - バックグラウンドの色は自分で指定する
-- ??? - 描き始めるときに必ず呼び出すメソッド名はなんだっけ？
-- ??? - arcadeを走らせるためのメソッド名は？
-
-#### 出力: 指定した色の画面だけが描画される
+### 前回までのコード
+#### ここのコピペからはじめてください。
 
 ```python
 import arcade
@@ -43,31 +39,33 @@ class MyGame(arcade.Window):
         # マウスを画面上で非表示にする
         self.set_mouse_visible(False)
 
-        # バックグラウンド色を自分の好きな色に
-        arcade.set_background_color(???)
+        # バックグラウンド色を緑に
+        arcade.set_background_color(arcade.color.AMAZON)
 
     def on_draw(self):
         # 描くのを始める
-        arcade.???()
+        arcade.start_render()
 
 
 def main():
     """ Main method """
     window = MyGame()
-    arcade.???()
+    arcade.run()
 
-
-if __name__ == "__main__":
-    # 上で作ったmainファンクションを呼び出す
-    main()
- 
+main()
 
 ```
-
 <br></br>
 ---
 
-### Acitivity2: `MyGame`クラスに`setup()`メソッドを追加
+
+
+### Acitivity1: `MyGame`クラスに`setup()`メソッドを追加
+
+- `setup()`メソッドと`__init__()`メソッドの違い
+	- 両方共、初期化という面では同じ
+	- `__init__()`はゲームでいうと「電源を入れる」に相当する
+	- `setup()`はゲームでいうと「リセットボタンを押す」に相当する
 
 - `MyGame`クラスに`setup()`メソッドを追加
 - `on_draw()`メソッドにスプライトリストを描画するメソッド`.draw()`を追加
@@ -79,6 +77,16 @@ if __name__ == "__main__":
 ### `MyGame`クラスに追加
 
 ```python
+
+class MyGame(arcade.Window):
+    """ arcade 組み込みのクラス """
+
+    def __init__(self):
+        # 省略
+
+    def on_draw(self):
+        # 省略
+
     def setup(self):
         """ ゲームの変数を初期化し、ゲームを設定する """
 
@@ -98,10 +106,22 @@ if __name__ == "__main__":
         # プレイヤースプライトリストに作ったプレイヤースプライトを追加
         self.player_list.append(self.player_sprite)
 
+
+def main():
+    # 省略
+
+main()
+
 ```
 
 ### `MyGame`クラスの`on_draw()`に追加
 ```python
+class MyGame(arcade.Window):
+    """ arcade 組み込みのクラス """
+
+    def __init__(self):
+        # 省略
+
     def on_draw(self):
         # 描くのを始める
         arcade.start_render()
@@ -110,10 +130,26 @@ if __name__ == "__main__":
         # スプライトリスト全体をdraw()ファンクションで描く
         self.ghost_list.draw()
         self.player_list.draw()
+
+    def setup(self):
+        # 省略
+
+
+def main():
+    # 省略
+
+main()
+
+
+
+    
 ```
 
 ### `main()`ファンクションに追加
 ```python
+class MyGame(arcade.Window):
+    # 省略
+
 def main():
     """ Main method """
     window = MyGame()
@@ -122,6 +158,9 @@ def main():
     # 変数を初期化する
     window.setup()
     arcade.run()
+
+main()
+    
 ```
 
 <br></br>
@@ -139,6 +178,15 @@ def main():
 ### `MyGame`クラスの`setup()`に追加
 
 ```python
+class MyGame(arcade.Window):
+    """ arcade 組み込みのクラス """
+
+    def __init__(self):
+        # 省略
+
+    def on_draw(self):
+        # 省略
+
     def setup(self):
         """ ゲームの変数を初期化し、ゲームを設定する """
 
@@ -169,6 +217,12 @@ def main():
 
             # ゴーストのスプライトリストにスプライトをたくさん追加
             self.ghost_list.append(ghost)
+            
+def main():
+    # 省略
+
+main()
+            
 ```
 
 <br></br>
@@ -189,6 +243,13 @@ def main():
 
 
 ```python
+
+class MyGame(arcade.Window):
+    """ arcade 組み込みのクラス """
+
+    def __init__(self):
+        # 省略
+
     def on_draw(self):
         # 描くのを始める
         arcade.start_render()
@@ -200,24 +261,67 @@ def main():
         # NEW !!
         output = f"Score: {self.score}"
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
+
+    def setup(self):
+        # 省略
+
+
+def main():
+    # 省略
+
+main()
+  
 ```
 
 - `MyGame`クラス内に新たに`on_mouse_motion()`メソッドを追加
 
 ```python
+class MyGame(arcade.Window):
+    """ arcade 組み込みのクラス """
+
+    def __init__(self):
+        # 省略
+
+    def on_draw(self):
+        # 省略
+
+    def setup(self):
+        # 省略
+        
     def on_mouse_motion(self, x, y, dx, dy):
         """ マウスの動きを制御 """
 
         # プレイヤースプライトの位置をマウスのx, y位置に移動
         self.player_sprite.center_x = x
         self.player_sprite.center_y = y
+
+
+def main():
+    # 省略
+
+main()
+
 ```
 
 - `MyGame`クラス内に新たに`update()`メソッドを追加
 
 ```python
-# NEW !!
-    def update(self, delta_time):
+class MyGame(arcade.Window):
+    """ arcade 組み込みのクラス """
+
+    def __init__(self):
+        # 省略
+
+    def on_draw(self):
+        # 省略
+
+    def setup(self):
+        # 省略
+        
+    def on_mouse_motion(self, x, y, dx, dy):
+        # 省略
+        
+	def update(self, delta_time):
         """ 動きとゲームロジック """
 
         # 全てのスプライトのupdate()ファンクションを呼び出す
@@ -234,6 +338,14 @@ def main():
         for ghost in ghost_hit_list:
             ghost.kill()
             self.score += 1
+
+
+def main():
+    # 省略
+
+main()
+
+    
 ```
 <br></br>
 ---
