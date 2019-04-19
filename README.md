@@ -186,6 +186,8 @@
 
 + ### [スプライトクラスを使い衝突判定を活用](https://github.com/Seigakuin/todays_task/blob/master/task_projects/arcade_proj/arcade05.md)
 
++ ### [スプライトに動きをつける](https://github.com/Seigakuin/todays_task/blob/master/task_projects/arcade_proj/arcade06.md)
+
 </p>
 
 </details>
