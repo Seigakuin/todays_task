@@ -180,9 +180,9 @@
 
 <br></br>
 
-<details>
+
  
-<summary> :cat: <b> Arcade Project </b> :mouse: </summary>
+:cat: <b> Arcade Project </b> :mouse:
  
  
  
@@ -203,7 +203,6 @@
 + ### [スプライトに動きをつける](https://github.com/Seigakuin/todays_task/blob/master/task_projects/arcade_proj/arcade06.md)
 
 
-</details>
 
 
 
