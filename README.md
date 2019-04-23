@@ -1,6 +1,6 @@
 # :computer: 聖学院プログラミング部 :computer:
  
-:imp: [**始め方**](https://github.com/Seigakuin/todays_task/blob/master/task_projects/Environment.md) :smiling_imp: 
+:imp: [**始め方**](https://github.com/Seigakuin/todays_task/blob/master/Environment.md) :smiling_imp: 
 
 
 ## :sparkles: 本日の課題
