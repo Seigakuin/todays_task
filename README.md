@@ -42,6 +42,22 @@
 
 <br></br>
 
+<details>
+ 
+<summary>  :smile: <b> PyCharm編 </b> :smiley:  </summary>
+ 
+<p>
+
++ デスクトップに今日、使うフォルダを用意(日本語は使わない)
++ プログラムの中から **PyCharm** を起動
++ **Create New Project** &rarr; **locationの中のパスの右にあるフォルダアイコンをクリックする** &rarr; **[自分がデスクトップに作ったフォルダを選択]**
++ [自分がデスクトップに作ったフォルダ]の選択し、**ファイル** &rarr; **新規ファイル** で新しいファイルをフォルダに作成
+
+</p>
+
+</details>
+
+<br></br>
 
 
 ## :sparkles: 本日の課題
