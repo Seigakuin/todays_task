@@ -1,87 +1,23 @@
 # :computer: 聖学院プログラミング部 :computer:
-
-<details>
  
-<summary>  :imp: <b> 始め方 </b> :smiling_imp:  </summary>
- 
-<p>
- 
-+ **Windowsメニュー** &rarr; **全てのプログラム** &rarr; **Anaconda** &rarr; **Anaconda Prompt** を開く
-+ `python` と打ち(pythonソフトを起動)、`Python 3.7.0 (anaconda ~~ ` と出力されるのを確認する
-+ `>>` という文字の横に `import pygame` と打ち、`pygame` がインストールされているかを確認する（エラーがでなければOK)
-+ **Ctrl** + **D** を2回打てば、pythonソフトから抜けることができる
-+ 抜け出たあと、 `idle`と打てばidleが起動する
-
-</p>
-
-</details>
-
-<br></br>
-
-<details>
- 
-<summary>  :smile: <b> VSCode編 </b> :smiley:  </summary>
- 
-<p>
-
-+ デスクトップに今日、使うフォルダを用意(日本語は使わない)
-+ プログラムの中から **VSCode** を起動
-+ **ファイル** &rarr; **フォルダを開く** &rarr; **[自分がデスクトップに作ったフォルダを選択]**
-+ **ファイル** &rarr; **新規ファイル** で新しいファイルをフォルダに作成
-#### プログラムの走らせ方
-* **ターミナル** &rarr; **統合ターミナル** で画面したにターミナル画面が出る(Powershellのようなもの)
-+ ターミナル画面の **powershell** を押す
- or
-* **表示** &rarr; **New Terminal** で画面したにターミナル画面が出る(Powershellのようなもの)
-+ `python main.py`と打つとプログラムが走る(`main.py`のファイル名は自分のつけたファイル名に変更)
-+ ターミナル画面の **powershell** を押す
-
-</p>
-
-</details>
-
-<br></br>
-
-<details>
- 
-<summary>  :smile: <b> PyCharm編 </b> :smiley:  </summary>
- 
-<p>
-
-+ デスクトップに今日、使うフォルダを用意(日本語は使わない)
-+ プログラムの中から **PyCharm** を起動
-+ **Create New Project** &rarr; **locationの中のパスの右にあるフォルダアイコンをクリックする** &rarr; **[自分がデスクトップに作ったフォルダを選択]**
-+ [自分がデスクトップに作ったフォルダ]の選択し、**ファイル** &rarr; **新規ファイル** で新しいファイルをフォルダに作成
-
-</p>
-
-</details>
-
-<br></br>
+:imp: [**始め方**](https://github.com/Seigakuin/todays_task/blob/master/task_projects/Environment.md) :smiling_imp: 
 
 
 ## :sparkles: 本日の課題
 
-<details>
+
+:hatching_chick: <b> 学習サイト </b> :dash:
  
-<summary>  :hatching_chick: <b> 学習サイト </b> :dash:  </summary>
- 
-<p>
 
 + [Progate](https://prog-8.com/) に登録し、 **Pythonコース** で特訓
 
-</p>
 
-</details>
 
 <br></br>
 
 
-<details>
  
-<summary>  :boom: <b>基本Task</b> :smiley:  </summary>
- 
-<p>
+:boom: <b>基本Task</b> :smiley:
 
 ### 
 + ### :whale2:[Task01](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task01.md) Hello, world!
@@ -105,21 +41,13 @@
 + ### :bug:[Task19](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task19_Class2.md) Class2        
 + ### :mouse:[Task20](https://github.com/Seigakuin/todays_task/blob/master/task_projects/task20_Class3_Cards.md) カードゲームを作ろう
 
-</p>
-
-</details>
 
 
 <br></br>
 
 
-
-
-<details>
+:snake: <b>Pygameの基本</b> :snake:
  
-<summary>  :snake: <b>Pygameの基本</> :snake:  </summary>
- 
-<p>
 
 ## 
 
@@ -131,31 +59,17 @@
 
 + ### [Block Inheritance](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_block_inheritance.md) 
 
-+ ### [Sprite](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_sprite.md) 
++ ### [Sprite](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_sprite.md)
 
-+ ### [Start End](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_startend.md) 
++ ### [Start End](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/pygame_startend.md)
 
-+ ### [Start End 2](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/blocks_sf.py) 
-    #### (スコア表示とハイスコア表示 / グローバル変数の扱い)
-    
-    
-</p>
-
-</details>
-
++ ### [Start End 2](https://github.com/Seigakuin/todays_task/blob/master/pygame_projects/blocks_sf.py)
+#### (スコア表示とハイスコア表示 / グローバル変数の扱い)
 
 <br></br>
 
+:snake: <b>Pygame Platformer</b> :cat: :dog: :mouse: :hamster:
 
-
-
-
-<details>
- 
-<summary>  :snake: <b>Pygame Platformer</b> :cat: :dog: :mouse: :hamster:  </summary>
- 
-<p>
- 
 + ### [Pygame - Platform ゲーム - [1]](https://qiita.com/sf_/items/bccd0df2416571e2a937) 
 + ### [Pygame - Platform ゲーム - [2]](https://qiita.com/sf_/items/f635870e2d2d2921becf) 
 + ### [Pygame - Platform ゲーム - [3]](https://qiita.com/sf_/items/cbef581265e490f5c58d) 
@@ -171,12 +85,6 @@
 + ### [Pygame - Platform ゲーム - [13]](https://qiita.com/sf_/items/8b40d6124a1a0b9d9708)
 + ### [Pygame - Platform ゲーム - [14]](https://qiita.com/sf_/items/fc5727666b3baa62ecbb)
 + ### [Pygame - Platform ゲーム - [15]](https://qiita.com/sf_/items/43a97c8681516f68aa8a)
-
-
-    
-</p>
-
-</details>
 
 <br></br>
 
