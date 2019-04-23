@@ -183,8 +183,6 @@
 <details>
  
 <summary> :cat: <b> Arcade Project </b> :mouse: </summary>
-
-<p>
  
  
  
@@ -204,7 +202,6 @@
 
 + ### [スプライトに動きをつける](https://github.com/Seigakuin/todays_task/blob/master/task_projects/arcade_proj/arcade06.md)
 
-</p>
 
 </details>
 
