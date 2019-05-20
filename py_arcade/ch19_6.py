@@ -1,4 +1,7 @@
-""" 19_5 Rotating Ghosts
+""" 19_6 
+- Player Class moves using UP/DOWN/LEFT/RIGHT key
+- Player Bounces off the wall
+- use on_key_press()
 """
 import random
 import math
@@ -12,13 +15,37 @@ GHOST_COUNT = 80
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
+MOVEMENT_SPEED = 3
+
+
+class Player(arcade.Sprite):
+    def __init__(self, filename, sprite_scaling):
+        super().__init__(filename, sprite_scaling)
+        self.center_x = SCREEN_WIDTH / 2
+        self.center_y = SCREEN_HEIGHT / 2
+
+        self.change_x = 0
+        self.change_y = 0
+
+    def update(self):
+        self.center_x += self.change_x
+        self.center_y += self.change_y
+
+        if self.top > SCREEN_HEIGHT:
+            self.change_y = -MOVEMENT_SPEED
+        if self.bottom < 0:
+            self.change_y = MOVEMENT_SPEED
+        if self.right > SCREEN_WIDTH:
+            self.change_x = -MOVEMENT_SPEED
+        if self.left < 0:
+            self.change_x = MOVEMENT_SPEED
 
 
 class Ghost(arcade.Sprite):
     """ Ghost Class
     """
 
-    def __init__(self, filename: str, sprite_scaling: float) -> None:
+    def __init__(self, filename, sprite_scaling):
         super().__init__(filename, sprite_scaling)
 
         # NEW 19_5
@@ -42,12 +69,10 @@ class Ghost(arcade.Sprite):
         # Ghostの初期位置を設定し、動かす
         # NEW 19_5
         self.center_x = (
-            self.circle_radius * math.sin(self.circle_angle)
-            + self.circle_center_x
+            self.circle_radius * math.sin(self.circle_angle) + self.circle_center_x
         )
         self.center_y = (
-            self.circle_radius * math.cos(self.circle_angle)
-            + self.circle_center_y
+            self.circle_radius * math.cos(self.circle_angle) + self.circle_center_y
         )
 
         # NEW 19_5
@@ -90,18 +115,17 @@ class MyGame(arcade.Window):
 
         # プレイヤーを設定
         # プレイヤーの大きさはSPRITE_SCALING_PLAYERで小さく
-        self.player_sprite = arcade.Sprite(
-            "./player.png", SPRITE_SCALING_PLAYER
-        )
-        self.player_sprite.center_x = 50
-        self.player_sprite.center_y = 50
+        # self.player_sprite = arcade.Sprite("./player.png", SPRITE_SCALING_PLAYER)
+        self.player = Player("py_arcade/player.png", SPRITE_SCALING_PLAYER)
+        # self.player.center_x = 50
+        # self.player_sprite.center_y = 50
         # プレイヤースプライトリストに作ったプレイヤースプライトを追加
-        self.player_list.append(self.player_sprite)
+        self.player_list.append(self.player)
 
         # Ghostの作成
         for _ in range(GHOST_COUNT):
             # ゴーストのイメージを作成
-            ghost = Ghost("ghost.png", SPRITE_SCALING_GHOST)
+            ghost = Ghost("py_arcade/ghost.png", SPRITE_SCALING_GHOST)
 
             # ゴーストの位置をランダムに設定
             # NEW 19_5
@@ -130,21 +154,33 @@ class MyGame(arcade.Window):
         output = f"Score: {self.score}"
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
 
-    def on_mouse_motion(self, x, y, dx, dy):
-        """ マウスの動きを制御 """
-        # プレイヤースプライトの位置をマウスのx, y位置に移動
-        self.player_sprite.center_x = x
-        self.player_sprite.center_y = y
+        # Player Status
+        status_text = f"""
+        center_x: {self.player.center_x},
+        center_y: {self.player.center_y},
+        change_x: {self.player.change_x},
+        change_y: {self.player.change_y}
+        """
+        arcade.draw_text(
+            status_text, 50, SCREEN_HEIGHT - 150, arcade.color.WHITE_SMOKE, 16
+        )
+
+    # def on_mouse_motion(self, x, y, dx, dy):
+    #     """ マウスの動きを制御 """
+    #     # プレイヤースプライトの位置をマウスのx, y位置に移動
+    #     self.player.center_x = x
+    #     self.player.center_y = y
 
     def update(self, delta_time):
         """ 動きとゲームロジック """
         # 全てのスプライトのupdate()ファンクションを呼び出す
         self.ghost_list.update()
+        self.player_list.update()
 
         # プレイヤーと衝突したスプライトのリストを作成する
         # 衝突したものになにかをする時に便利！
         ghost_hit_list = arcade.check_for_collision_with_list(
-            self.player_sprite, self.ghost_list
+            self.player, self.ghost_list
         )
 
         # 衝突したものリストをforループでさらい、消す(kill())
@@ -153,11 +189,26 @@ class MyGame(arcade.Window):
             ghost.kill()
             self.score += 1
 
+    def on_key_press(self, key, modifiers):
+        if key == arcade.key.LEFT:
+            self.player.change_x += -MOVEMENT_SPEED
+        if key == arcade.key.RIGHT:
+            self.player.change_x += MOVEMENT_SPEED
+        if key == arcade.key.UP:
+            self.player.change_y += MOVEMENT_SPEED
+        if key == arcade.key.DOWN:
+            self.player.change_y += -MOVEMENT_SPEED
+
+    # def on_key_release(self, key, modifiers):
+    #     if key == arcade.key.LEFT or key == arcade.key.RIGHT:
+    #         self.player.change_x = 0
+    #     if key == arcade.key.UP or key == arcade.key.DOWN:
+    #         self.player.change_y = 0
+
 
 def main():
     """ Main method """
     window = MyGame()
-    # NEW!! ch18_2
     # MyGameクラスに追加した setup()ファンクションを呼び出し、
     window.setup()
     arcade.run()

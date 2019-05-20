@@ -7,7 +7,7 @@ class Animal:
         self.age = age
         self.name = name
         self.weight = weight
-
+        
     # クラスに「動作」を与えるために
     # クラスにメソッド（ファンクション）を定義する
     def cry(self):
