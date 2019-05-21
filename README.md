@@ -112,8 +112,49 @@
 
 
 
+<br></br>
+
+:cat: <b> Arcade Project - Animating Snow </b> :mouse:
+
++ ### [Arcade - Animating Snow 1](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_1.py)
+    - Goal:
+        - 一粒のSnowを降らせる
+
+    - Exercises:
+        - 雪の場所、大きさを変えてみよう
 
 
++ ### [Arcade - Animating Snow 2](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_2.py)
+    - Goal:
+        - 雪の粒のステータスを入れておくDictionaryを作り、それで呼び出す
+
+    - Exercises:
+        - circleではなく、別の形を使ってみよう。
 
 
- 
++ ### [Arcade - Animating Snow 3](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_3.py)
+    - Goal:
+        - 雪の粒をたくさん作る(forループを使用)
+
+    - Exercises:
+        - 雪の粒の数を変更する
+
+
++ ### [Arcade - Animating Snow 4](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_4.py)
+
+    - Goal:
+        - 雪の粒を降らせる(下に移動)
+
+    - Exercises:
+        - 降るスピードを変更する
+        - (Difficult)各雪の粒のステータスに"speed"を加え、雪の粒それぞれにスピードをつける 
+
+
++ ### [Arcade - Animating Snow 5](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_5.py)
+
+    - Goal:
+        - 雪の粒が画面下の外に移動したら、再び上に戻す(ifを使用)
+
+    - Exercises:
+        - 雪の粒が突然上に移動してしまうエラーを直す
+        - 同じ縦に位置から降り始めるので、それをrandomにする
