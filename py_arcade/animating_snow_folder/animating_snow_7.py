@@ -62,7 +62,7 @@ class MyGame(arcade.Window):
         # 仮のsnowのステータスを作る
         # 一回限りだからselfが取れているのに注意!!!
         # for ループでたくさん作る
-        for i in range(50):
+        for i in range(100):
             # 各Snowインスタンスのステータスを作る
             x = random.randrange(0, SCREEN_WIDTH)
             y = random.randrange(0, SCREEN_HEIGHT)
