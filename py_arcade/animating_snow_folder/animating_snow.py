@@ -35,6 +35,7 @@ class MyGame(arcade.Window):
             arcade.color.WHITE_SMOKE,
             font_size=16,
         )
+        ell = arcade.create_ellipse(300, 300, 40, 40, arcade.color.GOLD)
 
         for snow in self.snow_list:
             arcade.draw_circle_filled(snow[0], snow[1], snow[3], arcade.color.WHITE)
