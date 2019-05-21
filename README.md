@@ -158,3 +158,27 @@
     - Exercises:
         - 雪の粒が突然上に移動してしまうエラーを直す
         - 同じ縦に位置から降り始めるので、それをrandomにする
+
++ ### [Arcade - Animating Snow 6](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_6.py)
+
+    - Goal:
+        - Snow クラスを作成し、Snowクラスのインスタンスでステータスを管理する
+
+    - Exercises:
+        - Snowインスタンスの数に変化をつけよう(動きが鈍くなるはず！)
+        - これを解決するためには根本的になにかを変えないといけない
+
+
+
++ ### [Arcade - Animating Snow 7](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_7.py)
+
+    - Goal:
+        - arcade.SpriteクラスからSnowクラスを継承しよう
+            - こうすることにより各インスタンスが管理しやすくなる
+            - 動きも良くなる
+
+    - Exercises:
+        - インスタンスの数を限界まで増やしてみよう
+        - (Difficult) Snowクラスのupdateに新たなルールをつけてみよう
+            - ex. center_xのスタート位置を変える
+            - ex. 再描画するときにradiusに変化をつける
