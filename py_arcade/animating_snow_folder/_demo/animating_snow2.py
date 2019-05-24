@@ -48,6 +48,7 @@ class MyGame(arcade.Window):
         self.snow_list = arcade.SpriteList()
         self.ADD_SNOW = False
         self.framecount = 0
+        self.points = ""
 
         for _ in range(100):
             x = random.randrange(0, SCREEN_WIDTH)
@@ -73,7 +74,11 @@ class MyGame(arcade.Window):
             arcade.color.WHITE_SMOKE,
             font_size=16,
         )
+
         self.snow_list.draw()
+        if self.framecount % 200 == 0:
+            self.points = self.snow_list[0].position
+        arcade.draw_text(f"points: {self.points}", 30, 300, arcade.color.WHITE, 10)
 
     def on_update(self, delta_time):
         """ 動きとゲームロジック """

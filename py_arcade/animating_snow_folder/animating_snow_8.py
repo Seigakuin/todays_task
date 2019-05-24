@@ -1,16 +1,12 @@
 """ 
-Animating Snow 07
-Goal:
-- arcade.SpriteクラスからSnowクラスを継承しよう
-    - こうすることにより各インスタンスが管理しやすくなる
-    - 動きも良くなる
+Animating Snow 08
+-Goal:
+    - `on_key_press()`を使い、下キーを押した時に雪を増やす
+    - MyGameクラスに`add_snow()`メソッド(関数)を加える
 
-Exercises:
-- インスタンスの数を限界まで増やしてみよう
-- (Difficult) Snowクラスのupdateに新たなルールをつけてみよう
-    - ex. center_xのスタート位置を変える
-    - ex. 再描画するときにradiusに変化をつける
-
+- Exercises:
+    - `add_snow()`を改良し、一度に増やす数を増やす
+        - ヒント： `add_snow()`の中にforループを入れる
 
 """
 import arcade
@@ -32,9 +28,7 @@ class Snow(arcade.Sprite):
 
         # 継承したSpriteクラスにはtextureというステータスがある
         # このtextureにcircle入れる
-        self.texture = arcade.make_soft_circle_texture(
-            self.radius, arcade.color.WHITE)
-        )
+        self.texture = arcade.make_soft_circle_texture(self.radius, arcade.color.WHITE)
 
     # 継承したSpriteクラスにはupdateという動き(Method)がある
     # ここに下に動くアニメーションを設定する
@@ -64,7 +58,7 @@ class MyGame(arcade.Window):
         # 仮のsnowのステータスを作る
         # 一回限りだからselfが取れているのに注意!!!
         # for ループでたくさん作る
-        for i in range(100):
+        for i in range(5):
             # 各Snowインスタンスのステータスを作る
             x = random.randrange(0, SCREEN_WIDTH)
             y = random.randrange(0, SCREEN_HEIGHT)
@@ -95,11 +89,28 @@ class MyGame(arcade.Window):
 
     def on_key_press(self, key, modifiers):
         """ キーが押されたら """
-        pass
+        # キーが押されたらSnowのインスタンスを追加
+        self.add_snow()
 
     def on_key_release(self, key, modifiers):
         """ キーが離されたら """
         pass
+
+    def add_snow(self):
+        """ Snowクラスのインスタンスを作成し、描画する"""
+        # 描く位置(x)を設定
+        x = random.randrange(0, SCREEN_WIDTH)
+
+        # 縦位置(y)は画面の一番上に描く
+        y = SCREEN_HEIGHT
+        # 雪の大きさをランダムで設定
+        radius = random.randrange(1, 20)
+        # 雪の降るスピードをランダムで設定
+        speed = random.randrange(1, 5)
+
+        # インスタンスを作成し、SpriteListに追加
+        snow = Snow(x, y, radius, speed)
+        self.snow_list.append(snow)
 
 
 def main():
