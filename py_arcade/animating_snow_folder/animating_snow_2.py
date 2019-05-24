@@ -5,6 +5,8 @@ Goal:
 
 Exercises:
 - circleではなく、別の形を使ってみよう。
+    - `draw_circle_filled()`では`center_x`, `center_y`, `radius`という属性の順番だけど、他の関数ではそうとは限らない！
+    - http://arcade.academy/quick_index.html で他の関数を確認
 
 """
 import arcade
@@ -22,7 +24,6 @@ class MyGame(arcade.Window):
         # 親クラスのコンストラクタに画面幅、画面高さ、画面の名前を表示
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "ARCADE EXAMPLE")
 
-        # あとでsnow_listに付け加えるための
         # snowのステータスを作る
         self.snow_status = {
             "center_x": random.randrange(0, SCREEN_WIDTH),
