@@ -185,33 +185,36 @@
 
 + ### [Arcade - Animating Snow 8](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_8.py)
 
--Goal:
-    - `on_key_press()`を使い、下キーを押した時に雪を増やす
-    - MyGameクラスに`add_snow()`メソッド(関数)を加える
+    - Goal:
+        - `on_key_press()`を使い、下キーを押した時に雪を増やす
+        - MyGameクラスに`add_snow()`メソッド(関数)を加える
 
-- Exercises:
-    - `add_snow()`を改良し、一度に増やす数を増やす
-        - ヒント： `add_snow()`の中にforループを入れる
+    - Exercises:
+        - `add_snow()`を改良し、一度に増やす数を増やす
+            - ヒント： `add_snow()`の中にforループを入れる
 
 + ### [Arcade - Animating Snow 9](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_9.py)
 
--Goal:
-    - Boxクラスを新たに作成
-        - 機能： 衝突したSnowを消す
-    - all_listを作成
-        - all_listはSpriteListのインスタンス
-        - BoxのインスタンスとすべてのSnowインスタンスを入れておくSpriteList
-            理由： Box, Snowすべてを一気にupdate(), draw()を呼び出すため
-    - MyGameクラスのupdate()に
-        - arcade.check_for_collision_with_list()を使い、衝突判定をし、衝突したSnowインスタンスをリストに格納
-        - remove_from_sprite_lists() 衝突したSnowインスタンスをsnow_listから取り除く
+    - Goal:
+        - Boxクラスを新たに作成
+            - 機能： 衝突したSnowを消す
+        - all_listを作成
+            - all_listはSpriteListのインスタンス
+            - BoxのインスタンスとすべてのSnowインスタンスを入れておくSpriteList
+                理由： Box, Snowすべてを一気にupdate(), draw()を呼び出すため
+        - MyGameクラスのupdate()に
+            - arcade.check_for_collision_with_list()を使い、衝突判定をし、衝突したSnowインスタンスをリストに格納
+            - remove_from_sprite_lists() 衝突したSnowインスタンスをsnow_listから取り除く
 
+    - Exercises:
+        - Boxクラスの`update`メソッドを改良し、動きを工夫する
+ 
 
 + ### [Arcade - Animating Snow 10](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_10.py)
 
-- Goal:
-    - キーに合わせてBoxを動かす
+    - Goal:
+        - キーに合わせてBoxを動かす
 
-- Exercises:
-    - 衝突判定を工夫する
-        - ex. 衝突した雪のスピードを下げる
+    - Exercises:
+        - 衝突判定を工夫する
+            - ex. 衝突した雪のスピードを下げる
