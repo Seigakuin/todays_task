@@ -4,9 +4,12 @@ Goal:
 - arcade.SpriteクラスからSnowクラスを継承しよう
     - こうすることにより各インスタンスが管理しやすくなる
     - 動きも良くなる
+- Snowクラス自体に`update`メソッド(関数)を加え、動きを管理する
+- Spriteクラスを継承してたSnowクラスをSpriteListクラスに入れることによって色々便利に管理できる
+    - SpriteListクラスをforループを使わずに、直接`update()`をリストから呼び出すことができる
 
 Exercises:
-- インスタンスの数を限界まで増やしてみよう
+- Snowクラスのインスタンスの数を限界まで増やしてみよう
 - (Difficult) Snowクラスのupdateに新たなルールをつけてみよう
     - ex. center_xのスタート位置を変える
     - ex. 再描画するときにradiusに変化をつける
