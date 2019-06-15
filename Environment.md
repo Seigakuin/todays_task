@@ -1,3 +1,17 @@
+### Pycharm 始め方
+
+- **Pycharm Community Edition** を起動する
+- **"Create New Project"**
+- **"Location"** に保存したい場所とフォルダー名を設定 ex. "PC-16¥Desktop¥<好きな名前>"
+- **"Project Interpreter"** をクリックする
+- そうすると　**"Existing Interpreter"** と **"System Interpreter"**　が選択肢で表示される
+- **"System Interpreter"** を選択し、"C¥Program - - - - - .python.exe" と書いてある右の下向き矢印をクリックするとその他のpythonへの選択肢がでる。
+- 選択肢の中の **"C:¥ProgramData¥Anaconda3¥python.exe"** を選ぶ
+- 左 **Pane** にある **"Project"** 以下にある自分で名付けたフォルダ名を選択し、画面上部の **「ファイル」** メニューから **"New"** を選択
+- **"Python File"** を選択し、ファイル名を設定する
+
+
+
 # Python 環境設定
 
 ## Mac編
@@ -25,13 +39,7 @@
   
 * 
 
-### Pycharm 設定
 
-- **Pycharm Community Edition** をダウンロード/インスール ([Pycharm Community Edition](https://www.jetbrains.com/pycharm/download))
-- **"Create New Project"**
-- **"Pure Python"** &rarr; **"Location"** に保存したい場所とフォルダー名を設定
-- 左 **Pane** にある **"Project"** 以下にある自分で名付けたフォルダ名を選択し、画面上部の **「ファイル」** メニューから **"New"** を選択
-- **"Python File"** を選択し、ファイル名を設定する
 
 
 
