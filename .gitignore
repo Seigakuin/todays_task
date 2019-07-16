@@ -1,0 +1,14 @@
+.vscode/
+__pycache__/
+initialize.py 
+utils.py
+for_sep_22.py
+classes.py
+.idea/
+**.png
+**.ogg
+**.wav
+**/.mypy_cache/
+.pytest_cache/
+.ropeproject/
+.ipynb_checkpoints/
