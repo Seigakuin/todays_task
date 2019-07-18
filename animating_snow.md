@@ -1,4 +1,4 @@
-# :computer: 聖学院プログラミング部 :computer:
+# :computer: [聖学院プログラミング部](https://github.com/Seigakuin/todays_task/blob/master/README.md) :computer:
 
 :cat: <b> Arcade Project - Animating Snow </b> :mouse:
 

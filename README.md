@@ -101,4 +101,6 @@
 
 <br></br>
 
-:cat: <b> Arcade Project - Ship Shooter </b> :mouse:
+### :whale2: [Arcade - Ship Shooter](https://github.com/Seigakuin/todays_task/blob/master/ship_shooter.md) :dragon:
+
+<br></br>
