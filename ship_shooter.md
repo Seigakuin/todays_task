@@ -2,6 +2,11 @@
 
 :cat: <b> Arcade Project - Ship Shooter </b> :mouse:
 
+- 始める前に:
+
+  - ここからゲームで使う画像をダウンロード [kenny.nl](https://www.kenney.nl/assets/space-shooter-redux)
+  - zip をダウンロードし、フォルダの中にある ship, enemy, background に使いたいものを選び、自分の py ファイルがあるフォルダに入れること
+
 - ### [Arcade - Ship Shooter 1](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/ship_shooter_folder/ship_shooter_1.py)
 
 * ### [Arcade - Ship Shooter 2](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/ship_shooter_folder/ship_shooter_2.py)
