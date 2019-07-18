@@ -1,7 +1,5 @@
 # :computer: [聖学院プログラミング部](https://github.com/Seigakuin/todays_task/blob/master/README.md) :computer:
 
-:boom: <b>基本 Task</b> :smiley:
-
 ## :boom: [基本 Task](https://github.com/Seigakuin/todays_task/blob/master/basic_tasks.md) :smiley:
 
 ###
