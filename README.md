@@ -97,7 +97,7 @@
 
 <br></br>
 
-### [Arcade - Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/animating_snow.md) </b>
+### :whale2: [Arcade - Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/animating_snow.md) :dragon:
 
 <br></br>
 
