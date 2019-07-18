@@ -1,9 +1,12 @@
 # Task03
-## テーマ：　for loopの練習, if / elif / else の練習
-"FizzBuzz" 
 
-スタートコード (これはコピペしても良い)    *  **???** の箇所を自分のコードに置き換えること
-``` python
+## テーマ：　 for loop の練習, if / elif / else の練習
+
+"FizzBuzz"
+
+スタートコード (これはコピペしても良い) \* **???** の箇所を自分のコードに置き換えること
+
+```python
 for i in range(1, 30):
     if ???:
         print(???)
@@ -17,6 +20,7 @@ for i in range(1, 30):
 ```
 
 出力
+
 ```python
 1
 2
@@ -45,3 +49,5 @@ Fizz
 Buzz
 # 続く
 ```
+
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task03.py)

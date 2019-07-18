@@ -1,13 +1,15 @@
 # Task12
-## テーマ：　Dictionaryをforループ2
 
-* 以下にあるリストから「出力」のようにデータを表示しなさい。
+## テーマ：　 Dictionary を for ループ 2
 
+- 以下にあるリストから「出力」のようにデータを表示しなさい。
 
 注意
-- for ループのなかにfor ループを使うこと
 
-#### スタートコード (これはコピペしても良い)    *  **???** の箇所を自分のコードに置き換えること
+- for ループのなかに for ループを使うこと
+
+#### スタートコード (これはコピペしても良い) \* **???** の箇所を自分のコードに置き換えること
+
 ```python
 myclass = {
     'A': ['Tom', 'John'],
@@ -20,18 +22,19 @@ for item in myclass:
     print(???)
     for ??? in ???:
         print(???)
-        
+
 
 ```
 
 #### 出力
+
 ```python
 ------
-A: 
+A:
 Tom
 John
 ------
-B: 
+B:
 Cathy
 Ben
 ------
@@ -40,5 +43,6 @@ Karen
 George
 ```
 
-
 [back home](https://github.com/Seigakuin/todays_task)
+
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task12.py)

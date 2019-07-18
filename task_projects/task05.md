@@ -1,9 +1,10 @@
 # Task05
-## テーマ：　while 練習
+
+## テーマ：　 while 練習
+
 前回、for ループで作った“Fizz Buzz”を while 文を使って書き換えなさい
 
-
-スタートコード (これはコピペしても良い)    *  **???** の箇所を自分のコードに置き換えること
+スタートコード (これはコピペしても良い) \* **???** の箇所を自分のコードに置き換えること
 
 ```python
 i = 1
@@ -21,6 +22,7 @@ while ???:
 ```
 
 出力
+
 ```python
 1
 2
@@ -44,3 +46,5 @@ Fizz
 Buzz
 # 続く
 ```
+
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task05.py)

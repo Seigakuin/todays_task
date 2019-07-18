@@ -12,3 +12,5 @@ print(???)
 ```python
 Hello, world!
 ```
+
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task01.py)
