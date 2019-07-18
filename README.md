@@ -97,7 +97,7 @@
 
 <br></br>
 
-:cat: <b> [Arcade - Animating Snow 1](https://github.com/Seigakuin/todays_task/blob/master/animating_snow.md) </b> :mouse:
+### [Arcade - Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/animating_snow.md) </b>
 
 <br></br>
 
