@@ -18,7 +18,7 @@
 
 <br></br>
 
-## :cat: [Arcade Basics](https://github.com/Seigakuin/todays_task/blob/master/arcade_basics.md) :mouse
+## :cat: [Arcade Basics](https://github.com/Seigakuin/todays_task/blob/master/arcade_basics.md) :mouse:
 
 <br></br>
 
