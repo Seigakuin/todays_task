@@ -14,11 +14,11 @@
 
 <br></br>
 
-## :snake: [Pygame Platformer](https://github.com/Seigakuin/todays_task/blob/master/pygame_platformer.md) :snake:
+### :snake: [Pygame Platformer](https://github.com/Seigakuin/todays_task/blob/master/pygame_platformer.md) :snake:
 
 <br></br>
 
-## :cat: [Arcade Basics](https://github.com/Seigakuin/todays_task/blob/master/arcade_basics.md) :mouse:
+### :cat: [Arcade Basics](https://github.com/Seigakuin/todays_task/blob/master/arcade_basics.md) :mouse:
 
 <br></br>
 
