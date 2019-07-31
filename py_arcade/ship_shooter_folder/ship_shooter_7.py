@@ -30,13 +30,7 @@ class Ship(arcade.Sprite):
         self.moving_right = False
         self.moving_left = False
 
-    # def apply_force(self, force)０
-    #     self.acceleration_x += force
-
     def update(self):
-
-        # self.change_x *= self.acceleration_x
-        # self.acceleration_x *= 0.98
 
         if self.moving_right:
             self.center_x += self.change_x
@@ -55,8 +49,6 @@ class Ship(arcade.Sprite):
         if self.center_x > SCREEN_WIDTH:
             self.center_x = 0
 
-        # super().update()
-
     def move_up(self):
         self.change_y += 5
 
@@ -65,11 +57,9 @@ class Ship(arcade.Sprite):
 
     def move_right(self):
         self.change_x += 5
-        # self.apply_force(0.2)
 
     def move_left(self):
         self.change_x -= 5
-        # self.apply_force(-0.2)
 
 
 class MyGame(arcade.Window):
@@ -106,14 +96,10 @@ class MyGame(arcade.Window):
         self.score = 0
 
         # Image from kenney.nl
-        self.ship_sprite = arcade.Sprite("./ship.png", SPRITE_SCALING_SHIP)
-        self.ship_sprite2 = Ship()
+        self.ship_sprite = Ship()
         self.ship_sprite.center_x = 50
         self.ship_sprite.center_y = 70
-        self.ship_sprite2.center_x = 150
-        self.ship_sprite2.center_y = 40
         self.ship_list.append(self.ship_sprite)
-        self.ship_list.append(self.ship_sprite2)
 
         # Create the enemys
         for i in range(ENEMY_COUNT):
@@ -191,15 +177,15 @@ class MyGame(arcade.Window):
             self.bullet_list.append(bullet)
 
         if symbol == arcade.key.RIGHT:
-            self.ship_sprite2.moving_right = True
+            self.ship_sprite.moving_right = True
         elif symbol == arcade.key.LEFT:
-            self.ship_sprite2.moving_left = True
+            self.ship_sprite.moving_left = True
 
     def on_key_release(self, symbol, modifiers):
         if symbol == arcade.key.RIGHT:
-            self.ship_sprite2.moving_right = False
+            self.ship_sprite.moving_right = False
         elif symbol == arcade.key.LEFT:
-            self.ship_sprite2.moving_left = False
+            self.ship_sprite.moving_left = False
 
     def update(self, delta_time):
         """ Movement and game logic """
