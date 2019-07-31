@@ -63,22 +63,23 @@ class Ship(arcade.Sprite):
             BULLET_LIST.append(bullet)
 
     def update(self):
-
         # if acc is over max_speed
         if self.change_x > MAX_SPEED:
             self.change_x = MAX_SPEED
         elif self.change_x < -MAX_SPEED:
             self.change_x = -MAX_SPEED
         else:
+            # 速度(change_x)に加速(acceleration_x)を足す
             self.change_x += self.acceleration_x
-        self.change_x *= 0.94
-        self.acceleration_x *= 0.92
+        self.center_x += self.change_x
+        self.acceleration_x *= 0.0
+        self.change_x *= 0.98
+        # self.acceleration_x *= 0.92
 
         if self.moving_right:
-            self.acceleration_x += 0.1
+            self.acceleration_x += 0.5
         elif self.moving_left:
-            self.acceleration_x -= 0.1
-        self.center_x += self.change_x
+            self.acceleration_x -= 0.5
 
         # Bullet shoot 処理
         if self.shooting:
@@ -274,7 +275,6 @@ class MyGame(arcade.Window):
         ENEMY_LIST.draw()
         self.ship_list.draw()
         BULLET_LIST.draw()
-        # self.bullet_list.draw()
 
         # Render the text
         arcade.draw_text(
@@ -295,7 +295,8 @@ class MyGame(arcade.Window):
         """
         Called whenever the mouse moves.
         """
-        self.ship_sprite.center_x = x
+        # self.ship_sprite.center_x = x
+        pass
 
     def on_mouse_press(self, x, y, button, modifiers):
         """

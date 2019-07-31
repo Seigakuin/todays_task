@@ -20,3 +20,5 @@
 * ### [Arcade - Ship Shooter 6](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/ship_shooter_folder/ship_shooter_6.py)
 
 - ### [Arcade - Ship Shooter 7](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/ship_shooter_folder/ship_shooter_7.py)
+
+- ### [Arcade - Ship Shooter 8](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/ship_shooter_folder/ship_shooter_8.py)

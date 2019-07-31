@@ -1,4 +1,4 @@
-"""Spaceship Shooter Game 5
+"""Spaceship Shooter Game 5 - Bullet / Enemy の衝突判定
 
 Goal:
 - bullet と enemy の衝突判定を設定
@@ -66,7 +66,6 @@ class MyGame(arcade.Window):
 
         # Create the enemys
         for i in range(ENEMY_COUNT):
-
             # Create the enemy instance
             # Coin image from kenney.nl
             enemy = arcade.Sprite("./enemy.png", SPRITE_SCALING_ENEMY)
@@ -91,11 +90,11 @@ class MyGame(arcade.Window):
 
         # ロードした背景画像を描く
         arcade.draw_texture_rectangle(
-            SCREEN_WIDTH // 2,
-            SCREEN_HEIGHT // 2,
-            SCREEN_WIDTH,
-            SCREEN_HEIGHT,
-            self.background,
+                SCREEN_WIDTH // 2,
+                SCREEN_HEIGHT // 2,
+                SCREEN_WIDTH,
+                SCREEN_HEIGHT,
+                self.background,
         )
 
         # Draw all the sprites.
@@ -105,7 +104,7 @@ class MyGame(arcade.Window):
 
         # Render the text
         arcade.draw_text(
-            f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14
+                f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14
         )
 
     def on_mouse_motion(self, x, y, dx, dy):
@@ -140,7 +139,7 @@ class MyGame(arcade.Window):
 
             # Check this bullet to see if it hit a enemy
             hit_list = arcade.check_for_collision_with_list(
-                bullet, self.enemy_list
+                    bullet, self.enemy_list
             )
 
             # If it did, get rid of the bullet

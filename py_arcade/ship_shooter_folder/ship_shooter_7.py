@@ -1,10 +1,8 @@
-"""Spaceship Shooter Game 7
+"""Spaceship Shooter Game 7 - Shipクラスを作成
 
 Goal:
-- bulletを発射するのをスペースキーにする (line 127)
-- on_key_press()
-
-
+- Shipクラスを作成 (line24)
+- MyGameクラスのsetup()でShipクラスのインスタンスを作成 (line75)
 
 """
 import random
@@ -24,18 +22,8 @@ BULLET_SPEED = 5
 class Ship(arcade.Sprite):
     def __init__(self):
         super().__init__("./ship.png", SPRITE_SCALING_SHIP)
-        self.acceleration_x = 1.01
-        self.change_x = 10
-
-        self.moving_right = False
-        self.moving_left = False
 
     def update(self):
-
-        if self.moving_right:
-            self.center_x += self.change_x
-        elif self.moving_left:
-            self.center_x -= self.change_x
 
         self.center_y += self.change_y
 
@@ -48,18 +36,6 @@ class Ship(arcade.Sprite):
             self.center_x = SCREEN_WIDTH
         if self.center_x > SCREEN_WIDTH:
             self.center_x = 0
-
-    def move_up(self):
-        self.change_y += 5
-
-    def move_down(self):
-        self.change_y -= 5
-
-    def move_right(self):
-        self.change_x += 5
-
-    def move_left(self):
-        self.change_x -= 5
 
 
 class MyGame(arcade.Window):
@@ -103,7 +79,6 @@ class MyGame(arcade.Window):
 
         # Create the enemys
         for i in range(ENEMY_COUNT):
-
             # Create the enemy instance
             # Coin image from kenney.nl
             enemy = arcade.Sprite("./enemy.png", SPRITE_SCALING_ENEMY)
@@ -128,11 +103,11 @@ class MyGame(arcade.Window):
 
         # ロードした背景画像を描く
         arcade.draw_texture_rectangle(
-            SCREEN_WIDTH // 2,
-            SCREEN_HEIGHT // 2,
-            SCREEN_WIDTH,
-            SCREEN_HEIGHT,
-            self.background,
+                SCREEN_WIDTH // 2,
+                SCREEN_HEIGHT // 2,
+                SCREEN_WIDTH,
+                SCREEN_HEIGHT,
+                self.background,
         )
 
         # Draw all the sprites.
@@ -142,7 +117,7 @@ class MyGame(arcade.Window):
 
         # Render the text
         arcade.draw_text(
-            f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14
+                f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14
         )
 
     def on_mouse_motion(self, x, y, dx, dy):
@@ -156,14 +131,7 @@ class MyGame(arcade.Window):
         """
         Called whenever the mouse button is clicked.
         """
-        bullet = arcade.Sprite("./laser.png", SPRITE_SCALING_LASER)
-
-        bullet.center_x = self.ship_sprite.center_x
-        bullet.center_y = self.ship_sprite.center_y + 30
-        bullet.change_y = BULLET_SPEED
-
-        # add bullet to list
-        self.bullet_list.append(bullet)
+        pass
 
     def on_key_press(self, symbol, modifiers):
         if symbol == arcade.key.SPACE:
@@ -176,16 +144,8 @@ class MyGame(arcade.Window):
             # add bullet to list
             self.bullet_list.append(bullet)
 
-        if symbol == arcade.key.RIGHT:
-            self.ship_sprite.moving_right = True
-        elif symbol == arcade.key.LEFT:
-            self.ship_sprite.moving_left = True
-
     def on_key_release(self, symbol, modifiers):
-        if symbol == arcade.key.RIGHT:
-            self.ship_sprite.moving_right = False
-        elif symbol == arcade.key.LEFT:
-            self.ship_sprite.moving_left = False
+        pass
 
     def update(self, delta_time):
         """ Movement and game logic """
@@ -200,7 +160,7 @@ class MyGame(arcade.Window):
 
             # Check this bullet to see if it hit a enemy
             hit_list = arcade.check_for_collision_with_list(
-                bullet, self.enemy_list
+                    bullet, self.enemy_list
             )
 
             # If it did, get rid of the bullet

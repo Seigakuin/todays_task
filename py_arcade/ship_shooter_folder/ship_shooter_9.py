@@ -1,9 +1,15 @@
-"""Spaceship Shooter Game 6 - Bulletをスペースキーで発射
+"""Spaceship Shooter Game 9 - Bulletクラスを作成
 
 Goal:
-- bulletを発射するのをスペースキーにする (line 117)
-- on_key_press()
+    - Bulletクラスを作り、SpriteListに入れ、管理をする
 
+Bullet クラスを作成 (line75)
+BULLET_LISTで管理 (SpriteList) (line28)
+MyGameの__init__にあった self.bullet_listは消す
+BULLET_LISTをdraw する (line164)
+BULLET_LISTにBulletクラスのインスタンスをappendする (line192)
+BULLET_LISTをupdate する (line202)
+BULLET_LISTのhit_listで衝突判定をする(line209)
 """
 import random
 import arcade
@@ -18,6 +24,69 @@ SCREEN_HEIGHT = 800
 
 BULLET_SPEED = 5
 
+# Bulletを格納するリスト
+BULLET_LIST = arcade.SpriteList()
+
+# Enemy を格納するリスト
+ENEMY_LIST = arcade.SpriteList()
+
+
+class Ship(arcade.Sprite):
+    def __init__(self):
+        super().__init__("./ship.png", SPRITE_SCALING_SHIP)
+
+    def update(self):
+
+        self.center_y += self.change_y
+
+        # 端っこ対策
+        if self.center_y < 0:
+            self.center_y = SCREEN_HEIGHT
+        if self.center_y > SCREEN_HEIGHT:
+            self.center_y = 0
+        if self.center_x < 0:
+            self.center_x = SCREEN_WIDTH
+        if self.center_x > SCREEN_WIDTH:
+            self.center_x = 0
+
+
+class Enemy(arcade.Sprite):
+    def __init__(self):
+        super().__init__("./enemy.png", SPRITE_SCALING_ENEMY)
+        self.change_y = random.randrange(-5, -1)
+        self.center_x = random.randrange(SCREEN_WIDTH)
+        self.bottom = random.randrange(500) + SCREEN_HEIGHT
+
+    def update(self):
+        self.center_x += self.change_x
+        self.center_y += self.change_y
+
+        # 端っこ対策
+        if self.center_y < 0:
+            self.center_y = SCREEN_HEIGHT
+        if self.center_y > SCREEN_HEIGHT + 500:
+            self.center_y = 0
+        if self.center_x < 0:
+            self.center_x = SCREEN_WIDTH
+        if self.center_x > SCREEN_WIDTH:
+            self.center_x = 0
+
+
+class Bullet(arcade.Sprite):
+    def __init__(self, ship):
+        super().__init__("./laser.png", SPRITE_SCALING_LASER)
+        self.ship = ship
+
+        self.center_x = self.ship.center_x
+        self.center_y = self.ship.center_y + 30
+
+    def update(self):
+        self.change_y = BULLET_SPEED
+        self.center_y += self.change_y
+
+        if self.bottom > SCREEN_HEIGHT:
+            self.kill()
+
 
 class MyGame(arcade.Window):
     """ Main application class. """
@@ -29,8 +98,6 @@ class MyGame(arcade.Window):
 
         # Variables that will hold sprite lists
         self.ship_list = None
-        self.enemy_list = None
-        self.bullet_list = None
 
         # Set up the ship info
         self.ship_sprite = None
@@ -46,37 +113,37 @@ class MyGame(arcade.Window):
 
         # Sprite lists
         self.ship_list = arcade.SpriteList()
-        self.enemy_list = arcade.SpriteList()
-        self.bullet_list = arcade.SpriteList()
 
         # Set up the ship
         self.score = 0
 
         # Image from kenney.nl
-        self.ship_sprite = arcade.Sprite("./ship.png", SPRITE_SCALING_SHIP)
+        self.ship_sprite = Ship()
         self.ship_sprite.center_x = 50
         self.ship_sprite.center_y = 70
         self.ship_list.append(self.ship_sprite)
 
+        # Enemyが画面に残っていたらリセット時に全て消す
+        while ENEMY_LIST:
+            ENEMY_LIST.pop()
+
+        # Bulletが画面に残っていたらリセット時に全て消す
+        while BULLET_LIST:
+            BULLET_LIST.pop()
+
         # Create the enemys
         for i in range(ENEMY_COUNT):
             # Create the enemy instance
-            # Coin image from kenney.nl
-            enemy = arcade.Sprite("./enemy.png", SPRITE_SCALING_ENEMY)
-
-            # Position the enemy
-            enemy.center_x = random.randrange(SCREEN_WIDTH)
-            enemy.center_y = random.randrange(200, SCREEN_HEIGHT)
+            enemy = Enemy()
 
             # Add the enemy to the lists
-            self.enemy_list.append(enemy)
+            ENEMY_LIST.append(enemy)
 
         # 背景用に使用する画像をロードする
         self.background = arcade.load_texture("./background.png")
 
     def on_draw(self):
-        """
-        Render the screen.
+        """Render the screen.
         """
 
         # This command has to happen before we start drawing
@@ -92,9 +159,9 @@ class MyGame(arcade.Window):
         )
 
         # Draw all the sprites.
-        self.enemy_list.draw()
+        ENEMY_LIST.draw()
         self.ship_list.draw()
-        self.bullet_list.draw()
+        BULLET_LIST.draw()
 
         # Render the text
         arcade.draw_text(
@@ -106,7 +173,6 @@ class MyGame(arcade.Window):
         Called whenever the mouse moves.
         """
         self.ship_sprite.center_x = x
-        # self.ship_sprite.center_y = y
 
     def on_mouse_press(self, x, y, button, modifiers):
         """
@@ -123,21 +189,25 @@ class MyGame(arcade.Window):
             bullet.change_y = BULLET_SPEED
 
             # add bullet to list
-            self.bullet_list.append(bullet)
+            BULLET_LIST.append(bullet)
+
+    def on_key_release(self, symbol, modifiers):
+        pass
 
     def update(self, delta_time):
         """ Movement and game logic """
 
         # Call update on all sprites
-        self.enemy_list.update()
-        self.bullet_list.update()
+        ENEMY_LIST.update()
+        BULLET_LIST.update()
+        self.ship_list.update()
 
         # loop through each bullet
-        for bullet in self.bullet_list:
+        for bullet in BULLET_LIST:
 
             # Check this bullet to see if it hit a enemy
             hit_list = arcade.check_for_collision_with_list(
-                    bullet, self.enemy_list
+                    bullet, ENEMY_LIST
             )
 
             # If it did, get rid of the bullet
@@ -148,10 +218,6 @@ class MyGame(arcade.Window):
             for enemy in hit_list:
                 enemy.kill()
                 self.score += 1
-
-            # If the bullet flies off-screen, remove it.
-            if bullet.bottom > SCREEN_HEIGHT:
-                bullet.kill()
 
 
 def main():

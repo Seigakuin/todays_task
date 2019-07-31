@@ -1,14 +1,10 @@
-"""Spaceship Shooter Game 4
+"""Spaceship Shooter Game 4 - Bulletを動かす
 
 Goal:
-- bullet をマウスをクリックすると画面にでるようにする
-- on_mouse_press() の中にbulletのSpriteインスタンスを作成 (line 120)
-- bulletのSpriteインスタンスをbullet_listに加える (line 128)
-- bullet の center_x, center_y, change_y を設定
+- on_mouse_press() の中のbulletのchnage_yをBULLET_SPEEDに設定(line 121)
 
 Exercise:
-- bulletの各種設定値を変更する
-
+- bulletのスピードを変更する
 
 """
 import random
@@ -66,7 +62,6 @@ class MyGame(arcade.Window):
 
         # Create the enemys
         for i in range(COIN_COUNT):
-
             # Create the enemy instance
             # Coin image from kenney.nl
             enemy = arcade.Sprite("./enemy.png", SPRITE_SCALING_ENEMY)
@@ -91,11 +86,11 @@ class MyGame(arcade.Window):
 
         # ロードした背景画像を描く
         arcade.draw_texture_rectangle(
-            SCREEN_WIDTH // 2,
-            SCREEN_HEIGHT // 2,
-            SCREEN_WIDTH,
-            SCREEN_HEIGHT,
-            self.background,
+                SCREEN_WIDTH // 2,
+                SCREEN_HEIGHT // 2,
+                SCREEN_WIDTH,
+                SCREEN_HEIGHT,
+                self.background,
         )
 
         # Draw all the sprites.
@@ -105,7 +100,7 @@ class MyGame(arcade.Window):
 
         # Render the text
         arcade.draw_text(
-            f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14
+                f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14
         )
 
     def on_mouse_motion(self, x, y, dx, dy):

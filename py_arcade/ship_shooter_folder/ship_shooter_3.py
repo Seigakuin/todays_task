@@ -1,11 +1,12 @@
-"""Spaceship Shooter Game 3
+"""Spaceship Shooter Game 3 - Bulletを画面上に描く
 
 Goal:
-- laser.pngを使用し、laserを使用できるように設定する
-- bullet_list 変数を初期化する (line 34)
-- SpriteListのインスタンスを作成 (line 52)
+- on_mouse_press()に"./laser.png"を使い、bullet(Sprite)インスタンスを作成 (line 115)
+- bulletインスタンスの位置をshipの位置に合わせる (line 120,121)
+- bullet_list 変数を初期化する (line 37)
+- SpriteListのインスタンスを作成 (line 54)
 - bullet_list を描く(.draw()) (line 101)
-- bullet_list をアップデートする(.update()) (line 127)
+- bullet_list をアップデートする(.update()) (line 131)
 
 """
 import random
@@ -63,7 +64,6 @@ class MyGame(arcade.Window):
 
         # Create the enemys
         for i in range(ENEMY_COUNT):
-
             # Create the enemy instance
             # Coin image from kenney.nl
             enemy = arcade.Sprite("./enemy.png", SPRITE_SCALING_ENEMY)
@@ -88,11 +88,11 @@ class MyGame(arcade.Window):
 
         # ロードした背景画像を描く
         arcade.draw_texture_rectangle(
-            SCREEN_WIDTH // 2,
-            SCREEN_HEIGHT // 2,
-            SCREEN_WIDTH,
-            SCREEN_HEIGHT,
-            self.background,
+                SCREEN_WIDTH // 2,
+                SCREEN_HEIGHT // 2,
+                SCREEN_WIDTH,
+                SCREEN_HEIGHT,
+                self.background,
         )
 
         # Draw all the sprites.
@@ -102,7 +102,7 @@ class MyGame(arcade.Window):
 
         # Render the text
         arcade.draw_text(
-            f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14
+                f"Score: {self.score}", 10, 20, arcade.color.WHITE, 14
         )
 
     def on_mouse_motion(self, x, y, dx, dy):
@@ -116,7 +116,12 @@ class MyGame(arcade.Window):
         """
         Called whenever the mouse button is clicked.
         """
-        pass
+        bullet = arcade.Sprite("./laser.png", SPRITE_SCALING_LASER)
+        bullet.center_x = self.ship_sprite.center_x
+        bullet.center_y = self.ship_sprite.center_y + 30
+
+        # add bullet to list
+        self.bullet_list.append(bullet)
 
     def update(self, delta_time):
         """ Movement and game logic """

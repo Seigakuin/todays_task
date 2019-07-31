@@ -1,15 +1,11 @@
-"""Spaceship Shooter Game 8 - Enemyクラスを作成
+"""Spaceship Shooter Game 10 - 左右キーでShipを動かす
 
 Goal:
-    - Enemyクラスを作り、SpriteListに入れ、管理をする
+    - Shipを左右キーで物理に基づき、動くようにする
 
-Enemy クラスを作成 (line52)
-ENEMY_LIST で管理 (SpriteList) (line30)
-MyGameの__init__にあった self.enemy_listは消す
-ENEMY_LISTに enemy を append() する (line122)
-ENEMY_LISTをupdate する (line185)
-ENEMY_LISTをdraw する (line144)
-ENEMY_LISTのhit_listで衝突判定をする(line193)
+Ship に acceleration_x を追加
+Ship - update() を物理法則に基づいてアルゴリズムを書く
+on_mouse_motionを消す
 
 """
 import random
@@ -25,6 +21,9 @@ SCREEN_HEIGHT = 800
 
 BULLET_SPEED = 5
 
+# Bulletを格納するリスト
+BULLET_LIST = arcade.SpriteList()
+
 # Enemy を格納するリスト
 ENEMY_LIST = arcade.SpriteList()
 
@@ -32,10 +31,19 @@ ENEMY_LIST = arcade.SpriteList()
 class Ship(arcade.Sprite):
     def __init__(self):
         super().__init__("./ship.png", SPRITE_SCALING_SHIP)
+        self.acceleration_x = 0.0
+        self.change_x = 0.0
+
+        self.moving_right = False
+        self.moving_left = False
 
     def update(self):
-
-        self.center_y += self.change_y
+        # 速度(change_x)に加速(acceleration_x)を足す
+        self.change_x += self.acceleration_x
+        # 速度(change_x)を位置(center_x)に足す
+        self.center_x += self.change_x
+        # 加速(acceleration_x)を0に戻す
+        self.acceleration_x *= 0.0
 
         # 端っこ対策
         if self.center_y < 0:
@@ -46,6 +54,13 @@ class Ship(arcade.Sprite):
             self.center_x = SCREEN_WIDTH
         if self.center_x > SCREEN_WIDTH:
             self.center_x = 0
+
+        if self.moving_right:
+            self.acceleration_x += 0.5
+            # self.apply_force(0.5)
+        elif self.moving_left:
+            self.acceleration_x -= 0.5
+            # self.apply_force(-0.5)
 
 
 class Enemy(arcade.Sprite):
@@ -70,6 +85,22 @@ class Enemy(arcade.Sprite):
             self.center_x = 0
 
 
+class Bullet(arcade.Sprite):
+    def __init__(self, ship):
+        super().__init__("./laser.png", SPRITE_SCALING_LASER)
+        self.ship = ship
+
+        self.center_x = self.ship.center_x
+        self.center_y = self.ship.center_y + 30
+
+    def update(self):
+        self.change_y = BULLET_SPEED
+        self.center_y += self.change_y
+
+        if self.bottom > SCREEN_HEIGHT:
+            self.kill()
+
+
 class MyGame(arcade.Window):
     """ Main application class. """
 
@@ -80,7 +111,6 @@ class MyGame(arcade.Window):
 
         # Variables that will hold sprite lists
         self.ship_list = None
-        self.bullet_list = None
 
         # Set up the ship info
         self.ship_sprite = None
@@ -96,7 +126,6 @@ class MyGame(arcade.Window):
 
         # Sprite lists
         self.ship_list = arcade.SpriteList()
-        self.bullet_list = arcade.SpriteList()
 
         # Set up the ship
         self.score = 0
@@ -107,9 +136,13 @@ class MyGame(arcade.Window):
         self.ship_sprite.center_y = 70
         self.ship_list.append(self.ship_sprite)
 
-        # 敵が画面に残っていたらリセット時に全て消す
+        # Enemyが画面に残っていたらリセット時に全て消す
         while ENEMY_LIST:
             ENEMY_LIST.pop()
+
+        # Bulletが画面に残っていたらリセット時に全て消す
+        while BULLET_LIST:
+            BULLET_LIST.pop()
 
         # Create the enemys
         for i in range(ENEMY_COUNT):
@@ -123,8 +156,7 @@ class MyGame(arcade.Window):
         self.background = arcade.load_texture("./background.png")
 
     def on_draw(self):
-        """
-        Render the screen.
+        """Render the screen.
         """
 
         # This command has to happen before we start drawing
@@ -142,7 +174,7 @@ class MyGame(arcade.Window):
         # Draw all the sprites.
         ENEMY_LIST.draw()
         self.ship_list.draw()
-        self.bullet_list.draw()
+        BULLET_LIST.draw()
 
         # Render the text
         arcade.draw_text(
@@ -153,14 +185,18 @@ class MyGame(arcade.Window):
         """
         Called whenever the mouse moves.
         """
-        self.ship_sprite.center_x = x
-        # self.ship_sprite.center_y = y
+        # self.ship_sprite.center_x = x
+        pass
 
     def on_mouse_press(self, x, y, button, modifiers):
         """
         Called whenever the mouse button is clicked.
         """
-        pass
+        bullet = arcade.Sprite("./laser.png", SPRITE_SCALING_LASER)
+
+        bullet.center_x = self.ship_sprite.center_x
+        bullet.center_y = self.ship_sprite.center_y + 30
+        bullet.change_y = BULLET_SPEED
 
     def on_key_press(self, symbol, modifiers):
         if symbol == arcade.key.SPACE:
@@ -171,21 +207,29 @@ class MyGame(arcade.Window):
             bullet.change_y = BULLET_SPEED
 
             # add bullet to list
-            self.bullet_list.append(bullet)
+            BULLET_LIST.append(bullet)
+
+        if symbol == arcade.key.RIGHT:
+            self.ship_sprite.moving_right = True
+        elif symbol == arcade.key.LEFT:
+            self.ship_sprite.moving_left = True
 
     def on_key_release(self, symbol, modifiers):
-        pass
+        if symbol == arcade.key.RIGHT:
+            self.ship_sprite.moving_right = False
+        elif symbol == arcade.key.LEFT:
+            self.ship_sprite.moving_left = False
 
     def update(self, delta_time):
         """ Movement and game logic """
 
         # Call update on all sprites
         ENEMY_LIST.update()
-        self.bullet_list.update()
+        BULLET_LIST.update()
         self.ship_list.update()
 
         # loop through each bullet
-        for bullet in self.bullet_list:
+        for bullet in BULLET_LIST:
 
             # Check this bullet to see if it hit a enemy
             hit_list = arcade.check_for_collision_with_list(
