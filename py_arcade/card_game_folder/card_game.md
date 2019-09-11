@@ -1,6 +1,6 @@
 # :computer: [聖学院プログラミング部](https://github.com/Seigakuin/todays_task/blob/master/README.md) :computer:
 
-## :frog: <b> Arcade Project - Dice </b> :star:
+## :game_die: <b> Arcade Project - Dice </b> :game_die:
 
 
 - ### [Dice 1](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/card_game_folder/dice_1.py)
