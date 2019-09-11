@@ -1,9 +1,10 @@
 # :computer: [聖学院プログラミング部](https://github.com/Seigakuin/todays_task/blob/master/README.md) :computer:
 
-:cat: <b> Arcade Project - Dice </b> :mouse:
+## :cat: <b> Arcade Project - Dice </b> :mouse:
 
 
-- ### [Dice 1](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/ship_shooter_folder/ship_shooter_1.py)
+- ### [Dice 1](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/card_game_folder/dice_1.py)
+    - #### 画面を表示しよう！
 
 * ### [Arcade - Ship Shooter 2 - Shipの横移動](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/ship_shooter_folder/ship_shooter_2.py)
 
