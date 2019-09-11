@@ -1,6 +1,6 @@
 .vscode/
 __pycache__/
-initialize.py 
+initialize.py
 utils.py
 for_sep_22.py
 classes.py
@@ -12,3 +12,4 @@ classes.py
 .pytest_cache/
 .ropeproject/
 .ipynb_checkpoints/
+.venv

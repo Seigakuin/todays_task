@@ -29,3 +29,7 @@
 ### :whale2: [Arcade - Ship Shooter](https://github.com/Seigakuin/todays_task/blob/master/ship_shooter.md) :dragon:
 
 <br></br>
+
+### :boom: [Arcade - Dice](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/card_game_folder/card_game.md) :boom:
+
+<br></br>
