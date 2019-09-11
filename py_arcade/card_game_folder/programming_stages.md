@@ -4,16 +4,16 @@
 
 
 ### Stage
-- Show screen
+1. Show screen
 
-- Show text on screen
+2. Show text on screen
 
 
-- Show one dice on screen
+3. Show one dice on screen
     - Read file from folder
     - Create Sprite
 
-- Load many dice into list
+4. Load many dice into list
 
 - `on_keypress`
     - show text `on_keypress`
