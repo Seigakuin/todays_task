@@ -10,3 +10,5 @@
 # Hello, world!
 
 # この下にコードを書く
+print("Hello world")
+1+1

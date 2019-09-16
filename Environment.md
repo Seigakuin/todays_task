@@ -1,3 +1,25 @@
+### mu-editor始め方
+#### インストール
+- [mu-editorホームページ](https://codewith.mu)に行き"Download"をクリック
+- "Windows Installer" "64-bit" をクリックするとダウンロードが開始される
+
+#### 始め方
+- "Windowsマーク"(画面左下)から"mu-editor"を選ぶ
+- 画面が開き、"モードの選択"画面が開くので"Pygame Zero"を選択する
+- 以下のコードを記述する
+```python
+WIDTH = 800
+HEIGHT = 600
+TITILE = "Hello World!"
+
+def draw():
+    screen.fill((128, 0, 0))
+```
+- "プレイ"ボタンを押す(セーブをしていなかったら、「名前をつけて保存」が表示される)
+- 赤い画面が表示されたら成功！
+
+<br></br>
+
 ### Pycharm 始め方
 
 - **Pycharm Community Edition** を起動する
@@ -33,19 +55,19 @@
       * `cd Documents`
     * `myname`フォルダに移動する場合
       * `cd ../`
-      
+
 * `idle`を起動する
   * コマンド:   `idle`
-  
-* 
+
+*
 
 
 
 
 
 
-:imp: 始め方 :smiling_imp: 
- 
+:imp: 始め方 :smiling_imp:
+
 + **Windowsメニュー** - **全てのプログラム** - **Anaconda** - **Anaconda Prompt** を開く
 
 + `python` と打ち(pythonソフトを起動)、`Python 3.7.0 (anaconda ~~ ` と出力されるのを確認する
@@ -53,9 +75,9 @@
 + **Ctrl** + **D** を2回打てば、pythonソフトから抜けることができる
 + 抜け出たあと、 `idle`と打てばidleが起動する
 
- 
- :smile: <b> VSCode編 </b> :smiley: 
- 
+
+ :smile: <b> VSCode編 </b> :smiley:
+
 <p>
 
 + デスクトップに今日、使うフォルダを用意(日本語は使わない)
@@ -77,9 +99,9 @@
 <br></br>
 
 <details>
- 
+
 <summary>  :smile: <b> PyCharm編 </b> :smiley:  </summary>
- 
+
 <p>
 
 + デスクトップに今日、使うフォルダを用意(日本語は使わない)
