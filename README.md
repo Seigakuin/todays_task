@@ -30,6 +30,6 @@
 
 <br></br>
 
-### :boom: [Arcade - Dice](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/card_game_folder/card_game.md) :boom:
+### :boom: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/pygame_zero/dice_project/dice.md) :boom:
 
 <br></br>
