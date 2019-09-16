@@ -7,7 +7,7 @@
     - （すでにPygame Zeroがインストールされているから楽）
 - ##### [インストール方法、はじめ方はここから](https://github.com/Seigakuin/todays_task/blob/master/Environment.md)
 
-- ##### このプロジェクトに必要なアセット(画像ファイル、音声ファイルなど)をダウンロードし、解凍後、ホーム > mu_codeフォルダの中に入れる
+- ##### [このプロジェクトに必要なアセット(画像ファイル、音声ファイルなど)をダウンロードし、解凍後、ホーム > mu_codeフォルダの中に入れる](https://drive.google.com/open?id=1nIH_3PfIXX2Qh8AQSXWo4ycKp-evsS31&authuser=0)
 
 - ### [Dice 1](https://github.com/Seigakuin/todays_task/blob/master/pygame_zero/dice_project/dice1.py)
     - #### 画面を表示しよう！
