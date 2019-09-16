@@ -86,4 +86,4 @@ Do you want to continue? (y/n) n
 
 [back home](https://github.com/Seigakuin/todays_task)
 
-### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task13.py)
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/projects/task_templates/task13.py)

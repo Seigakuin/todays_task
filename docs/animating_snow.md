@@ -2,7 +2,7 @@
 
 :cat: <b> Arcade Project - Animating Snow </b> :mouse:
 
-- ### [Arcade - Animating Snow 1](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_1.py)
+- ### [Arcade - Animating Snow 1](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_1.py)
 
   - Goal:
 
@@ -11,7 +11,7 @@
   - Exercises:
     - 雪の場所、大きさを変えてみよう
 
-* ### [Arcade - Animating Snow 2](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_2.py)
+* ### [Arcade - Animating Snow 2](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_2.py)
 
   - Goal:
 
@@ -20,7 +20,7 @@
   - Exercises:
     - circle ではなく、別の形を使ってみよう。
 
-- ### [Arcade - Animating Snow 3](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_3.py)
+- ### [Arcade - Animating Snow 3](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_3.py)
 
   - Goal:
 
@@ -29,7 +29,7 @@
   - Exercises:
     - 雪の粒の数を変更する
 
-* ### [Arcade - Animating Snow 4](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_4.py)
+* ### [Arcade - Animating Snow 4](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_4.py)
 
   - Goal:
 
@@ -39,7 +39,7 @@
     - 降るスピードを変更する
     - (Difficult)各雪の粒のステータスに"speed"を加え、雪の粒それぞれにスピードをつける
 
-- ### [Arcade - Animating Snow 5](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_5.py)
+- ### [Arcade - Animating Snow 5](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_5.py)
 
   - Goal:
 
@@ -49,7 +49,7 @@
     - 雪の粒が突然上に移動してしまうエラーを直す
     - 同じ縦に位置から降り始めるので、それを random にする
 
-- ### [Arcade - Animating Snow 6](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_6.py)
+- ### [Arcade - Animating Snow 6](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_6.py)
 
   - Goal:
 
@@ -59,7 +59,7 @@
     - Snow インスタンスの数に変化をつけよう(動きが鈍くなるはず！)
     - これを解決するためには根本的になにかを変えないといけない
 
-* ### [Arcade - Animating Snow 7](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_7.py)
+* ### [Arcade - Animating Snow 7](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_7.py)
 
   - Goal:
 
@@ -73,7 +73,7 @@
       - ex. center_x のスタート位置を変える
       - ex. 再描画するときに radius に変化をつける
 
-* ### [Arcade - Animating Snow 8](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_8.py)
+* ### [Arcade - Animating Snow 8](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_8.py)
 
   - Goal:
 
@@ -84,7 +84,7 @@
     - `add_snow()`を改良し、一度に増やす数を増やす
       - ヒント： `add_snow()`の中に for ループを入れる
 
-* ### [Arcade - Animating Snow 9](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_9.py)
+* ### [Arcade - Animating Snow 9](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_9.py)
 
   - Goal:
 
@@ -101,7 +101,7 @@
   - Exercises:
     - Box クラスの`update`メソッドを改良し、動きを工夫する
 
-- ### [Arcade - Animating Snow 10](https://github.com/Seigakuin/todays_task/blob/master/py_arcade/animating_snow_folder/animating_snow_10.py)
+- ### [Arcade - Animating Snow 10](https://github.com/Seigakuin/todays_task/blob/master/projects/py_arcade/animating_snow_folder/animating_snow_10.py)
 
   - Goal:
 

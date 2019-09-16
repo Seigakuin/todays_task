@@ -34,4 +34,4 @@ print(new_list)
 
 [back home](https://github.com/Seigakuin/todays_task)
 
-### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task10.py)
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/projects/task_templates/task10.py)

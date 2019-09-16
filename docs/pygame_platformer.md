@@ -1,6 +1,6 @@
 # :computer: [聖学院プログラミング部](https://github.com/Seigakuin/todays_task/blob/master/README.md) :computer:
 
-## :snake: [Pygame Platformer](https://github.com/Seigakuin/todays_task/blob/master/pygame_platformer.md) :snake:
+## :snake: [Pygame Platformer](https://github.com/Seigakuin/todays_task/blob/master/docs/pygame_platformer.md) :snake:
 
 - ### [Pygame - Platform ゲーム - [1]](https://qiita.com/sf_/items/bccd0df2416571e2a937)
 - ### [Pygame - Platform ゲーム - [2]](https://qiita.com/sf_/items/f635870e2d2d2921becf)

@@ -29,4 +29,4 @@ print(mylist)
 [“apple”, “orange”, “melon”, “grapes”]
 ```
 
-### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task09.py)
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/projects/task_templates/task09.py)

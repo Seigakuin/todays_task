@@ -45,4 +45,4 @@ George
 
 [back home](https://github.com/Seigakuin/todays_task)
 
-### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task12.py)
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/projects/task_templates/task12.py)

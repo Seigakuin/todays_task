@@ -52,4 +52,4 @@ Jason's score is 69
 
 [back home](https://github.com/Seigakuin/todays_task)
 
-### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task11.py)
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/projects/task_templates/task11.py)

@@ -34,4 +34,4 @@ print("結果：" + ???)
 結果：35
 ```
 
-### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task06.py)
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/projects/task_templates/task06.py)

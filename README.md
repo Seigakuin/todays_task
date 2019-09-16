@@ -10,26 +10,26 @@
 
 <br></br>
 
-### :boom: [基本 Task](https://github.com/Seigakuin/todays_task/blob/master/basic_tasks.md) :smiley:
+### :boom: [基本 Task](https://github.com/Seigakuin/todays_task/blob/master/docs/basic_tasks.md) :smiley:
 
 <br></br>
 
-### :snake: [Pygame Platformer](https://github.com/Seigakuin/todays_task/blob/master/pygame_platformer.md) :snake:
+### :snake: [Pygame Platformer](https://github.com/Seigakuin/todays_task/blob/master/docs/pygame_platformer.md) :snake:
 
 <br></br>
 
-### :cat: [Arcade Basics](https://github.com/Seigakuin/todays_task/blob/master/arcade_basics.md) :mouse:
+### :cat: [Arcade Basics](https://github.com/Seigakuin/todays_task/blob/master/docs/arcade_basics.md) :mouse:
 
 <br></br>
 
-### :whale2: [Arcade - Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/animating_snow.md) :dragon:
+### :whale2: [Arcade - Animating Snow](https://github.com/Seigakuin/todays_task/blob/master/docs/animating_snow.md) :dragon:
 
 <br></br>
 
-### :whale2: [Arcade - Ship Shooter](https://github.com/Seigakuin/todays_task/blob/master/ship_shooter.md) :dragon:
+### :whale2: [Arcade - Ship Shooter](https://github.com/Seigakuin/todays_task/blob/master/docs/ship_shooter.md) :dragon:
 
 <br></br>
 
-### :boom: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/pygame_zero/dice_project/dice.md) :boom:
+### :boom: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/dice_project/dice.md) :boom:
 
 <br></br>

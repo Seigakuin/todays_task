@@ -35,4 +35,4 @@ for ??? in range(???):
 # 続く
 ```
 
-### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/task_templates/task02.py)
+### [このスタートファイルをコピー](https://github.com/Seigakuin/todays_task/blob/master/projects/task_templates/task02.py)
