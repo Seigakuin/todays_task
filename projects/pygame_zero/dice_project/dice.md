@@ -29,3 +29,27 @@
 
 - ### [Dice 7](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/dice_project/dice7.py)
     - #### サイコロの数値を表示しよう！
+---
+- #### :bug: 日本語を書いてエラーが出た場合...
+
+以下のようなエラー
+```python
+  File "C:\Users\PC-12\AppData\Local\Mu\pkgs\pgzero\runner.py", line 77, in main
+    src = f.read()
+UnicodeDecodeError: 'cp932' codec can't decode byte 0x84 in position 28: illegal multibyte sequence
+```
+
+直す手順
+1. `C:\Users\PC-12\AppData\Local\Mu\pkgs\pgzero\runner.py`にあるファイルをPycharmかIDLEで開く
+2. エラーに書いてあるようにline77まで行く
+3. 以下のコードを見つける
+```python
+ with open(path) as f:
+        src = f.read()
+```
+以下のようなコードに書き換える
+```python
+ with open(path, encoding="utf-8", errors="ignore") as f:
+        src = f.read()
+```
+4. `Adminとして実行しますか`と聞かれるので「はい」と答えて実行する
