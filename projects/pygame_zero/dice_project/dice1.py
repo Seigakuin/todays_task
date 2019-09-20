@@ -1,3 +1,4 @@
+# type: ignore
 """Dice 1 - 画面を表示しよう！
 テーマ：
 - WIDTH, HEIGHT, TITLE 変数は特別な意味がある
@@ -7,9 +8,15 @@
 - ウィンドウのタイトルを変更しよう！
 
 """
+import pgzrun
+
 WIDTH = 800
 HEIGHT = 600
 TITLE = "Hello World!!"
 
+
 def draw():
     screen.fill((80, 148, 75))
+
+
+pgzrun.go()

@@ -9,12 +9,16 @@
 
 """
 
+
 def hello(name):
     print("Hello", name)
 
+
 hello("たろう")
+
 
 def addfive(number):
     print(number + 5)
+
 
 addfive(12)

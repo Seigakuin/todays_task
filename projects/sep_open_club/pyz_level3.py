@@ -12,6 +12,7 @@ WIDTH = 800
 HEIGHT = 600
 TITLE = "HELLO"
 
+
 def draw():
-    screen.fill((0, 0, 0))
-    screen.draw.filled_circle((400, 300), 40, (255, 255, 100))
+    screen.fill((255, 255, 255))
+    screen.draw.filled_circle((400, 300), 20, (0, 0, 200))
