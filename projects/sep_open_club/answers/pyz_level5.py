@@ -14,8 +14,6 @@
 
 
 """
-# この下にpythonコードを書く
-
 WIDTH = 800
 HEIGHT = 600
 TITLE = "HELLO"
@@ -27,7 +25,6 @@ alien.pos = (300, 200)
 def draw():
     screen.fill((255, 255, 255))
     alien.draw()
-
 
 def update():
     alien.left += 2

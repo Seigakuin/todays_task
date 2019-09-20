@@ -8,19 +8,17 @@
 
 
 """
-# この下にpythonコードを書く
 
 
-# 見本
-# hello()ファンクションの定義
-# nameを受け取り、
 def hello(name):
-    # print()する時に受けったnameの前に"Hello"をつける
     print("Hello", name)
 
 
-# hello()ファンクションの実行
 hello("たろう")
 
 
-# 下に自分でaddfive(number)関数を書こう！
+def addfive(number):
+    print(number + 5)
+
+
+addfive(12)

@@ -7,12 +7,7 @@
     - (0, 0)は画面の左上　(800, 600)は画面の右下
 4. 色々な場所に円を描こう
 
-＊そのほかの図形ファンクション
-screen.draw.line(start, end, (R, G, B))
-
 """
-# この下にpythonコードを書く
-
 WIDTH = 800
 HEIGHT = 600
 TITLE = "HELLO"

@@ -6,4 +6,5 @@
 print("Hello world!")
 
 """
-# この下にpythonコードを書く
+
+print("Hello")

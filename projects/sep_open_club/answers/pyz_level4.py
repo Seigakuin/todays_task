@@ -8,8 +8,6 @@
 5. 色々ば場所にalienを移動させよう
 
 """
-# この下にpythonコードを書く
-
 WIDTH = 800
 HEIGHT = 600
 TITLE = "HELLO"
