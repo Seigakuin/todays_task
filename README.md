@@ -34,6 +34,6 @@
 
 <br></br>
 
-### :spades: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/card_project/cards.md) :hearts:
+### :spades: [Pygame Zero- Cards](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/card_project/cards.md) :hearts:
 
 <br></br>
