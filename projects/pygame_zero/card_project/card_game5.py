@@ -17,7 +17,7 @@
 - draw()の中にscreen.fill()を入れる（画面を複数回描画すると、画像が重なってしまう）
 
 課題：　
--
+- print()を使ってコンソールに残りのカードの枚数を表示しよう
 
 """
 import random
@@ -53,7 +53,6 @@ def count_cards():
     for s in CARDS:
         for c in CARDS[s]:
             NUM_CARDS += 1
-    print(NUM_CARDS)
 
 
 def choose_card():
