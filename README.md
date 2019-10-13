@@ -33,3 +33,7 @@
 ### :boom: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/dice_project/dice.md) :boom:
 
 <br></br>
+
+### :spades: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/card_project/cards.md) :hearts:
+
+<br></br>
