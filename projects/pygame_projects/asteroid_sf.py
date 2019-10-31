@@ -54,8 +54,9 @@ class Rock(Drawable):
 
     def draw(self):
         """ 隕石を描画する """
-        rotated = pygame.transform.rotozoom(self.image, self.theta,
-                                            self.size / 64)
+        rotated = pygame.transform.rotozoom(
+            self.image, self.theta, self.size / 64
+        )
         rect = rotated.get_rect()
         rect.center = self.rect.center
         SURFACE.blit(rotated, rect)
@@ -158,7 +159,9 @@ def main():
     sysfont = pygame.font.SysFont(None, 72)
     scorefont = pygame.font.SysFont(None, 36)
     message_clear = sysfont.render("!!CLEARED!!", True, (0, 255, 225))
-    message_over = sysfont.render("GAME OVER!!Press Space", True, (0, 255, 225))
+    message_over = sysfont.render(
+        "GAME OVER!!Press Space", True, (0, 255, 225)
+    )
     message_rect = message_clear.get_rect()
     message_rect.center = (400, 400)
 
@@ -211,9 +214,11 @@ def main():
                         rocks.remove(hit)
                         if hit.rect.width > 16:
                             rocks.append(
-                                Rock(hit.rect.center, hit.rect.width / 2))
+                                Rock(hit.rect.center, hit.rect.width / 2)
+                            )
                             rocks.append(
-                                Rock(hit.rect.center, hit.rect.width / 2))
+                                Rock(hit.rect.center, hit.rect.width / 2)
+                            )
                         if len(rocks) == 0:
                             game_over = True
 

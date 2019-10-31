@@ -271,4 +271,3 @@ def read_cards():
         "joker": {"joker": {"card": Actor(card_path + "joker"), "score": 1}},
     }
     return CARDS
-

@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "projects/pygame_projects/games/invader"
+		},
+		{
+			"path": "projects/pygame_projects/games/snake_bite"
+		},
+		{
+			"path": "projects/pygame_projects/platformer"
+		},
+		{
+			"path": "projects/pygame_projects/alieninvasion"
+		},
+		{
+			"path": "projects/pygame_projects/games/cave"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3",
+		"code-runner.executorMap": {
+			"python": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3",
+		},
+		"python.linting.mypyPath": "/usr/local/bin/mypy"
+	}
+}

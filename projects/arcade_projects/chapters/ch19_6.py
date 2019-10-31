@@ -69,10 +69,12 @@ class Ghost(arcade.Sprite):
         # Ghostの初期位置を設定し、動かす
         # NEW 19_5
         self.center_x = (
-            self.circle_radius * math.sin(self.circle_angle) + self.circle_center_x
+                self.circle_radius * math.sin(
+            self.circle_angle) + self.circle_center_x
         )
         self.center_y = (
-            self.circle_radius * math.cos(self.circle_angle) + self.circle_center_y
+                self.circle_radius * math.cos(
+            self.circle_angle) + self.circle_center_y
         )
 
         # NEW 19_5
@@ -115,8 +117,10 @@ class MyGame(arcade.Window):
 
         # プレイヤーを設定
         # プレイヤーの大きさはSPRITE_SCALING_PLAYERで小さく
-        # self.player_sprite = arcade.Sprite("./player.png", SPRITE_SCALING_PLAYER)
-        self.player = Player("py_arcade/player.png", SPRITE_SCALING_PLAYER)
+        # self.player_sprite = arcade.Sprite("./player.png",
+        # SPRITE_SCALING_PLAYER)
+        self.player = Player("arcade_projects/player.png",
+                             SPRITE_SCALING_PLAYER)
         # self.player.center_x = 50
         # self.player_sprite.center_y = 50
         # プレイヤースプライトリストに作ったプレイヤースプライトを追加
@@ -125,7 +129,7 @@ class MyGame(arcade.Window):
         # Ghostの作成
         for _ in range(GHOST_COUNT):
             # ゴーストのイメージを作成
-            ghost = Ghost("py_arcade/ghost.png", SPRITE_SCALING_GHOST)
+            ghost = Ghost("arcade_projects/ghost.png", SPRITE_SCALING_GHOST)
 
             # ゴーストの位置をランダムに設定
             # NEW 19_5
@@ -162,7 +166,8 @@ class MyGame(arcade.Window):
         change_y: {self.player.change_y}
         """
         arcade.draw_text(
-            status_text, 50, SCREEN_HEIGHT - 150, arcade.color.WHITE_SMOKE, 16
+                status_text, 50, SCREEN_HEIGHT - 150, arcade.color.WHITE_SMOKE,
+                16
         )
 
     # def on_mouse_motion(self, x, y, dx, dy):
@@ -180,7 +185,7 @@ class MyGame(arcade.Window):
         # プレイヤーと衝突したスプライトのリストを作成する
         # 衝突したものになにかをする時に便利！
         ghost_hit_list = arcade.check_for_collision_with_list(
-            self.player, self.ghost_list
+                self.player, self.ghost_list
         )
 
         # 衝突したものリストをforループでさらい、消す(kill())

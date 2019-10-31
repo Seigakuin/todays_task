@@ -25,21 +25,23 @@ TEAL = (0, 139, 139)
 
 # set up assets folder
 game_folder = os.path.dirname(__file__)
+print("gamefolder", game_folder)
 img_folder = os.path.join(game_folder, "img")
 snd_folder = os.path.join(game_folder, "snd")
+print("soundfolder", snd_folder)
 
 ###########################
 # -- Initialize --
 ###########################
 pygame.init()
 pygame.mixer.init()
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
+screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)
 pygame.display.set_caption("Shmup!")
 clock = pygame.time.Clock()
 
 # ---- SetFont ----
 font_name = pygame.font.match_font(
-    'arial')  # pygame will search your comupter to the closest font
+        'arial')  # pygame will search your comupter to the closest font
 
 
 ###########################
@@ -123,7 +125,8 @@ class Player(pygame.sprite.Sprite):
 
     def update(self):
         # timeout for powerups
-        if self.power >= 2 and pygame.time.get_ticks() - self.power_time > POWERUP_TIME:
+        if self.power >= 2 and pygame.time.get_ticks() - self.power_time > \
+                POWERUP_TIME:
             self.power -= 1
             self.power_time = pygame.time.get_ticks()
 
@@ -286,16 +289,16 @@ class Explosion(pygame.sprite.Sprite):
 
 # load all game graphics
 background = pygame.image.load(
-    os.path.join(img_folder, "background.png")).convert()
+        os.path.join(img_folder, "background.png")).convert()
 background_rect = background.get_rect()
 player_img = pygame.image.load(
-    os.path.join(img_folder, "player.png")).convert()
+        os.path.join(img_folder, "player.png")).convert()
 player_mini_img = pygame.transform.scale(player_img, (25, 19))
 player_mini_img.set_colorkey(BLACK)
 bullet_img = pygame.image.load(
-    os.path.join(img_folder, "bullet.png")).convert()
+        os.path.join(img_folder, "bullet.png")).convert()
 meteor_img = pygame.image.load(
-    os.path.join(img_folder, "meteorBrown_med1.png")).convert()
+        os.path.join(img_folder, "meteorBrown_med1.png")).convert()
 meteor_images = []
 meteor_list = ['meteorBrown_big1.png', 'meteorBrown_big2.png',
                'meteorBrown_med1.png', 'meteorBrown_med3.png',
@@ -304,7 +307,7 @@ meteor_list = ['meteorBrown_big1.png', 'meteorBrown_big2.png',
 
 for img in meteor_list:
     meteor_images.append(
-        pygame.image.load(os.path.join(img_folder, img)).convert())
+            pygame.image.load(os.path.join(img_folder, img)).convert())
 
 # load explosion images
 explosion_anim = {
@@ -329,9 +332,9 @@ for i in range(9):
 
 powerup_images = {
     'shield': pygame.image.load(
-        os.path.join(img_folder, 'shield_gold.png')).convert(),
+            os.path.join(img_folder, 'shield_gold.png')).convert(),
     'gun': pygame.image.load(
-        os.path.join(img_folder, 'bolt_gold.png')).convert(),
+            os.path.join(img_folder, 'bolt_gold.png')).convert(),
 }
 
 # load game sounds
@@ -341,9 +344,10 @@ power_sound = pygame.mixer.Sound(os.path.join(snd_folder, "pow2.wav"))
 expl_sounds = []
 for snd in ['expl1.wav', 'expl6.wav']:
     expl_sounds.append(pygame.mixer.Sound(os.path.join(snd_folder, snd)))
-player_die_sound = pygame.mixer.Sound(os.path.join(snd_folder, 'die_sound.ogg'))
+player_die_sound = pygame.mixer.Sound(
+        os.path.join(snd_folder, 'die_sound.ogg'))
 pygame.mixer.music.load(
-    os.path.join(snd_folder, "bgm.ogg"))
+        os.path.join(snd_folder, "bgm.ogg"))
 pygame.mixer.music.set_volume(0.4)
 # set background music / looping
 pygame.mixer.music.play(loops=-1)
@@ -424,7 +428,8 @@ while running:
             player.powerup()
             power_sound.play()
 
-    # if player died and the explosion has finished playing / alive() is sprite func
+    # if player died and the explosion has finished playing / alive() is
+    # sprite func
     if player.lives == 0 and not death_explosion.alive():
         game_over = True
 

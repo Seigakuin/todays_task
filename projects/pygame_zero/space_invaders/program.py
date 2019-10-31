@@ -1,9 +1,14 @@
+import pgzrun
+
+pgzrun.go()
 import random
+from pgzero.actor import Actor
+from pgzero.game import screen
+from pgzero.keyboard import keyboard
 
 WIDTH = 600
 HEIGHT = 500
 TITLE = "Alien Invasion"
-
 
 # The Launcher
 ship = Actor("ship")
@@ -19,7 +24,6 @@ asteroid.pos = (
 )
 asteroid_speed = 1
 
-
 # The Missile
 MISSILE_SIZE = 20, 43
 missile = Actor("laser")
@@ -33,12 +37,14 @@ game_score = 0
 
 def draw():
     if game_status == 0:
-        screen.draw.text("Press ENTER to start", (100, 300), color="white", fontsize=32)
+        screen.draw.text("Press ENTER to start", (100, 300), color="white",
+                         fontsize=32)
     if game_status == 1:
 
         screen.clear()
         screen.draw.text(
-            "Score: " + str(game_score), (WIDTH - 100, 50), color="blue", fontsize=24
+                "Score: " + str(game_score), (WIDTH - 100, 50), color="blue",
+                fontsize=24
         )
         ship.draw()
 
@@ -59,7 +65,8 @@ def update():
         if keyboard.RETURN:
             game_status = 1
             asteroid.pos = (
-                random.randint(ASTEROID_SIZE[0] / 2, WIDTH - (ASTEROID_SIZE[0] / 2)),
+                random.randint(ASTEROID_SIZE[0] / 2,
+                               WIDTH - (ASTEROID_SIZE[0] / 2)),
                 ASTEROID_SIZE[1],
             )
             game_score = 0
