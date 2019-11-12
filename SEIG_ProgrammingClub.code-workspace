@@ -14,6 +14,9 @@
 		},
 		{
 			"path": "projects/pygame_projects/games/cave"
+		},
+		{
+			"path": "projects/pygame_projects/games/asteroid"
 		}
 	],
 	"settings": {

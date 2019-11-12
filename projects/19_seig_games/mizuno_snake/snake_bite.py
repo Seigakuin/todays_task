@@ -9,12 +9,19 @@ pygame.init()
 SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 600
 
-SURFACE = pygame.display.set_mode((600, 600))
+SURFACE = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN)
 FPSCLOCK = pygame.time.Clock()
 
 FOODS = []
 SNAKE = []
-(W, H) = (20, 20)
+BLOCK_SIZE = 10
+BLOCK_COUNT = SCREEN_WIDTH // BLOCK_SIZE
+(W, H) = (BLOCK_SIZE, BLOCK_SIZE)
+
+WHITE = (255, 255, 255)
+BLACK = (50, 255, 255)
+
+SPEED = 3
 
 
 def add_food():
@@ -36,29 +43,46 @@ def move_food(pos):
 
 def paint(message):
     """ 画面全体の描画 """
-    SURFACE.fill((0, 0, 0))
+    SURFACE.fill(BLACK)
     for food in FOODS:
         pygame.draw.ellipse(
-            SURFACE, (0, 255, 0), Rect(food[0] * 30, food[1] * 30, 30, 30)
+            SURFACE,
+            (50, 225, 135),
+            Rect(
+                food[0] * BLOCK_COUNT,
+                food[1] * BLOCK_COUNT,
+                BLOCK_COUNT,
+                BLOCK_COUNT,
+            ),
         )
     for body in SNAKE:
         pygame.draw.rect(
-            SURFACE, (0, 255, 255), Rect(body[0] * 30, body[1] * 30, 30, 30)
+            SURFACE,
+            (255, 225, 255),
+            Rect(
+                body[0] * BLOCK_COUNT,
+                body[1] * BLOCK_COUNT,
+                BLOCK_COUNT,
+                BLOCK_COUNT,
+            ),
         )
-    for index in range(20):
+    for index in range(BLOCK_SIZE):
         pygame.draw.line(
-            SURFACE, (64, 64, 64), (index * 30, 0), (index * 30, 600)
+            SURFACE,
+            (64, 64, 64),
+            (index * BLOCK_COUNT, 0),
+            (index * BLOCK_COUNT, SCREEN_HEIGHT),
         )
         pygame.draw.line(
-            SURFACE, (64, 64, 64), (0, index * 30), (600, index * 30)
+            SURFACE,
+            (64, 64, 64),
+            (0, index * BLOCK_COUNT),
+            (SCREEN_WIDTH, index * BLOCK_COUNT),
         )
     if message != None:
-        SURFACE.blit(message, (150, 300))
+        SURFACE.blit(message, (150, SCREEN_HEIGHT // 2))
     pygame.display.update()
 
-
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
 
 font = pygame.font.SysFont(None, 76)
 score_font = pygame.font.SysFont(None, 44)
@@ -88,7 +112,7 @@ def wait_for_player_to_press_key():
 # 画面を白くする
 SURFACE.fill(WHITE)
 # 文字を表示
-draw_text("BLOCKS!!", font, SURFACE, SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
+draw_text("SNAKE!!", font, SURFACE, SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
 draw_text(
     "Press SPACE", font, SURFACE, SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 50
 )
@@ -98,7 +122,7 @@ wait_for_player_to_press_key()
 
 def main():
     """ メインルーチン """
-    global SNAKE, FOODS
+    global SNAKE, FOODS, SPEED
     myfont = pygame.font.SysFont(None, 80)
     key = K_DOWN
     message = None
@@ -139,6 +163,7 @@ def main():
             SNAKE.insert(0, head)
             if head in FOODS:
                 move_food(head)
+                SPEED += 0
             else:
                 SNAKE.pop()
 
@@ -158,7 +183,7 @@ def main():
             SNAKE.append((int(W / 2), int(H / 2)))
             for _ in range(10):
                 add_food()
-        FPSCLOCK.tick(15)
+        FPSCLOCK.tick(SPEED)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,3 @@
+INFO  time: initialize in 0.26s
+WARN  no build tool detected in workspace '/Users/sfujimoto/code/Python/SEIG_ProgrammingClub/projects/pygame_projects/games/invader'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals

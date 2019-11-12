@@ -23,10 +23,11 @@ SCREEN_HEIGHT = 800
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GREEN = (37, 211, 102)
+YELLOW = (255, 212, 0)
 
 pygame.init()
 pygame.key.set_repeat(5, 5)
-SURFACE = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+SURFACE = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN)
 FPSCLOCK = pygame.time.Clock()
 
 
@@ -51,7 +52,7 @@ class Rock(Drawable):
     def __init__(self, pos, size):
         super(Rock, self).__init__(Rect(0, 0, size, size))
         self.rect.center = pos
-        self.image = pygame.image.load("rock.png")
+        self.image = pygame.image.load("newrock.png")
         self.theta = randint(0, 360)
         self.size = size
         self.power = 128 / size
@@ -79,14 +80,14 @@ class Shot(Drawable):
     def __init__(self, theta):
         super(Shot, self).__init__(Rect(0, 0, 6, 6))
         self.count = 50
-        self.power = 30
+        self.power = 10
         self.max_count = 50
 
         # #
         self.theta = theta
         self.accel = 0
         self.explode = False
-        self.image = pygame.image.load("bullet.png")
+        self.image = pygame.image.load("newbullet.png")
 
     def draw(self):
         """ 弾丸を描画する """
@@ -118,7 +119,7 @@ class Ship(Drawable):
         self.power = 0
         self.accel = 0
         self.explode = False
-        self.image = pygame.image.load("ship.png")
+        self.image = pygame.image.load("newship.png")
         self.bang = pygame.image.load("bang.png")
 
     def draw(self):
@@ -158,7 +159,7 @@ def key_event_handler(keymap, ship):
     elif K_RIGHT in keymap:
         ship.theta -= 5
     elif K_UP in keymap:
-        ship.accel = min(5, ship.accel + 0.2)
+        ship.accel = min(5, ship.accel + 0.1)
     elif K_DOWN in keymap:
         ship.accel = max(-5, ship.accel - 0.1)
 
@@ -168,7 +169,7 @@ score_font = pygame.font.SysFont(None, 44)
 
 
 def draw_text(text, font, surface, x, y):
-    textobj = font.render(text, 1, BLACK)
+    textobj = font.render(text, 1, YELLOW)
     textrect = textobj.get_rect()
     textrect.center = (x, y)
     surface.blit(textobj, textrect)
@@ -190,11 +191,11 @@ def wait_for_player_to_press_key():
 
 
 # 画面を白くする
-SURFACE.fill(WHITE)
+SURFACE.fill(BLACK)
 # 文字を表示
-draw_text("ASTEROID", font, SURFACE, SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
+draw_text("OPPOSITE PACMAN", font, SURFACE, SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 )
 draw_text(
-    "Press SPACE", font, SURFACE, SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 50
+    "Press SPACE", font, SURFACE, SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100
 )
 pygame.display.update()
 wait_for_player_to_press_key()
@@ -216,18 +217,18 @@ def main():
     game_over = False
     score = 0
     back_x, back_y = 0, 0
-    back_image = pygame.image.load("bg.png")
-    back_image = pygame.transform.scale2x(back_image)
+    back_image = pygame.image.load("newbg.png")
+#     back_image = pygame.transform.scale2x(back_image)
 
     # 隕石の数
-    while len(rocks) < 4:
+    while len(rocks) < 8:
         pos = randint(0, SCREEN_WIDTH), randint(0, SCREEN_HEIGHT)
         rock = Rock(pos, 64)
         if not rock.rect.colliderect(ship.rect):
             rocks.append(rock)
 
     # 弾丸の数
-    while len(shots) < 15:
+    while len(shots) < 10:
         shots.append(Shot(ship.theta))
 
     while True:
@@ -278,10 +279,11 @@ def main():
                     fire = True
 
         # 背景の描画
-        back_x = (back_x + ship.step[0] / 2) % 1600
-        back_y = (back_y + ship.step[1] / 2) % 1600
+#         back_x = (back_x + ship.step[0] / 2) % 1600
+#         back_y = (back_y + ship.step[1] / 2) % 1600
         SURFACE.fill((0, 0, 0))
-        SURFACE.blit(back_image, (-back_x, -back_y), (0, 0, 3200, 3200))
+        SURFACE.blit(back_image,(0, 0))
+#         SURFACE.blit(back_image, (-back_x, -back_y), (0, 0, 3200, 3200))
 
         # 各種オブジェクトの描画
         ship.draw()
