@@ -8,7 +8,7 @@
   - zip をダウンロードし、フォルダの中にある ship, enemy, background に使いたいものを選び、自分の py ファイルがあるフォルダに入れること
 
 - ### [Arcade - Ship Shooter 1](https://github.com/Seigakuin/todays_task/blob/master/projects/arcade_projects/ship_shooter_folder/ship_shooter_1.py)
-https://github.com/Seigakuin/todays_task/blob/master/projects/arcade_projects/ship_shooter_folder/ship_shooter_1.py
+
 * ### [Arcade - Ship Shooter 2 - Shipの横移動](https://github.com/Seigakuin/todays_task/blob/master/projects/arcade_projects/ship_shooter_folder/ship_shooter_2.py)
 
 - ### [Arcade - Ship Shooter 3 - Bulletを画面上に描く](https://github.com/Seigakuin/todays_task/blob/master/projects/arcade_projects/ship_shooter_folder/ship_shooter_3.py)
