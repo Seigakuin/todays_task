@@ -6,7 +6,12 @@ question = {
 
 
 while True:
-    response = input(question["question"])
+    print(question["question"])
+    for key, value in question["choices"].items():
+        print(f"{key} - {value}", end="   ")
+    print()
+    response = input("answer:  ")
+
     if question["answer"] == response:
         print("That's right!")
         break

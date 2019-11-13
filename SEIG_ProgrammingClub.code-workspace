@@ -17,6 +17,12 @@
 		},
 		{
 			"path": "projects/pygame_projects/games/asteroid"
+		},
+		{
+			"path": "projects/arcade_projects"
+		},
+		{
+			"path": "projects/back_to_basics"
 		}
 	],
 	"settings": {
