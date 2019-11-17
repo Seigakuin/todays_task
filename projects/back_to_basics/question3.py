@@ -25,7 +25,11 @@ questions = [
 for q in questions:
     while True:
         print(q["question"])
-        response = input()
+
+        for key, item in q["choices"].items():
+            print("* " + key + " - " + item)
+
+        response = input("choose a~d: ")
         if q["answer"] == response:
             print("That's right!")
             break
