@@ -1,34 +1,19 @@
-questions = [
-    {
-        "question": "What is the color of the sky?",
-        "choices": {"a": "black", "b": "blue", "c": "red", "d": "yellow"},
-        "answer": "b",
-    },
-    {
-        "question": "How old is our school?",
-        "choices": {"a": "110", "b": "98", "c": "113", "d": "109"},
-        "answer": "c",
-    },
-    {
-        "question": "How old is Earth?",
-        "choices": {
-            "a": "4.5 billion years old",
-            "b": "35 thousand years old",
-            "c": "100 million years old",
-            "d": "2.1 trillion years",
-        },
-        "answer": "a",
-    },
-]
+question = {
+    "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+    "en": "Modern technology has greatly (     ) our lives.",
+    "choices": "① considered  ② improved  ③ included  ④ concerned",
+    "answer": 2,
+    "q_num": 1,
+}
 
 
-for q in questions:
-    while True:
-        print(q["question"])
-        response = input()
-        if q["answer"] == response:
-            print("That's right!")
-            break
-        else:
-            print("You're wrong! Try again.")
+print(question["q_num"])
+print(question["jp"])
+print(question["en"])
+print(question["choices"])
+response = input()
+if question["answer"] == int(response):
+    print("----- That's right! -----\n")
+else:
+    print("----- You're wrong! Try again. -----\n")
 

@@ -1,4 +1,4 @@
-question = [
+questions = [
     {
         "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
         "en": "Modern technology has greatly (     ) our lives.",
@@ -29,15 +29,16 @@ question = [
     },
 ]
 
-while True:
-    print(question["question"])
-    for key, value in question["choices"].items():
-        print(f"{key} - {value}", end="   ")
-    print()
-    response = input("answer:  ")
 
-    if question["answer"] == response:
-        print("That's right!")
-        break
-    else:
-        print("You're wrong! Try again.")
+for q in questions:
+    while True:
+        print(q["q_num"])
+        print(q["jp"])
+        print(q["en"])
+        print(q["choices"])
+        response = input()
+        if q["answer"] == int(response):
+            print("----- That's right! -----\n")
+            break
+        else:
+            print("----- You're wrong! Try again. -----\n")

@@ -29,3 +29,19 @@
 </details>
 
 ---
+
+
+
+
+* dictionary の KeyとValueを取得するには...
+* string(文字列)をつなげるには...
+```python
+d = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+# dictionsryに.items()をつけることによって、
+# dictionaryのkeyとvalueを同時に取得できる
+for key, value in d.items():
+    # stringは "+" でつなげることができる
+    print(key + " - " + value)
+
+```

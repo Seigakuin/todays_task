@@ -1,6 +1,7 @@
-# ４択クイズを作ろう
+# Target1900 クイズアプリを作ろう!
 
 ## Level 1:
+
 
 ### 課題：
 ユーザーに４択問題を質問をし、
@@ -8,9 +9,9 @@
 不正解ならば「不正解です。」
 と答えるようなプログラムを作成しなさい。
 
-質問は「世界で最も長い川はどこでしょうか。」
-選択肢は (a) 長江 (b) アマゾン川 (c) ナイル川 (d) メコン川
-（アルファベットで答えさせる）
+質問は「(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕」
+選択肢は ① considered  ② improved  ③ included  ④ concerned
+（数字で答えさせる）
 
 #### ヒント：
 - 使う ファンクションは `input()`
@@ -23,11 +24,12 @@
 <p>
 
 ```python
-print("世界で最も長い川はどこでしょうか。")
-print("(a) 長江 (b) アマゾン川 (c) ナイル川 (d) メコン川")
-response = input("アルファベットで答えなさい")
+print("(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕")
+print("Modern technology has greatly (     ) our lives.")
+print("① considered  ② improved  ③ included  ④ concerned")
+response = input("数字で答えなさい")
 
-if response == "c":
+if response == "2":
     print("正解です")
 else:
     print("不正解です")
@@ -38,7 +40,90 @@ else:
 
 ---
 
+
 ## Level 2:
+
+### 課題：
+
+下記のDictionaryを使い、以下のようなユーザーとのやり取りができるようなプログラムを作りなさい。
+
+#### 条件：
+- print()の中に直接、文字を打ち込むのではなく、`question`Dictionaryを使うこと
+
+
+#### ヒント：
+Dictionary要素の呼び出しの仕方を確認
+`dict1["a"]`
+
+#### コードの骨格
+```python
+print(??ここは問題番号を表示??)
+print(??ここは日本語質問文を表示??)
+print(??ここは英文を表示??)
+print(??ここは選択肢を表示??)
+response = ??ユーザーからの入力を得る??
+if ??質問の答えと比較?? == ??ユーザーの入力をintに変換する??(response):
+    print("----- That's right! -----\n")
+else:
+    print("----- You're wrong! Try again. -----\n")?
+
+```
+
+
+#### 使用するデータ(コピペで良い)
+
+```python
+question = {
+    "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+    "en": "Modern technology has greatly (     ) our lives.",
+    "choices": "① considered  ② improved  ③ included  ④ concerned",
+    "answer": 2,
+    "q_num": 1,
+}
+
+```
+
+
+#### ユーザーから見たプログラム
+```
+1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+4 <-- (ユーザーが答えたもの)
+----- You're wrong! Try again. -----
+
+```
+
+<details>
+
+<summary> <b> Level 2 答え表示 </b> </summary>
+
+<p>
+
+```python
+print(question["q_num"])
+print(question["jp"])
+print(question["en"])
+print(question["choices"])
+response = input()
+if question["answer"] == int(response):
+    print("----- That's right! -----\n")
+else:
+    print("----- You're wrong! Try again. -----\n")
+
+
+
+
+```
+
+</p>
+</details>
+
+---
+
+
+## Level 3:
 
 ### 課題：
 
@@ -51,19 +136,39 @@ else:
 
 #### ヒント：
 正解するまで答えられるようにするには
-`while`文を使う(ネットで検索しよう)
+`while`文を使う(ネットで検索しよう) *`break`もうまく使う
 
 Dictionary要素の呼び出しの仕方を確認
 `dict1["a"]`
+
+
+#### コードの骨格
+
+```python
+while True:
+    print(??ここは問題番号を表示??)
+    print(??ここは日本語質問文を表示??)
+    print(??ここは英文を表示??)
+    print(??ここは選択肢を表示??)
+    response = ??ユーザーからの入力を得る??
+    if ??質問の答えと比較?? == ??ユーザーの入力をintに変換する??(response)
+        print("----- That's right! -----\n")
+        ??正解したら抜け出したい??
+    else:
+        print("----- You're wrong! Try again. -----\n")
+
+```
 
 
 #### 使用するデータ(コピペで良い)
 
 ```python
 question = {
-    "question": "What is the color of the sky?",
-    "choices": {"a": "black", "b": "blue", "c": "red", "d": "yellow"},
-    "answer": "b",
+    "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+    "en": "Modern technology has greatly (     ) our lives.",
+    "choices": "① considered  ② improved  ③ included  ④ concerned",
+    "answer": 2,
+    "q_num": 1,
 }
 
 ```
@@ -71,34 +176,40 @@ question = {
 
 #### ユーザーから見たプログラム
 ```
-What is the color of the sky?
-(a) black   (b) blue    (c) red    (d) yellow
-choose a ~ d
-> c
+1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+1 <-- (ユーザーが答えたもの)
+----- You're wrong! Try again. -----
 
-You're wrong...
-
-> b
-
-You're right!
+1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+2 <-- (ユーザーが答えたもの)
+----- That's right! -----
 
 ```
 
 <details>
 
-<summary> <b> Level 2 答え表示 </b> </summary>
+<summary> <b> Level 3 答え表示 </b> </summary>
 
 <p>
 
 ```python
 while True:
-    print(q["question"])
-    response = input("choose a~d")
-    if q["answer"] == response:
-        print("That's right!")
+    print(question["q_num"])
+    print(question["jp"])
+    print(question["en"])
+    print(question["choices"])
+    response = input()
+    if question["answer"] == int(response):
+        print("----- That's right! -----\n")
         break
     else:
-        print("You're wrong! Try again.")
+        print("----- You're wrong! Try again. -----\n")
 
 
 ```
@@ -111,158 +222,115 @@ while True:
 
 
 
-## Level 3:
-
-### 課題：
-４択の選択肢をキレイに表示しよう。
-
-#### 条件：
-Level 2 の答えのコードに４択をキレイに表示するコードを追加すること
-
-#### ヒント：
-
-```python
-# ??? をうめなさい
-for key, item in ???:
-    print(???)
-
-```
-
-* dictionary の KeyとValueを取得するには...
-* string(文字列)をつなげるには...
-```python
-d = {"key1": "value1", "key2": "value2", "key3": "value3"}
-
-# dictionsryに.items()をつけることによって、
-# dictionaryのkeyとvalueを同時に取得できる
-for key, value in d.items():
-    # stringは "+" でつなげることができる
-    print(key + " - " + value)
-
-```
 
 
-#### 使用するデータ(コピペで良い)
-```python
-question = {
-    "question": "What is the color of the sky?",
-    "choices": {"a": "black", "b": "blue", "c": "red", "d": "yellow"},
-    "answer": "b",
-}
 
 
-```
-
-#### ユーザーから見たプログラム
-```
-What is the color of the sky?
-* a - black
-* b - blue
-* c - red
-* d - yellow
-choose a~d:
-
-> b
-
-You're right!!
-
-```
 
 
-<details>
 
-<summary> <b> Level 3 答え表示 </b> </summary>
 
-<p>
 
-```python
-while True:
-    print(q["question"])
 
-    for key, item in q["choices"].items():
-        print("* " + key + " - " + item)
 
-    response = input("choose a~d: ")
-    if q["answer"] == response:
-        print("That's right!")
-        break
-    else:
-        print("You're wrong! Try again.")
-```
 
-</p>
-</details>
+
+
+
+
+
+
 
 
 ## Level 4:
 
 ### 課題：
-複数の問題を聞き続けよう。
+複数の問題を解けるようにしよう
 
 #### 条件：
-Level 3 の答えのコードに４択をキレイに表示するコードを追加すること
+- questionを一つのでなく、複数を表示できるようにする
+- `for ?? in ???` を使いリストをループする
 
 #### ヒント：
+- `for`ループの文法を検索すること
 
+#### コードの骨格
 ```python
-for ??? in questions:
-    ???
+for ??ここはforループ構文を入れる??:
+    while True:
+        print(??ここは問題番号を表示??)
+        print(??ここは日本語質問文を表示??)
+        print(??ここは英文を表示??)
+        print(??ここは選択肢を表示??)
+        response = ??ユーザーからの入力を得る??
+        if ??質問の答えと比較?? == ??ユーザーの入力をintに変換する??(response)
+            print("----- That's right! -----\n")
+            ??正解したら抜け出したい??
+        else:
+            print("----- You're wrong! Try again. -----\n")
 
 ```
-
-* 全体をforループで囲むと...
 
 #### 使用するデータ(コピペで良い)
 ```python
 questions = [
     {
-        "question": "What is the color of the sky?",
-        "choices": {"a": "black", "b": "blue", "c": "red", "d": "yellow"},
-        "answer": "b",
+        "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+        "en": "Modern technology has greatly (     ) our lives.",
+        "choices": "① considered  ② improved  ③ included  ④ concerned",
+        "answer": 2,
+        "q_num": 1,
     },
     {
-        "question": "How old is our school?",
-        "choices": {"a": "110", "b": "98", "c": "113", "d": "109"},
-        "answer": "c",
+        "jp": "(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕",
+        "en": "The quality of life is not directly (     ) to energy use.",
+        "choices": "① produced  ② improved  ③ provided  ④ related",
+        "answer": 4,
+        "q_num": 2,
     },
     {
-        "question": "How old is Earth?",
-        "choices": {
-            "a": "4.5 billion years old",
-            "b": "35 thousand years old",
-            "c": "100 million years old",
-            "d": "2.1 trillion years",
-        },
-        "answer": "a",
+        "jp": "(3) 言語はすべて私たちに社会に関する貴重な情報を[与える]ことができる。 〔p.18，3〕",
+        "en": "All languages can (     ) us with valuable information about society.",
+        "choices": "① concern  ② relate  ③ include  ④ provide",
+        "answer": 4,
+        "q_num": 3,
+    },
+    {
+        "jp": "(4) なぜ政府はその難民たちを違法と[見なす]のか。 〔p.18，4〕",
+        "en": "Why does the Government (     ) those refugees illegal?",
+        "choices": "① consider  ② encourage  ③ improve  ④ provide",
+        "answer": 1,
+        "q_num": 4,
     },
 ]
+
 
 
 ```
 
 #### ユーザーから見たプログラム
 ```
-What is the color of the sky?
-* a - black
-* b - blue
-* c - red
-* d - yellow
-choose a~d:
+1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+2
+----- That's right! -----
 
-> b
+2
+(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕
+The quality of life is not directly (     ) to energy use.
+① produced  ② improved  ③ provided  ④ related
+1
+----- You're wrong! Try again. -----
 
-You're right!!
+2
+(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕
+The quality of life is not directly (     ) to energy use.
+① produced  ② improved  ③ provided  ④ related
+4
+----- That's right! -----
 
-How old is our school??
-* a - 110
-* b - 98
-* c - 72
-* d - 101
-choose a~d:
-
-> a
-
-You're wrong.. Try again!
 
 ```
 
@@ -276,18 +344,53 @@ You're wrong.. Try again!
 ```python
 for q in questions:
     while True:
-        print(q["question"])
-
-        for key, item in q["choices"].items():
-            print("* " + key + " - " + item)
-
-        response = input("choose a~d: ")
-        if q["answer"] == response:
-            print("That's right!")
+        print(q["q_num"])
+        print(q["jp"])
+        print(q["en"])
+        print(q["choices"])
+        response = input()
+        if q["answer"] == int(response):
+            print("----- That's right! -----\n")
             break
         else:
-            print("You're wrong! Try again.")
+            print("----- You're wrong! Try again. -----\n")
 
+```
+
+</p>
+</details>
+
+
+## Level 5:
+
+### 課題：
+
+#### 条件：
+
+#### ヒント：
+
+```python
+
+```
+
+
+#### 使用するデータ(コピペで良い)
+```python
+
+```
+
+#### ユーザーから見たプログラム
+```
+```
+
+
+<details>
+
+<summary> <b> Level 4 答え表示 </b> </summary>
+
+<p>
+
+```python
 
 ```
 

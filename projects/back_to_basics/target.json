@@ -1,0 +1,33 @@
+[
+  {
+    "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+    "en": "Modern technology has greatly (     ) our lives.",
+    "choices": "① considered  ② improved  ③ included  ④ concerned",
+    "answer": 2,
+    "q_num": 1
+  }, {
+    "jp": "(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕",
+    "en": "The quality of life is not directly (     ) to energy use.",
+    "choices": "① produced  ② improved  ③ provided  ④ related",
+    "answer": 4,
+    "q_num": 2
+  }, {
+    "jp": "(3) 言語はすべて私たちに社会に関する貴重な情報を[与える]ことができる。 〔p.18，3〕",
+    "en": "All languages can (     ) us with valuable information about society.",
+    "choices": "① concern  ② relate  ③ include  ④ provide",
+    "answer": 4,
+    "q_num": 3
+  }, {
+    "jp": "(4) なぜ政府はその難民たちを違法と[見なす]のか。 〔p.18，4〕",
+    "en": "Why does the Government (     ) those refugees illegal?",
+    "choices": "① consider  ② encourage  ③ improve  ④ provide",
+    "answer": 1,
+    "q_num": 4
+  }, {
+    "jp": "(5) 自分の食事が必ず新鮮な食品を十分に[含む]ようにしなさい。 〔p.18，5〕",
+    "en": "Make sure your diet (     ) enough fresh foods.",
+    "choices": "① relates  ② concerns  ③ improves  ④ includes",
+    "answer": 4,
+    "q_num": 5
+  }
+]
