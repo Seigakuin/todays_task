@@ -10,11 +10,15 @@
 
 <br></br>
 
+### :us: [Target1900クイズアプリ](https://github.com/Seigakuin/todays_task/blob/master/projects/back_to_basics/back_to_basics.md) :gb:
+
+<br></br>
+
 ### :boom: [基本 Task](https://github.com/Seigakuin/todays_task/blob/master/docs/basic_tasks.md) :smiley:
 
 <br></br>
 
-### :snake: [Pygame Platformer](https://github.com/Seigakuin/todays_task/blob/master/docs/pygame_platformer.md) :snake:
+### :spades: [Pygame Zero- Cards](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/card_project/cards.md) :hearts:
 
 <br></br>
 
@@ -30,10 +34,13 @@
 
 <br></br>
 
-### :boom: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/dice_project/dice.md) :boom:
+
+
+
+### :snake: [Pygame Platformer](https://github.com/Seigakuin/todays_task/blob/master/docs/pygame_platformer.md) :snake:
 
 <br></br>
 
-### :spades: [Pygame Zero- Cards](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/card_project/cards.md) :hearts:
+### :boom: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/dice_project/dice.md) :boom:
 
 <br></br>

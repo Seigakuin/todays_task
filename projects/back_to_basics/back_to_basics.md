@@ -363,11 +363,235 @@ for q in questions:
 ## Level 5:
 
 ### 課題：
+ランダムに問題が出力されるようにしよう
+
+#### 条件：
+* 問題が重なっても良い
+* 問題の出題回数を決められる
+
+#### ヒント：
+- `number_of_times` 変数を作り、出題回数を格納する
+- `random_number` 変数を作り、呼び出すquestionの配列番号を格納する
+- `for ?? in ???`ではなく、`for ?? in range(??)`を使う
+    - 理由: questionオブジェクトそのものでなく、questionの配列番号を使うため
+    - forループの中でquestionオブジェクトを呼び出す方法が変わるので注意！！
+```python
+
+```
+
+#### コードの骨格
+```python
+# 出題する回数
+number_of_times = 5
+
+for ?? in range(??):
+    while True:
+        # 問題の範囲配列番号をランダムに取得
+        random_number = random.randint(??)
+        print("問題: " + str(??[??]["q_num"]))
+        print(??[??]["jp"])
+        print(??[??]["en"])
+        print(??[??]["choices"])
+
+        response = input("choose 1~4: ")
+        if ??[??]["answer"] == int(response):
+            print("----- That's right! -----\n")
+            break
+        else:
+            print("----- You're wrong! -----\n")
+```
+
+#### 使用するデータ(Level 4 のものを使用)
+
+#### ユーザーから見たプログラム
+```
+3
+(3) 言語はすべて私たちに社会に関する貴重な情報を[与える]ことができる。 〔p.18，3〕
+All languages can (     ) us with valuable information about society.
+① concern  ② relate  ③ include  ④ provide
+choose 1~4: 2
+----- You're wrong! Try again. -----
+
+3
+(3) 言語はすべて私たちに社会に関する貴重な情報を[与える]ことができる。 〔p.18，3〕
+All languages can (     ) us with valuable information about society.
+① concern  ② relate  ③ include  ④ provide
+choose 1~4: 4
+----- That's right! -----
+
+2
+(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕
+The quality of life is not directly (     ) to energy use.
+① produced  ② improved  ③ provided  ④ related
+choose 1~4: 
+```
+
+
+<details>
+
+<summary> <b> Level 5 答え表示 </b> </summary>
+
+<p>
+
+```python
+
+number_of_times = 5
+
+for i in range(0, number_of_times):
+
+    while True:
+        random_number = random.randint(0, 3)
+        print("問題: " + str(questions[random_number]["q_num"]))
+        print(questions[random_number]["jp"])
+        print(questions[random_number]["en"])
+        print(questions[random_number]["choices"])
+
+        response = input("choose 1~4: ")
+        if questions[random_number]["answer"] == int(response):
+            print("----- That's right! -----\n")
+            break
+        else:
+            print("----- You're wrong! -----\n")
+
+```
+
+</p>
+</details>
+
+
+
+
+## Level 6:
+
+### 課題：
+ランダムに問題を出題し、問題が重ならないようにする
+#### 条件：
+- 出題される問題が重ならないようにする
+- 間違えた問題は正解するまで出題される
+#### ヒント：
+- 出題された配列番号を記録しておく`chosen_q_nums`リストを作る
+- `chosen_q_nums`にランダムに選ばれた番号があるかを確認する
+- もしリストに含まれていなかったら問題を出題する
+- `len(??)`を使って問題の数を取得する
+- `randint`を使うときにはリストの配列番号に注意
+    - リストは「0」から始まり「問題数-1」で終わる
+```python
+
+```
+#### コードの骨格
+```python
+# 選ばれたquestion配列番号を記録しておくリスト
+chosen_q_nums = []
+
+# 問題の数、出題する
+for i in range(0, len(??)):
+
+    while True:
+        # リストの配列番号に注意！ゼロから始まる！
+        random_number = random.randint(0, ?? - ??)
+        # if を使ってすでに出題されたかを確認する
+        if ?? not in ??:
+            print("問題: " + str(questions[random_number]["q_num"]))
+            print(questions[random_number]["jp"])
+            print(questions[random_number]["en"])
+            print(questions[random_number]["choices"])
+
+            response = input("choose 1~4: ")
+            if questions[random_number]["answer"] == int(response):
+                # もし出題されていなかった問題番号だとしたら、リストに追加する
+                chosen_q_nums.append(random_number)
+                print("----- That's right! -----\n")
+                break
+            else:
+                print("----- You're wrong! Try again. -----\n")
+
+```
+
+
+#### 使用するデータ(Level 4 のものを使用)
+
+#### ユーザーから見たプログラム
+```
+問題: 1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+choose 1~4: 2
+----- That's right! -----
+
+問題: 4
+(4) なぜ政府はその難民たちを違法と[見なす]のか。 〔p.18，4〕
+Why does the Government (     ) those refugees illegal?
+① consider  ② encourage  ③ improve  ④ provide
+choose 1~4: 1
+----- That's right! -----
+
+問題: 3
+(3) 言語はすべて私たちに社会に関する貴重な情報を[与える]ことができる。 〔p.18，3〕
+All languages can (     ) us with valuable information about society.
+① concern  ② relate  ③ include  ④ provide
+choose 1~4: 4
+----- That's right! -----
+
+問題: 2
+(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕
+The quality of life is not directly (     ) to energy use.
+① produced  ② improved  ③ provided  ④ related
+choose 1~4: 4
+----- That's right! -----
+```
+
+
+<details>
+
+<summary> <b> Level 6 答え表示 </b> </summary>
+
+<p>
+
+```python
+# 選ばれたquestion配列番号を記録しておくリスト
+chosen_q_nums = []
+
+for i in range(0, len(questions)):
+
+    while True:
+        random_number = random.randint(0, len(questions) - 1)
+        # if を使ってすでに出題されたかを確認する
+        if random_number not in chosen_q_nums:
+            # もし出題されていなかった問題番号だとしたら、リストに追加する
+            chosen_q_nums.append(random_number)
+            print("問題: " + str(questions[random_number]["q_num"]))
+            print(questions[random_number]["jp"])
+            print(questions[random_number]["en"])
+            print(questions[random_number]["choices"])
+
+            response = input("choose 1~4: ")
+            if questions[random_number]["answer"] == int(response):
+                print("----- That's right! -----\n")
+                break
+            else:
+                print("----- You're wrong! Try again. -----\n")
+
+```
+
+</p>
+</details>
+
+
+
+
+## Level 7:
+
+### 課題：
 
 #### 条件：
 
 #### ヒント：
 
+```python
+
+```
+#### コードの骨格
 ```python
 
 ```
@@ -385,7 +609,51 @@ for q in questions:
 
 <details>
 
-<summary> <b> Level 4 答え表示 </b> </summary>
+<summary> <b> Level 7 答え表示 </b> </summary>
+
+<p>
+
+```python
+
+```
+
+</p>
+</details>
+
+
+
+
+
+## Level 8:
+
+### 課題：
+
+#### 条件：
+
+#### ヒント：
+
+```python
+
+```
+#### コードの骨格
+```python
+
+```
+
+
+#### 使用するデータ(コピペで良い)
+```python
+
+```
+
+#### ユーザーから見たプログラム
+```
+```
+
+
+<details>
+
+<summary> <b> Level 8 答え表示 </b> </summary>
 
 <p>
 
