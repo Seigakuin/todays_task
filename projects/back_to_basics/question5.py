@@ -1,3 +1,6 @@
+# Level 5
+import random
+
 questions = [
     {
         "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
@@ -30,17 +33,36 @@ questions = [
 ]
 
 
-for q in questions:
+number_of_times = 5
+
+for i in range(0, number_of_times):
+
     while True:
-        print(q["q_num"])
-        print(q["jp"])
-        print(q["en"])
-        print(q["choices"])
+        random_number = random.randint(0, 3)
+        print("問題: " + str(questions[random_number]["q_num"]))
+        print(questions[random_number]["jp"])
+        print(questions[random_number]["en"])
+        print(questions[random_number]["choices"])
 
         response = input("choose 1~4: ")
-        if q["answer"] == int(response):
+        if questions[random_number]["answer"] == int(response):
             print("----- That's right! -----\n")
             break
         else:
             print("----- You're wrong! Try again. -----\n")
+
+
+# for q in questions:
+#     while True:
+#         print(q["q_num"])
+#         print(q["jp"])
+#         print(q["en"])
+#         print(q["choices"])
+
+#         response = input("choose 1~4: ")
+#         if q["answer"] == int(response):
+#             print("----- That's right! -----\n")
+#             break
+#         else:
+#             print("----- You're wrong! Try again. -----\n")
 

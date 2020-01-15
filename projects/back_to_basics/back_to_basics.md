@@ -499,7 +499,7 @@ for i in range(0, len(??)):
             response = input("choose 1~4: ")
             if questions[random_number]["answer"] == int(response):
                 # もし出題されていなかった問題番号だとしたら、リストに追加する
-                chosen_q_nums.append(random_number)
+                chosen_q_nums.append(??)
                 print("----- That's right! -----\n")
                 break
             else:
@@ -558,8 +558,6 @@ for i in range(0, len(questions)):
         random_number = random.randint(0, len(questions) - 1)
         # if を使ってすでに出題されたかを確認する
         if random_number not in chosen_q_nums:
-            # もし出題されていなかった問題番号だとしたら、リストに追加する
-            chosen_q_nums.append(random_number)
             print("問題: " + str(questions[random_number]["q_num"]))
             print(questions[random_number]["jp"])
             print(questions[random_number]["en"])
@@ -567,6 +565,8 @@ for i in range(0, len(questions)):
 
             response = input("choose 1~4: ")
             if questions[random_number]["answer"] == int(response):
+                # もし出題されていなかった問題番号だとしたら、リストに追加する
+                chosen_q_nums.append(random_number)
                 print("----- That's right! -----\n")
                 break
             else:
@@ -583,28 +583,51 @@ for i in range(0, len(questions)):
 ## Level 7:
 
 ### 課題：
-
+questionを表示する機能をファンクションにまとめる
 #### 条件：
-
+* 自分のファンクションを定義する `show_question()`
 #### ヒント：
+* ファンクションの定義は `def hello()`
 
-```python
-
-```
 #### コードの骨格
 ```python
+# 1つのquestionを表示するファンクションを定義
+def show_question(question):
+    print("問題: " + str(??["q_num"]))
+    print(??["jp"])
+    print(??["en"])
+    print(??["choices"])
 
+
+# 選ばれたquestion配列番号を記録しておくリスト
+chosen_q_nums = []
+
+# 問題の数、出題する
+for i in range(0, len(questions)):
+
+    while True:
+        random_number = random.randint(0, len(questions) - 1)
+        # if を使ってすでに出題されたかを確認する
+        if random_number not in chosen_q_nums:
+
+            # 定義したファンクションを使用する
+            show_question(??)
+
+            response = input("choose 1~4: ")
+            if questions[random_number]["answer"] == int(response):
+                # もし出題されていなかった問題番号だとしたら、リストに追加する
+                chosen_q_nums.append(random_number)
+                print("----- That's right! -----\n")
+                break
+            else:
+                print("----- You're wrong! -----\n")
 ```
 
 
-#### 使用するデータ(コピペで良い)
-```python
-
-```
+#### 使用するデータ(Level 4 のものを使用)
 
 #### ユーザーから見たプログラム
-```
-```
+* Level 6 から変更なし
 
 
 <details>
@@ -614,7 +637,36 @@ for i in range(0, len(questions)):
 <p>
 
 ```python
+# 1つのquestionを表示するファンクションを定義
+def show_question(question):
+    print("問題: " + str(question["q_num"]))
+    print(question["jp"])
+    print(question["en"])
+    print(question["choices"])
 
+
+# 選ばれたquestion配列番号を記録しておくリスト
+chosen_q_nums = []
+
+# 問題の数、出題する
+for i in range(0, len(questions)):
+
+    while True:
+        random_number = random.randint(0, len(questions) - 1)
+        # if を使ってすでに出題されたかを確認する
+        if random_number not in chosen_q_nums:
+
+            # 定義したファンクションを使用する
+            show_question(questions[random_number])
+
+            response = input("choose 1~4: ")
+            if questions[random_number]["answer"] == int(response):
+                # もし出題されていなかった問題番号だとしたら、リストに追加する
+                chosen_q_nums.append(random_number)
+                print("----- That's right! -----\n")
+                break
+            else:
+                print("----- You're wrong! -----\n")
 ```
 
 </p>
@@ -654,6 +706,50 @@ for i in range(0, len(questions)):
 <details>
 
 <summary> <b> Level 8 答え表示 </b> </summary>
+
+<p>
+
+```python
+
+```
+
+</p>
+</details>
+
+
+
+
+
+## Level 9:
+
+### 課題：
+
+#### 条件：
+
+#### ヒント：
+
+```python
+
+```
+#### コードの骨格
+```python
+
+```
+
+
+#### 使用するデータ(コピペで良い)
+```python
+
+```
+
+#### ユーザーから見たプログラム
+```
+```
+
+
+<details>
+
+<summary> <b> Level 9 答え表示 </b> </summary>
 
 <p>
 

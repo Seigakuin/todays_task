@@ -1,4 +1,4 @@
-# Level : 6 ランダムに問題を出題し、問題が重ならないようにする
+# Level : 7
 import random
 
 questions = [
@@ -32,6 +32,14 @@ questions = [
     },
 ]
 
+# 1つのquestionを表示するファンクションを定義
+def show_question(question):
+    print("問題: " + str(question["q_num"]))
+    print(question["jp"])
+    print(question["en"])
+    print(question["choices"])
+
+
 # 選ばれたquestion配列番号を記録しておくリスト
 chosen_q_nums = []
 
@@ -42,15 +50,14 @@ for i in range(0, len(questions)):
         random_number = random.randint(0, len(questions) - 1)
         # if を使ってすでに出題されたかを確認する
         if random_number not in chosen_q_nums:
-            # もし出題されていなかった問題番号だとしたら、リストに追加する
-            chosen_q_nums.append(random_number)
-            print("問題: " + str(questions[random_number]["q_num"]))
-            print(questions[random_number]["jp"])
-            print(questions[random_number]["en"])
-            print(questions[random_number]["choices"])
+
+            # 定義したファンクションを使用する
+            show_question(questions[random_number])
 
             response = input("choose 1~4: ")
             if questions[random_number]["answer"] == int(response):
+                # もし出題されていなかった問題番号だとしたら、リストに追加する
+                chosen_q_nums.append(random_number)
                 print("----- That's right! -----\n")
                 break
             else:
