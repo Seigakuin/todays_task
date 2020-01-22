@@ -48,6 +48,7 @@ for i in range(0, len(questions)):
 
     while True:
         random_number = random.randint(0, len(questions) - 1)
+
         # if を使ってすでに出題されたかを確認する
         if random_number not in chosen_q_nums:
 
