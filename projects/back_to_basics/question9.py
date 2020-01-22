@@ -1,5 +1,5 @@
 # Level : 9
-# クラスにメンバーを
+# クラスにメソッド（動作）をつけよう
 import random
 
 my_question = {
@@ -13,7 +13,6 @@ my_question = {
 
 # クラスを作成
 class Question:
-    # NEW!!
     # 引数 question を クラス Question に渡す
     def __init__(self, question):
         self.jp = question["jp"]
@@ -22,18 +21,23 @@ class Question:
         self.answer = question["answer"]
         self.q_num = question["q_num"]
 
+    # NEW!!
+    def show_question(self):
+        print("問題: " + str(self.q_num))
+        print(self.jp)
+        print(self.en)
+        print(self.choices)
+
 
 while True:
-    # NEW!!
     # クラス Question を初期化、
     # その際、引数 my_questionを入れる
     # question インスタンスを作る
     question_instance = Question(my_question)  # ここでコンストラクタ __init__ が呼ばれる
-    print(question_instance.q_num)  # questionインスタンスの属性q_numを使う
-    print(question_instance.jp)
-    print(question_instance.jp)
-    print(question_instance.en)
-    print(question_instance.choices)
+
+    # NEW!!
+    question_instance.show_question()  # ここでshow_questionを呼び出す
+
     response = input()
     if question_instance.answer == int(response):
         print("----- That's right! -----\n")

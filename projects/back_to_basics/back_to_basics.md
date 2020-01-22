@@ -57,7 +57,7 @@ else:
 
 #### コードの骨格
 ```python
-print(??ここは問題番号を表示??)
+print(??s??ここは問題番号を表示??)
 print(??ここは日本語質問文を表示??)
 print(??ここは英文を表示??)
 print(??ここは選択肢を表示??)
@@ -679,7 +679,7 @@ for i in range(0, len(questions)):
 ## Level 8:
 
 ### 課題：
-
+クラスの導入、クラスのメンバーの呼び出し方
 #### 条件：
 
 #### ヒント：
@@ -689,17 +689,42 @@ for i in range(0, len(questions)):
 ```
 #### コードの骨格
 ```python
+# クラスを作成
+class Question:
+    # コンストラクタ __init__
+    def __init__(self):
+        self.??? = 1
+        self.??? = "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕"
+        self.??? = "Modern technology has greatly (     ) our lives."
+        self.??? = "① considered  ② improved  ③ included  ④ concerned"
+        self.??? = 2
 
+
+while True:
+    # NEW!!
+    # クラス Question を初期化、question インスタンスを作る
+    question = ???()  # ここでコンストラクタ __init__ が呼ばれる
+    print(question.???)  # questionインスタンスの属性q_numを使う
+    print(question.???)
+    print(question.???)
+    print(question.???)
+    response = input()
+    if question.answer == int(response):
+        print("----- That's right! -----\n")
+        break
+    else:
+        print("----- You're wrong! Try again. -----\n")
 ```
 
-
-#### 使用するデータ(コピペで良い)
-```python
-
-```
 
 #### ユーザーから見たプログラム
 ```
+1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+1
+----- You're wrong! Try again. -----
 ```
 
 
@@ -710,7 +735,31 @@ for i in range(0, len(questions)):
 <p>
 
 ```python
+# クラスを作成
+class Question:
+    # コンストラクタ __init__
+    def __init__(self):
+        self.q_num = 1
+        self.jp = "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕"
+        self.en = "Modern technology has greatly (     ) our lives."
+        self.choices = "① considered  ② improved  ③ included  ④ concerned"
+        self.answer = 2
 
+
+while True:
+    # NEW!!
+    # クラス Question を初期化、question インスタンスを作る
+    question = Question()  # ここでコンストラクタ __init__ が呼ばれる
+    print(question.q_num)  # questionインスタンスの属性q_numを使う
+    print(question.jp)
+    print(question.en)
+    print(question.choices)
+    response = input()
+    if question.answer == int(response):
+        print("----- That's right! -----\n")
+        break
+    else:
+        print("----- You're wrong! Try again. -----\n")
 ```
 
 </p>
@@ -721,29 +770,69 @@ for i in range(0, len(questions)):
 
 
 ## Level 9:
-
 ### 課題：
+クラスにメソッド（動作）をつけよう
 
 #### 条件：
 
 #### ヒント：
 
 ```python
+# クラスを作成
+class Question:
+    # 引数 question を クラス Question に渡す
+    def __init__(self, question):
+        self.jp = question["jp"]
+        self.en = question["en"]
+        self.choices = question["choices"]
+        self.answer = question["answer"]
+        self.q_num = question["q_num"]
 
-```
-#### コードの骨格
-```python
+    # NEW!!
+    def show_question(self):
+        ???
+        ???
+        ???
+        ???
 
+
+while True:
+    # クラス Question を初期化、
+    # その際、引数 my_questionを入れる
+    # question インスタンスを作る
+    question_instance = Question(???)  # ここでコンストラクタ __init__ が呼ばれる
+
+    # NEW!!
+    ???.???()  # ここでshow_questionを呼び出す
+
+    response = input()
+    if ???.??? == int(response):
+        print("----- That's right! -----\n")
+        break
+    else:
+        print("----- You're wrong! Try again. -----\n")
 ```
 
 
 #### 使用するデータ(コピペで良い)
 ```python
-
+my_question = {
+    "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+    "en": "Modern technology has greatly (     ) our lives.",
+    "choices": "① considered  ② improved  ③ included  ④ concerned",
+    "answer": 2,
+    "q_num": 1,
+}
 ```
 
 #### ユーザーから見たプログラム
 ```
+問題: 1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+2
+----- That's right! -----
 ```
 
 
@@ -755,6 +844,48 @@ for i in range(0, len(questions)):
 
 ```python
 
+my_question = {
+    "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+    "en": "Modern technology has greatly (     ) our lives.",
+    "choices": "① considered  ② improved  ③ included  ④ concerned",
+    "answer": 2,
+    "q_num": 1,
+}
+
+
+# クラスを作成
+class Question:
+    # 引数 question を クラス Question に渡す
+    def __init__(self, question):
+        self.jp = question["jp"]
+        self.en = question["en"]
+        self.choices = question["choices"]
+        self.answer = question["answer"]
+        self.q_num = question["q_num"]
+
+    # NEW!!
+    def show_question(self):
+        print("問題: " + str(self.q_num))
+        print(self.jp)
+        print(self.en)
+        print(self.choices)
+
+
+while True:
+    # クラス Question を初期化、
+    # その際、引数 my_questionを入れる
+    # question インスタンスを作る
+    question_instance = Question(my_question)  # ここでコンストラクタ __init__ が呼ばれる
+
+    # NEW!!
+    question_instance.show_question()  # ここでshow_questionを呼び出す
+
+    response = input()
+    if question_instance.answer == int(response):
+        print("----- That's right! -----\n")
+        break
+    else:
+        print("----- You're wrong! Try again. -----\n")
 ```
 
 </p>
@@ -762,3 +893,246 @@ for i in range(0, len(questions)):
 
 
 
+
+
+## Level 10:
+### 課題：
+Questions クラスを作って、複数の問題を入れよう
+
+#### 条件：
+
+#### ヒント：
+
+```python
+
+# NEW!!
+class Questions:
+    def __init__(self, questions):
+        # まずは複数のQuestionインスタンスを入れる空のリストを作る
+        self.questions = []
+        # ここでquestionsリストを一つひとつQuestionクラスに変換し、
+        # self.questionsリストに足していく
+        for ??? in ???:
+            # 一つのquestion DictionaryをQuestionインスタンスに変換
+            q_instance = Question(???)
+            # できたQuestionインスタンスをself.questionsリストに付け足す
+            self.questions.append(???)
+
+
+# クラスを作成
+class Question:
+    # 引数 question を クラス Question に渡す
+    def __init__(self, question):
+        self.jp = question["jp"]
+        self.en = question["en"]
+        self.choices = question["choices"]
+        self.answer = question["answer"]
+        self.q_num = question["q_num"]
+
+    def show_question(self):
+        print("問題: " + str(self.q_num))
+        print(self.jp)
+        print(self.en)
+        print(self.choices)
+
+
+# NEW!!
+# my_questions変数の中にあるデータをQuestionsクラスに渡し、
+# Questionsクラスのインスタンスを作る
+my_questions_instances = Questions(???)
+
+# NEW!!
+# my_questions_instancesの中にあるquestionsのリストをfor ループで一つ一つ取り出す
+for q in my_questions_instances.???:
+    while True:
+        # 質問を呼び出す
+        ???.???()
+        response = input()
+        if ???.answer == int(response):
+            print("----- That's right! -----\n")
+            break
+        else:
+            print("----- You're wrong! Try again. -----\n")
+```
+
+
+#### 使用するデータ(コピペで良い)
+```python
+
+my_questions = [
+    {
+        "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+        "en": "Modern technology has greatly (     ) our lives.",
+        "choices": "① considered  ② improved  ③ included  ④ concerned",
+        "answer": 2,
+        "q_num": 1,
+    },
+    {
+        "jp": "(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕",
+        "en": "The quality of life is not directly (     ) to energy use.",
+        "choices": "① produced  ② improved  ③ provided  ④ related",
+        "answer": 4,
+        "q_num": 2,
+    },
+    {
+        "jp": "(3) 言語はすべて私たちに社会に関する貴重な情報を[与える]ことができる。 〔p.18，3〕",
+        "en": "All languages can (     ) us with valuable information about society.",
+        "choices": "① concern  ② relate  ③ include  ④ provide",
+        "answer": 4,
+        "q_num": 3,
+    },
+    {
+        "jp": "(4) なぜ政府はその難民たちを違法と[見なす]のか。 〔p.18，4〕",
+        "en": "Why does the Government (     ) those refugees illegal?",
+        "choices": "① consider  ② encourage  ③ improve  ④ provide",
+        "answer": 1,
+        "q_num": 4,
+    },
+]
+
+```
+
+#### ユーザーから見たプログラム
+```
+
+```
+
+
+<details>
+
+<summary> <b> Level 10 表示 </b> </summary>
+
+<p>
+
+```python
+
+# NEW!!
+class Questions:
+    def __init__(self, questions):
+        # まずは複数のQuestionインスタンスを入れる空のリストを作る
+        self.questions = []
+        # ここでquestionsリストを一つひとつQuestionクラスに変換し、
+        # self.questionsリストに足していく
+        for q in questions:
+            # 一つのquestion DictionaryをQuestionインスタンスに変換
+            q_instance = Question(q)
+            # できたQuestionインスタンスをself.questionsリストに付け足す
+            self.questions.append(q_instance)
+
+
+# クラスを作成
+class Question:
+    # 引数 question を クラス Question に渡す
+    def __init__(self, question):
+        self.jp = question["jp"]
+        self.en = question["en"]
+        self.choices = question["choices"]
+        self.answer = question["answer"]
+        self.q_num = question["q_num"]
+
+    def show_question(self):
+        print("問題: " + str(self.q_num))
+        print(self.jp)
+        print(self.en)
+        print(self.choices)
+
+
+# NEW!!
+# my_questions変数の中にあるデータをQuestionsクラスに渡し、
+# Questionsクラスのインスタンスを作る
+my_questions_instances = Questions(my_questions)
+
+# NEW!!
+# my_questions_instancesの中にあるquestionsのリストをfor ループで一つ一つ取り出す
+for q in my_questions_instances.questions:
+    while True:
+        # 質問を呼び出す
+        q.show_question()
+        response = input()
+        if q.answer == int(response):
+            print("----- That's right! -----\n")
+            break
+        else:
+            print("----- You're wrong! Try again. -----\n")
+
+```
+
+</p>
+</details>
+
+
+
+## Level ??:
+### 課題：
+
+
+#### 条件：
+
+#### ヒント：
+
+```python
+
+```
+
+
+#### 使用するデータ(コピペで良い)
+```python
+
+```
+
+#### ユーザーから見たプログラム
+```
+
+```
+
+
+<details>
+
+<summary> <b> Level ??表示 </b> </summary>
+
+<p>
+
+```python
+
+```
+
+</p>
+</details>
+
+
+## Level ??:
+### 課題：
+
+
+#### 条件：
+
+#### ヒント：
+
+```python
+
+```
+
+
+#### 使用するデータ(コピペで良い)
+```python
+
+```
+
+#### ユーザーから見たプログラム
+```
+
+```
+
+
+<details>
+
+<summary> <b> Level ??表示 </b> </summary>
+
+<p>
+
+```python
+
+```
+
+</p>
+</details>
