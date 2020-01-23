@@ -373,11 +373,8 @@ for q in questions:
 - `number_of_times` 変数を作り、出題回数を格納する
 - `random_number` 変数を作り、呼び出すquestionの配列番号を格納する
 - `for ?? in ???`ではなく、`for ?? in range(??)`を使う
-    - 理由: questionオブジェクトそのものでなく、questionの配列番号を使うため
+    - 理由: questionオブジェクトそのものでなく、questionの配列番号を使うため
     - forループの中でquestionオブジェクトを呼び出す方法が変わるので注意！！
-```python
-
-```
 
 #### コードの骨格
 ```python
@@ -475,9 +472,7 @@ for i in range(0, number_of_times):
 - `len(??)`を使って問題の数を取得する
 - `randint`を使うときにはリストの配列番号に注意
     - リストは「0」から始まり「問題数-1」で終わる
-```python
-
-```
+    
 #### コードの骨格
 ```python
 # 選ばれたquestion配列番号を記録しておくリスト
@@ -680,14 +675,11 @@ for i in range(0, len(questions)):
 
 ### 課題：
 クラスの導入、クラスのメンバーの呼び出し方
+
 #### 条件：
 
 #### ヒント：
 
-```python
-
-```
-#### コードの骨格
 ```python
 # クラスを作成
 class Question:
