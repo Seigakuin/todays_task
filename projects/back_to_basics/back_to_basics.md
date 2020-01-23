@@ -676,7 +676,6 @@ for i in range(0, len(questions)):
 ### 課題：
 クラスの導入、クラスのメンバーの呼び出し方
 
-#### 条件：
 
 #### ヒント：
 
@@ -764,8 +763,6 @@ while True:
 ## Level 9:
 ### 課題：
 クラスにメソッド（動作）をつけよう
-
-#### 条件：
 
 #### ヒント：
 
@@ -986,7 +983,24 @@ my_questions = [
 
 #### ユーザーから見たプログラム
 ```
+問題: 1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+1
+----- You're wrong! Try again. -----
 
+問題: 1
+(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕
+Modern technology has greatly (     ) our lives.
+① considered  ② improved  ③ included  ④ concerned
+2
+----- That's right! -----
+
+問題: 2
+(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕
+The quality of life is not directly (     ) to energy use.
+① produced  ② improved  ③ provided  ④ related
 ```
 
 
