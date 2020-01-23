@@ -13,6 +13,19 @@
 選択肢は ① considered  ② improved  ③ included  ④ concerned
 （数字で答えさせる）
 
+#### コードの骨格
+```python
+print(???)
+print(???)
+print(???)
+response = input(???)
+
+if response == ???:
+    print("正解です")
+else:
+    print("不正解です")
+```
+
 #### ヒント：
 - 使う ファンクションは `input()`
 - ４択はDictionary に埋め込む
@@ -378,6 +391,8 @@ for q in questions:
 
 #### コードの骨格
 ```python
+import random
+
 # 出題する回数
 number_of_times = 5
 
@@ -475,6 +490,7 @@ for i in range(0, number_of_times):
     
 #### コードの骨格
 ```python
+import random
 # 選ばれたquestion配列番号を記録しておくリスト
 chosen_q_nums = []
 
@@ -544,6 +560,7 @@ choose 1~4: 4
 <p>
 
 ```python
+import random
 # 選ばれたquestion配列番号を記録しておくリスト
 chosen_q_nums = []
 
@@ -586,6 +603,7 @@ questionを表示する機能をファンクションにまとめる
 
 #### コードの骨格
 ```python
+import random
 # 1つのquestionを表示するファンクションを定義
 def show_question(question):
     print("問題: " + str(??["q_num"]))
@@ -632,6 +650,7 @@ for i in range(0, len(questions)):
 <p>
 
 ```python
+import random
 # 1つのquestionを表示するファンクションを定義
 def show_question(question):
     print("問題: " + str(question["q_num"]))
