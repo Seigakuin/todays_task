@@ -1,5 +1,9 @@
 # Target1900 クイズアプリを作ろう!
 
+<br></br>
+
+---
+
 ## Level 1:
 
 
@@ -51,8 +55,9 @@ else:
 </p>
 </details>
 
----
+<br></br>
 
+---
 
 ## Level 2:
 
@@ -132,6 +137,8 @@ else:
 
 </p>
 </details>
+
+<br></br>
 
 ---
 
@@ -229,6 +236,9 @@ while True:
 
 </p>
 </details>
+
+
+<br></br>
 
 ---
 
@@ -372,6 +382,9 @@ for q in questions:
 </p>
 </details>
 
+<br></br>
+
+---
 
 ## Level 5:
 
@@ -470,7 +483,9 @@ for i in range(0, number_of_times):
 </p>
 </details>
 
+<br></br>
 
+---
 
 
 ## Level 6:
@@ -589,7 +604,9 @@ for i in range(0, len(questions)):
 </p>
 </details>
 
+<br></br>
 
+---
 
 
 ## Level 7:
@@ -687,6 +704,9 @@ for i in range(0, len(questions)):
 </details>
 
 
+<br></br>
+
+---
 
 
 
@@ -776,7 +796,9 @@ while True:
 </details>
 
 
+<br></br>
 
+---
 
 
 ## Level 9:
@@ -900,7 +922,9 @@ while True:
 </details>
 
 
+<br></br>
 
+---
 
 
 ## Level 10:
@@ -1025,7 +1049,7 @@ The quality of life is not directly (     ) to energy use.
 
 <details>
 
-<summary> <b> Level 10 表示 </b> </summary>
+<summary> <b> Level 10 答え表示 </b> </summary>
 
 <p>
 
@@ -1085,11 +1109,18 @@ for q in my_questions_instances.questions:
 </p>
 </details>
 
+<br></br>
 
+---
 
 ## Level 11:
 ### 課題：
-Questionsクラスにすべての機能を入れ、プログラムをシンプルにする！
+Questionsクラスにすべての機能を入れ、プログラムをシンプルにする！   
+    　　
+
+**利点：**
+- たった一つのメソッド(ファンクション)の呼び出しでTargetクイズアプリを呼び出せる様になる       
+- クラスにすべての機能を埋め込む事によって、コードがシンプルで理解しやすくなる
 
 #### ヒント：
 
@@ -1142,6 +1173,8 @@ class Questions:
             # できたQuestionインスタンスをself.questionsリストに付け足す
             self.questions.append(q_instance)
 
+
+    # NEW!!!
     def start_quiz(self):
         for ??? in ???:
             while True:
@@ -1173,6 +1206,8 @@ class Question:
 # Questionsクラスのインスタンスを作る
 questions_instance = Questions(my_questions)
 
+# NEW!!!
+# たったこれだけで、クイズがはじまる！
 questions_instance.???
 
 
@@ -1180,14 +1215,12 @@ questions_instance.???
 
 
 #### 使用するデータ(コピペで良い)
-```python
 
-```
+Level 10 と同じ
 
 #### ユーザーから見たプログラム
-```
 
-```
+Level 10 と同じ
 
 
 <details>
@@ -1256,7 +1289,6 @@ class Questions:
                     break
                 else:
                     print("----- You're wrong! Try again. -----\n")
-
 
 # クラスを作成
 class Question:
