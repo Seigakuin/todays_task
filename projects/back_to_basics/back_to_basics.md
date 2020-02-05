@@ -1319,6 +1319,177 @@ questions_instance.start_quiz()
 </details>
 
 
+## Level 12:
+### 課題：
+すべてを１つのpyファイルに入れるのではなく、ファイルを分けよう！
+
+#### 条件：
+```
+main.py (ここにクイズを走らせるためのコードが入っている)
+    |- src という名前のフォルダ
+        |- questions.py  (Questionsクラスがはいっている)
+        |- question.py (Questionsクラスがはいっている)
+```
+#### ヒント：
+`main.py`
+```python
+# NEW!!
+# ここでQuestionsクラスをインポートする
+from ??? import Questions
+
+
+my_questions = [
+   ???
+]
+
+# NEW!!
+# クイズゲームを走らせるときに正しいかどうかを確認してくれる
+if __name__ == "__main__":
+    ??? = ???
+
+    ???.start_quiz()
+```
+
+`src/questions.py`
+```python
+from ??? import Question
+
+class Questions:
+    def __init__(self, questions):
+        # まずは複数のQuestionインスタンスを入れる空のリストを作る
+        self.questions = []
+        # ここでquestionsリストを一つひとつQuestionクラスに変換し、
+        # self.questionsリストに足していく
+        for q in questions:
+            # 一つのquestion DictionaryをQuestionインスタンスに変換
+            q_instance = Question(q)
+            # できたQuestionインスタンスをself.questionsリストに付け足す
+            self.questions.append(q_instance)
+
+    def start_quiz(self):
+        for q in self.questions:
+            while True:
+                # 質問を呼び出す
+                q.show_question()
+                response = input()
+                if q.answer == int(response):
+                    print("----- That's right! -----\n")
+                    break
+                else:
+                    print("----- You're wrong! Try again. -----\n")
+
+```
+
+`src/question.py`
+```python
+# クラスを作成
+class Question:
+    # 引数 question を クラス Question に渡す
+    def __init__(self, question):
+        self.jp = question["jp"]
+        self.en = question["en"]
+        self.choices = question["choices"]
+        self.answer = question["answer"]
+        self.q_num = question["q_num"]
+
+    def show_question(self):
+        print("問題: " + str(self.q_num))
+        print(self.jp)
+        print(self.en)
+        print(self.choices)
+```
+
+
+<details>
+
+<summary> <b> Level 12表示 </b> </summary>
+
+<p>
+
+`main.py`
+```python
+from src.questions import Questions
+
+
+my_questions = [
+    {
+        "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
+        "en": "Modern technology has greatly (     ) our lives.",
+        "choices": "① considered  ② improved  ③ included  ④ concerned",
+        "answer": 2,
+        "q_num": 1,
+    },
+    {
+        "jp": "(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕",
+        "en": "The quality of life is not directly (     ) to energy use.",
+        "choices": "① produced  ② improved  ③ provided  ④ related",
+        "answer": 4,
+        "q_num": 2,
+    },
+    {
+        "jp": "(3) 言語はすべて私たちに社会に関する貴重な情報を[与える]ことができる。 〔p.18，3〕",
+        "en": "All languages can (     ) us with valuable information about society.",
+        "choices": "① concern  ② relate  ③ include  ④ provide",
+        "answer": 4,
+        "q_num": 3,
+    },
+    {
+        "jp": "(4) なぜ政府はその難民たちを違法と[見なす]のか。 〔p.18，4〕",
+        "en": "Why does the Government (     ) those refugees illegal?",
+        "choices": "① consider  ② encourage  ③ improve  ④ provide",
+        "answer": 1,
+        "q_num": 4,
+    },
+]
+
+if __name__ == "__main__":
+    # my_questions変数の中にあるデータをQuestionsクラスに渡し、
+    # Questionsクラスのインスタンスを作る
+    questions_instance = Questions(my_questions)
+
+    questions_instance.start_quiz()
+
+```
+
+`questions.py`
+```python
+from src.question import Question
+
+
+class Questions:
+    def __init__(self, questions):
+        # まずは複数のQuestionインスタンスを入れる空のリストを作る
+        self.questions = []
+        # ここでquestionsリストを一つひとつQuestionクラスに変換し、
+        # self.questionsリストに足していく
+        for q in questions:
+            # 一つのquestion DictionaryをQuestionインスタンスに変換
+            q_instance = Question(q)
+            # できたQuestionインスタンスをself.questionsリストに付け足す
+            self.questions.append(q_instance)
+
+    def start_quiz(self):
+        for q in self.questions:
+            while True:
+                # 質問を呼び出す
+                q.show_question()
+                response = input()
+                if q.answer == int(response):
+                    print("----- That's right! -----\n")
+                    break
+                else:
+                    print("----- You're wrong! Try again. -----\n")
+
+```
+
+`question.py`はヒントと同じなので省略
+
+</p>
+</details>
+
+
+
+
 ## Level ??:
 ### 課題：
 
