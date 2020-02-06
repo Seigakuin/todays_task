@@ -1326,9 +1326,9 @@ questions_instance.start_quiz()
 #### 条件：
 ```
 main.py (ここにクイズを走らせるためのコードが入っている)
-    |- src という名前のフォルダ
-        |- questions.py  (Questionsクラスがはいっている)
-        |- question.py (Questionsクラスがはいっている)
+|-src という名前のフォルダ
+    |-questions.py  (Questionsクラスがはいっている)
+    |-question.py (Questionクラスがはいっている)
 ```
 #### ヒント：
 `main.py`
