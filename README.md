@@ -10,6 +10,11 @@
 
 <br></br>
 
+### :game_die: [すごろくゲーム](https://github.com/Seigakuin/todays_task/blob/master/projects/sugoroku/sugoroku.md) :game_die:
+
+<br></br>
+
+
 ### :us: [Target1900クイズアプリ](https://github.com/Seigakuin/todays_task/blob/master/projects/back_to_basics/back_to_basics.md) :gb:
 
 <br></br>
