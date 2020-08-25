@@ -1,5 +1,63 @@
 # :computer: 聖学院プログラミング部 :computer:
 
+## 2020年度 プログラミング部
+
+### [JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript) 
+
+* 使用する言語
+
+### [p5.js](https://p5js.org/) 
+
+* 使用するJavaScriptライブラリ
+
+### [p5.js リファレンス](https://p5js.org/reference/) 
+
+* 関数や定数の説明
+
+### [p5.js Web Editor](https://editor.p5js.org/) 
+
+* ブラウザ上でコードを書くことができる
+
+
+
+## p5.js 学習
+
+1. Step1: `setup()`と`draw()`関数を理解しよう
+   * `setup()`: プログラムが始まったときに呼ばれる関数
+   * `draw()`: `setup()`直後に呼ばれる関数　プログラムが終了するまで呼ばれ続ける関数（フレームレートの早さで呼ばれ続ける）
+2. Step2: `createCanvas(w, h)`を理解しよう
+   *  `createCanvas(w, h)`: HTMLドキュメントに描くためのキャンバスを作成する関数
+     * `w`: 幅（ピクセル）
+     * `h`: 高さ（ピクセル）
+
+3. Step3: `background()`を理解しよう　RGB色を理解しよう
+
+   * `background(color)`
+
+     * `color` : 0 ~ 255 までの数字を入れると黒〜白を表現する
+
+   * `background(r, g, b)`
+
+     * `r` : 0 ~ 255 赤の数字
+     * `g` : 0 ~ 255 緑の数字
+     * `b` : 0 ~ 255 青の数字
+
+     
+
+4. Step4:[ `ellipse()`](https://p5js.org/reference/#/p5/ellipse)を使って円を描こう
+
+   * `ellipse(x, y, w, h)`
+     * `x` : x座標
+     * `y` : y座標
+     * `w` : 幅
+     * `h` : 高さ
+
+
+
+----
+
+## 2019年度 プログラミング部
+
 :imp: [**始め方**](https://github.com/Seigakuin/todays_task/blob/master/Environment.md) :smiling_imp:
 
 ## :sparkles: 本日の課題

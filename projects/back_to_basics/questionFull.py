@@ -1,39 +1,7 @@
-# Level : 11
-# Questions クラスにstart_quizメソッドを作る
-import random
-
-my_questions = [
-    {
-        "jp": "(1) 現代の科学技術は私たちの生活を大いに[向上させた]。 〔p.18，1〕",
-        "en": "Modern technology has greatly (     ) our lives.",
-        "choices": "① considered  ② improved  ③ included  ④ concerned",
-        "answer": 2,
-        "q_num": 1,
-    },
-    {
-        "jp": "(2) 生活の質はエネルギー使用に直接[関連し]てはいない。 〔p.18，2〕",
-        "en": "The quality of life is not directly (     ) to energy use.",
-        "choices": "① produced  ② improved  ③ provided  ④ related",
-        "answer": 4,
-        "q_num": 2,
-    },
-    {
-        "jp": "(3) 言語はすべて私たちに社会に関する貴重な情報を[与える]ことができる。 〔p.18，3〕",
-        "en": "All languages can (     ) us with valuable information about society.",
-        "choices": "① concern  ② relate  ③ include  ④ provide",
-        "answer": 4,
-        "q_num": 3,
-    },
-    {
-        "jp": "(4) なぜ政府はその難民たちを違法と[見なす]のか。 〔p.18，4〕",
-        "en": "Why does the Government (     ) those refugees illegal?",
-        "choices": "① consider  ② encourage  ③ improve  ④ provide",
-        "answer": 1,
-        "q_num": 4,
-    },
-]
+import json
 
 
+# これは青写真
 class Questions:
     def __init__(self, questions):
         # まずは複数のQuestionインスタンスを入れる空のリストを作る
@@ -41,6 +9,7 @@ class Questions:
         # ここでquestionsリストを一つひとつQuestionクラスに変換し、
         # self.questionsリストに足していく
         for q in questions:
+            print(f"q: {type(q)}")
             # 一つのquestion DictionaryをQuestionインスタンスに変換
             q_instance = Question(q)
             # できたQuestionインスタンスをself.questionsリストに付け足す
@@ -59,6 +28,7 @@ class Questions:
                     print("----- You're wrong! Try again. -----\n")
 
 
+# これも青写真
 # クラスを作成
 class Question:
     # 引数 question を クラス Question に渡す
@@ -76,8 +46,17 @@ class Question:
         print(self.choices)
 
 
-# my_questions変数の中にあるデータをQuestionsクラスに渡し、
+# ここから実行が始まる
+
+# 1. 同じフォルダにあるtarget.jsonを開く
+with open("./target.json", "r") as f:
+    # 2. questions 変数に読み込んだデータを格納
+    questions = json.load(f)
+    # このデータの中身を見たければ以下のコードをコメントアウトして見てみる
+    # print(questions)
+
+# questions変数の中にあるデータをQuestionsクラスに渡し、
 # Questionsクラスのインスタンスを作る
-questions_instance = Questions(my_questions)
+questions_instance = Questions(questions)
 
 questions_instance.start_quiz()
