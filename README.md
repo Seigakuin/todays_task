@@ -2,6 +2,8 @@
 
 ## 2020年度 プログラミング部
 
+## ![p5logo](docs/p5js/pics/p5logo.png)![jslogo](docs/p5js/pics/jslogo.png)
+
 ## [p5.js 学習ページ](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js.md)
 
 

@@ -1,3 +1,5 @@
+![p5logo](pics/p5logo.png)
+
 ## p5.js 学習
 
 ## [Step1-5](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-1.md)
