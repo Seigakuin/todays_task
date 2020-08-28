@@ -68,11 +68,7 @@ function draw() {
 
   // sun
   fill(249, 255, 47)
-
-
   ellipse(350, 50, 70, 70)
-
-
 
   // chimney, roof
   fill(255, 28, 28)
