@@ -31,7 +31,7 @@
 ----
 
 <details>
-<summary><b> 2019年度 プログラミング部 </b></summary>
+<summary><h1> 2019年度 プログラミング部 </h1></summary>
 
 
 
