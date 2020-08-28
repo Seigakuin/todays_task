@@ -91,6 +91,6 @@ function draw() {
 ```
 
 
-
+<image src="./pics/step5.png" alt="house" style="width: 200px" />
 ![step8-2](pics/step5.png)
 
