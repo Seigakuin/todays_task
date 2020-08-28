@@ -1,4 +1,4 @@
-![p5logo](pics/p5logo.png)
+![p5logo](pics/p5logo.png)![jslogo](pics/jslogo.png)
 
 ## p5.js 学習
 
