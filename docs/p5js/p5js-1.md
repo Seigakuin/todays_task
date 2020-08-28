@@ -91,5 +91,5 @@ function draw() {
 ```
 
 
-<image src="./pics/step5.png" alt="house" width="100"  />
+<image src="./pics/step5.png" alt="house" width="200"  />
 
