@@ -55,6 +55,46 @@
 ### Task: 簡単な絵を描こう
 
 * `ellipse()`, `rect()`, `fill()`, `background()`を使って絵を描こう
+  * コメントを描くときは `//`
+
+```js
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  // sky
+  background(153, 204, 255);
+
+  // sun
+  fill(249, 255, 47)
+
+
+  ellipse(350, 50, 70, 70)
+
+
+
+  // chimney, roof
+  fill(255, 28, 28)
+  rect(190, 160, 20, 70)
+  triangle(150, 170, 50, 250, 250, 250)
+
+  // house body
+  fill(255, 255, 255)
+  rect(80, 250, 140, 100)
+
+  // door
+  fill(255, 125, 24)
+  rect(160, 290, 30, 60)
+
+  // ground
+  fill(0, 255, 85)
+  rect(0, 350, 400, 50)
+
+}
+```
+
+
 
 ![step8-2](pics/step5.png)
 
