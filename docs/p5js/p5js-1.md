@@ -56,3 +56,5 @@
 
 * `ellipse()`, `rect()`, `fill()`, `background()`を使って絵を描こう
 
+![step8-2](pics/step5.png)
+
