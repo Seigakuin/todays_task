@@ -2,7 +2,15 @@
 
 ## [Step1-5](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-1.md)
 
+* `setup()`, `draw()`, `createCanvas()`, `background()`, `ellipse()`,  `rect()`, `fill()` の理解
+* RGB色の理解
+* x, y 座標の理解
+
 ## [Step6-8](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-2.md)
+
+* 変数(variable)の理解  `let`, `const`, `var`
+* 関数(function)の理解、関数の引数(argument)の理解
+* for文の理解
 
 
 

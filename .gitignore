@@ -12,3 +12,5 @@ classes.py
 .ropeproject/
 .ipynb_checkpoints/
 .venv
+
+**/img/*.png
