@@ -32,8 +32,9 @@
 
 <details>
 
-<summary><h1>2019年度 プログラミング部</h1></summary>
+<summary><b> 2019年度 プログラミング部 </b></summary>
 
+<p>
 :imp: [**始め方**](https://github.com/Seigakuin/todays_task/blob/master/Environment.md) :smiling_imp:
 
 ## :sparkles: 本日の課題
@@ -83,5 +84,5 @@
 ### :boom: [Pygame Zero- Dice](https://github.com/Seigakuin/todays_task/blob/master/projects/pygame_zero/dice_project/dice.md) :boom:
 
 <br></br>
-
+</p>
 </details>
