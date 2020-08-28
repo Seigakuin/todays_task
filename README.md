@@ -31,7 +31,7 @@
 ----
 
 <details>
-<summary><h1> 2019年度 プログラミング部 </h1></summary>
+<summary><b style="font-size: 40px"> 2019年度 プログラミング部 </b></summary>
 
 
 
