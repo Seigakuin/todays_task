@@ -2,7 +2,7 @@
 
 ## [Step1-5](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-1.md)
 
-## [Step6-7](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-1.md)
+## [Step6-8](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-2.md)
 
 
 

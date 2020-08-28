@@ -133,7 +133,7 @@ function draw() {
 
 
 
-![step8-1](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/pics/step8-1.png)
+![step8-1](pics/step8-1.png)
 
 
 
@@ -159,4 +159,4 @@ function draw() {
 
 ```
 
-![step8-2](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/pics/step8-2.png)
+![step8-2](pics/step8-2.png)
