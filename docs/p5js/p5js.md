@@ -15,9 +15,11 @@
 * for文の理解
 
 
+## [Step9-10](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-3.md)
 
-
-
+* アニメーションの初歩
+* if文の理解
+* 変数(variable)の利用
 
 
 ---
