@@ -76,5 +76,5 @@ function draw() {
 }
 ```
 
-
+![step8-2](pics/step11.png)
 
