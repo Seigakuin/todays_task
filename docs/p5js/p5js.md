@@ -1,6 +1,6 @@
 ![p5logo](pics/p5logo.png)![jslogo](pics/jslogo.png)
 
-## p5.js 学習
+# p5.js 学習
 
 ## [Step1-5](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-1.md)
 
@@ -28,6 +28,12 @@
   * `constructor()`の理解
   * メソッド(クラスが持っている関数)の理解
 
+
+
+## [Step11]()
+
+* たくさんの円を描く(for文を使う)
+* それぞれ円がランダムに動く
 
 
 ---

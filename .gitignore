@@ -14,3 +14,4 @@ classes.py
 .venv
 
 **/img/*.png
+.DS_Store
