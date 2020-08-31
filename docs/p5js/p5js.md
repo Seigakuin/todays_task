@@ -15,11 +15,19 @@
 * for文の理解
 
 
-## [Step9-10](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-3.md)
+## [Step9](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-3.md)
 
 * アニメーションの初歩
 * if文の理解
 * 変数(variable)の利用
+
+
+## [Step10](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-4.md)
+
+* クラス(Class)の利用
+  * `constructor()`の理解
+  * メソッド(クラスが持っている関数)の理解
+
 
 
 ---
