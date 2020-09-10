@@ -169,10 +169,4 @@ class Ball {
 }
 ```
 
-![sketch](https://editor.p5js.org/sf_/embed/ji8ppQaji)
-
-<<<<<<< HEAD
-=======
-
->>>>>>> dda02d399109363346fc1e2bb754479e1fd386ed
-
+![sketch](https://editor.p5js.org/sf_/full/ji8ppQaji)
