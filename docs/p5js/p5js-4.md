@@ -145,6 +145,9 @@ function draw() {
 * 新しくなった`Ball`クラスを初期化し、インスタンスを`ball`変数に割り当てよう
 
 
+<iframe src="https://editor.p5js.org/sf_/embed/ji8ppQaji"></iframe>
+
+
 ```js
 let ball
 
@@ -167,5 +170,5 @@ class Ball {
 ```
 
 
-<iframe src="https://editor.p5js.org/sf_/embed/ji8ppQaji"></iframe>
+
 
