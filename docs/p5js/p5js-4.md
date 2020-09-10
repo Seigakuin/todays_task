@@ -166,6 +166,6 @@ class Ball {
 }
 ```
 
-[![sketch]](https://editor.p5js.org/sf_/embed/ji8ppQaji)
+![sketch](https://editor.p5js.org/sf_/embed/ji8ppQaji)
 
 
