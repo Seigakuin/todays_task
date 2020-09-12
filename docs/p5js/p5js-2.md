@@ -1,4 +1,4 @@
-## 2020年度 プログラミング部
+## <span style="background: #6a67ce;">2020年度 プログラミング部</span>
 
 ## p5.js 学習
 
