@@ -45,6 +45,11 @@
 
 
 
+## [Step13](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-7.md)
+
+* Vectorを使って座標、動きを表現しよう
+* `createVector()`関数でベクトルオブジェクトを作成する
+
 
 
 
