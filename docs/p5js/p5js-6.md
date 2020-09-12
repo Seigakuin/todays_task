@@ -11,54 +11,86 @@
 
 
 
-
-
-
-
-
-
-
-
-#### Task: 
+#### Task: Ballを上下左右の壁から跳ね返るようにしよう
 
 ##### Hint: 
-
-
-* 
+* `width`と`height`は画面の大きさを取得してくれる変数
+* `Ball`の引数はすべて`random()`で生成
+* 上下の壁から`Ball`が跳ね返るように`edges()`メソッドにコードを追記する
 
 
 
 ```js
 let balls = []
+const NUM_BALLS = 30  // NUM_BALLS変数でボールの数を管理
 
 function setup() {
   createCanvas(400, 400);
 
   // !! ここでBallインスタンスを作成
-  for (???; ???; ???) {
+  for (let i = 0; i < NUM_BALLS; i++) {
+    // Ballがランダムな大きさ
     balls.push(new Ball(
-      random(???, ???),
-      random(???, ???),
-      random(???, ???)
+      random(10, width),  // x 
+      random(0, height),  // y
+      random(10, 100),  // r 直径
+      random(-10, 10),  // xspeed 
+      random(-10, 10)  // yspeed
     ))
   }
 }
 
 class Ball {
-  // ここは以前と同じ
+  constructor(x, y, r, xspeed, yspeed) {
+    this.x = x
+    this.y = y
+    this.r = r
+    // 縦の動きを加える yspeed (speedをxspeedに変更)
+    this.xspeed = xspeed
+    this.yspeed = yspeed
+  }
+
+  show() {
+    circle(this.x, this.y, this.r)
+  }
+
+  update() {
+    this.x = this.x + this.xspeed
+    this.y = this.y + this.yspeed
+  }
+
+  edges() {
+    
+    if (this.x >= 400 && this.xspeed > 0) {
+      this.xspeed = this.xspeed * -1
+    }
+    if (this.x < 0 && this.xspeed < 0) {
+      this.xspeed = this.xspeed * -1
+    }
+    // 上下の壁からも跳ね返るようにする
+    if (this.y >= 400 && this.yspeed > 0) {
+      this.yspeed = this.yspeed * -1
+    }
+    if (this.y < 0 && this.yspeed < 0) {
+      this.yspeed = this.yspeed * -1
+    }
+  }
 }
 
 function draw() {
   background(220);
 
   // !! ここでBallを描く
-  for (???; ???; ???) {
-    ???.update()
-    ???.edges()
-    ???balls[i].show()
+  for (let i = 0; i < NUM_BALLS; i++) {
+    balls[i].update()
+    balls[i].edges()
+    balls[i].show()
   }
 }
 ```
 
-![step8-2](pics/step11.png)
+![step12](pics/step12.png)
 
+
+
+# [sketch](https://editor.p5js.org/sf_/present/rtvBWovEO)

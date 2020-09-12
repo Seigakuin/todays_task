@@ -36,6 +36,18 @@
 * それぞれ円がランダムに動く
 
 
+
+## [Step12](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-6.md)
+
+* 円の数を`NUM_BALLS`変数で管理する
+* 円が上下左右の壁から跳ね返るようにする
+* 円のサイズがランダムに生成されるようにする
+
+
+
+
+
+
 ---
 
 
