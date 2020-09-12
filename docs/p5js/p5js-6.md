@@ -22,20 +22,20 @@
 
 ```js
 let balls = []
-const NUM_BALLS = 30  // NUM_BALLS変数でボールの数を管理
+const NUM_BALLS = ???  // NUM_BALLS変数でボールの数を管理
 
 function setup() {
   createCanvas(400, 400);
 
   // !! ここでBallインスタンスを作成
-  for (let i = 0; i < NUM_BALLS; i++) {
+  for (let i = 0; i < ???; i++) {
     // Ballがランダムな大きさ
     balls.push(new Ball(
       random(10, width),  // x 
       random(0, height),  // y
-      random(10, 100),  // r 直径
-      random(-10, 10),  // xspeed 
-      random(-10, 10)  // yspeed
+      ???,  // r 直径
+      ???,  // xspeed 
+      ???  // yspeed
     ))
   }
 }
@@ -68,10 +68,10 @@ class Ball {
       this.xspeed = this.xspeed * -1
     }
     // 上下の壁からも跳ね返るようにする
-    if (this.y >= 400 && this.yspeed > 0) {
+    if (??? && ???) {
       this.yspeed = this.yspeed * -1
     }
-    if (this.y < 0 && this.yspeed < 0) {
+    if (??? && ???) {
       this.yspeed = this.yspeed * -1
     }
   }
@@ -81,7 +81,7 @@ function draw() {
   background(220);
 
   // !! ここでBallを描く
-  for (let i = 0; i < NUM_BALLS; i++) {
+  for (let i = 0; i < ???; i++) {
     balls[i].update()
     balls[i].edges()
     balls[i].show()
