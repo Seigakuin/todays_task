@@ -178,6 +178,6 @@ function draw() {
 
 ![step13](pics/step12.png)
 
-# [sketch](https://editor.p5js.org/sf_/present/LxIk8EaPw)
+# [sketch](https://editor.p5js.org/sf_/sketches/LxIk8EaPw)
 
 
