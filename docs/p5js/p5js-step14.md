@@ -181,6 +181,6 @@ class Paddle {
 
 ![step13](pics/step14-1.png)
 
-# [sketch](https://editor.p5js.org/sf_/sketches/kSFhT69Ao)
+# [sketch](https://editor.p5js.org/sf_/sketches/kSFhT69Ao){:target="_blank"}
 
 
