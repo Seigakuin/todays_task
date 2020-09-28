@@ -163,8 +163,30 @@ class Ball {
     this.speed = ???
   }
   
-  // 以下は前と同じ
-  // ...
+
+  show() {
+    circle(this.x, this.y, 150)
+  }
+
+  update() {
+    this.x = this.x + this.xspeed
+    this.y = this.y + this.yspeed
+  }
+
+  edges() {
+    if (this.x >= 400 && this.xspeed > 0) {
+      this.xspeed = this.xspeed * -1
+    }
+    if (this.x < 0 && this.xspeed < 0) {
+      this.xspeed = this.xspeed * -1
+    }
+    if (this.y >= 400 && this.yspeed > 0) {
+      this.yspeed = this.yspeed * -1
+    }
+    if (this.y < 0 && this.yspeed < 0) {
+      this.yspeed = this.yspeed * -1
+    }
+  }
 
 }
 ```
