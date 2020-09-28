@@ -1,89 +1,77 @@
 let paddle
-let ball
-let bricks = []
-let playingGame = false
-let youWin = false
-const NUM_BALLS = 60
-let winText
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
+  // Paddleクラスのインスタンスを作成
   paddle = new Paddle()
-  ball = new Ball()
-
-  for (let i = 0; i < NUM_BALLS; i++) {
-    bricks.push(new Brick())
-  }
-
-  createText()
 }
 
 function draw() {
   background(255)
 
+  // Paddleインスタンスのdisplay(), update(), checkEdges()を呼び出す（繰り返し）
   paddle.display()
-  if (playingGame) paddle.update()
-  if (playingGame) paddle.checkEdges()
-
-  ball.display()
-  if (playingGame) ball.update()
-  if (playingGame) ball.checkEdges()
-
-  if (ball.meets(paddle) && ball.direction.y > 0) ball.direction.y *= -1
-
-  for (let j = bricks.length - 1; j >= 0; j--) {
-    if (ball.hits(bricks[j])) {
-      if (bricks[j].r > 40) {
-        bricks[j].r = bricks[j].r / 2
-      } else {
-        bricks.splice(j, 1)
-      }
-      ball.direction.y *= -1
-    }
-    if (bricks[j] === undefined) continue
-    bricks[j].display()
-  }
-
-  if (ball.pos.y > height) {
-    playingGame = false
-    ball.pos = createVector(width / 2, height / 2)
-  }
-
-  if (bricks.length === 0) {
-    youWin = true
-    playingGame = false
-  }
-
-  if (youWin) {
-    winText.style("display", "block")
-  } else {
-    winText.style("display", "none")
-  }
+  paddle.update()
+  paddle.checkEdges()
 }
 
 function keyPressed() {
   if (key === "a" || key === "A") {
+    // キーボードのaもしくはAが押された時にPaddleインスタンスのi isMovingRight を true に変更
     paddle.isMovingLeft = true
   } else if (key === "d" || key === "D") {
+    // キーボードの d もしくは D が押された時にPaddleインスタンスのi isMovingLeft を true に変更
     paddle.isMovingRight = true
-  } else if (key === "s" || key === "S") {
-    playingGame = true
-    youWin = false
-
-    if (bricks.length === 0) {
-      for (let i = 0; i < 20; i++) {
-        bricks.push(new Brick())
-      }
-    }
   }
 }
 
 function keyReleased() {
+  // キーボードのキーを押しているのを離したら Paddleインスタンスの isMovingLeft, isMovingRight を false に変更
   paddle.isMovingLeft = false
   paddle.isMovingRight = false
 }
 
-function createText() {
-  winText = createP("YOU WIN!!!!!!")
-  winText.position(width / 2 - 50, 80)
+class Paddle {
+  constructor() {
+    this.w = 160 // w = 幅
+    this.h = 20 // h = 高さ
+
+    this.isMovingLeft = false // 左に動いているか Boolean
+    this.isMovingRight = false // 右に動いているか Boolean
+
+    // pos = 位置を示すVector
+    this.pos = createVector(width / 2, height - 40)
+  }
+
+  display() {
+    // 長方形を表示
+    rect(this.pos.x, this.pos.y, this.w, this.h)
+  }
+
+  move(step) {
+    // 動きを司る関数 pos.x （横位置） に 引数として渡す step の量を動かす
+    this.pos.x += step
+  }
+
+  update() {
+    if (this.isMovingRight) {
+      // もし、 isMovingRight が true だとしたら右に 20ピクセル動かす
+      this.move(20)
+    } else if (this.isMovingLeft) {
+      // もし、 isMovingLeft が true だとしたら左に 20ピクセル動かす
+      this.move(-20)
+    }
+  }
+
+  checkEdges() {
+    // 画面外に移動しないように工夫
+    if (this.pos.x < 0) {
+      // もし、pos.x の位置が左画面外に移動したら、位置を画面左端に戻す
+      this.pos.x = 0
+    } else if (this.pos.x > width - this.w) {
+      // もし、Paddleの右端が画面右端に移動したら、位置を画面右端に戻す
+      // ＊ pos.xはPaddleの左上の位置を示すので、右端を計算するにはPaddleの幅を足して計算をしなければならない
+      this.pos.x = width - this.w
+    }
+  }
 }
