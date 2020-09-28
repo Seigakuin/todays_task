@@ -52,6 +52,15 @@
 
 
 
+## [Step14](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-step14.md)
+
+* Paddleクラスを作ろう
+* Paddleをキーボードを使って動かそう
+
+
+
+
+
 
 ---
 
