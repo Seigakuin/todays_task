@@ -59,6 +59,11 @@
 
 
 
+## [Step15](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-step15.md)
+
+* Ballクラスに衝突判定をするメソッドを定義
+* draw関数の調整
+
 
 
 

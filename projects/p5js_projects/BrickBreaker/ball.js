@@ -37,10 +37,4 @@ class Ball {
       return true
     } else return false
   }
-
-  hits(brick) {
-    let distance = dist(this.pos.x, this.pos.y, brick.pos.x, brick.pos.y)
-    if (distance < this.r + brick.r) return true
-    else return false
-  }
 }
