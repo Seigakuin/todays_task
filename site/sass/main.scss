@@ -1,0 +1,44 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utility";
+
+@import "components/button";
+
+@import "layout/header";
+@import "pages/home";
+
+/*---------------------------------
+  old
+   --------------------------*/
+.wf-hannari {
+  font-family: "Hannari";
+}
+
+.wf-sawarabimincho {
+  font-family: "Sawarabi Mincho";
+}
+
+.embed-container {
+  height: 0;
+  overflow: hidden;
+  max-width: 600px;
+  padding-bottom: 600px;
+  position: relative;
+}
+
+.embed-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: aqua;
+  /* border: solid 2px; */
+}
+
+/* css */

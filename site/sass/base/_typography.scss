@@ -1,0 +1,54 @@
+body {
+  font-family: "Hannari", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 3rem;
+}
+
+/* HEADING */
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+
+  backface-visibility: hidden; /* fix the shake in animation end */
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 7rem;
+    text-align: center;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: 3; */
+    /* animation-delay: 3s; */
+  }
+
+  &--sub1 {
+    display: block;
+    font-size: 4.2rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    text-align: center;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 2.5s; */
+  }
+
+  &--sub2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    text-align: center;
+    animation: moveInRight 1s ease-out;
+  }
+}
