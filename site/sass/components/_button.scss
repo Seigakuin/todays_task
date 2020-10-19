@@ -25,6 +25,11 @@
     color: $color-grey-dark;
   }
 
+  &--pink {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
   &::after {
     content: ""; /* needed */
     display: inline-block; /* needed */

@@ -66,6 +66,14 @@
 
 
 
+## [Step16](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-step16.md)
+
+* Brickをたくさん表示しよう
+* Brickクラスの作成、Ballクラスの調整
+* setup関数、draw関数の調整
+
+
+
 
 ---
 

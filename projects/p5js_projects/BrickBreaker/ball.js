@@ -19,8 +19,6 @@ class Ball {
   checkEdges() {
     if (this.pos.y < this.r && this.direction.y < 0) this.direction.y *= -1
 
-    // if (this.pos.y > height - this.r && this.direction.y > 0) this.direction.y *= -1
-
     if (this.pos.x < this.r && this.direction.x < 0) this.direction.x *= -1
 
     if (this.pos.x > width - this.r && this.direction.x > 0)
@@ -36,5 +34,20 @@ class Ball {
     ) {
       return true
     } else return false
+  }
+  // NEW!!
+  hits(brick) {
+    // brick.pos はsquareの左上の座標を指す
+    // brickの真ん中からのdistanceを得たいため
+    // brick.pos.xにbrick.r(サイドｎ長さ)の半分を足し
+    // squareの真ん中を指すようにする
+    let distance = dist(
+      this.pos.x,
+      this.pos.y,
+      brick.pos.x + brick.r / 2,
+      brick.pos.y + brick.r / 2
+    )
+    if (distance < this.r + brick.r) return true
+    else return false
   }
 }

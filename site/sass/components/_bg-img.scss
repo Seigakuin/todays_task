@@ -1,0 +1,18 @@
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.81),
+      rgba($color-primary-dark, 0.82)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 80%, 100% 50%, 100% 100%, 0 100%);
+  z-index: -10;
+}
