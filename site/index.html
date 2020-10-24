@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>聖学院プログラミング部 | 記念祭</title>
     <link rel="stylesheet" href="css/icon-font.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02</span>Games</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Members</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.svg" alt="Logo" class="header__logo" />
@@ -21,7 +53,7 @@
           <span class="heading-primary--sub1">プログラミング部</span>
           <span class="heading-primary--sub2">2020年度 記念祭企画</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated"
+        <a href="#section-tours" class="btn btn--white btn--animated"
           >ゲームを体験する<span style="font-size: 1.5rem;">&nbsp;</span></a
         >
       </div>
@@ -124,7 +156,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             部員
@@ -157,7 +189,7 @@
                     <p class="card__name-only">GAME NAME</p>
                     <p class="card__difficulty">DIFFICULTY: 2</p>
                   </div>
-                  <a href="#" class="btn btn--white">PLAY NOW!</a>
+                  <a href="#popup" class="btn btn--white">PLAY NOW!</a>
                 </div>
               </div>
             </div>
@@ -187,7 +219,7 @@
                     <p class="card__name-only">GAME NAME</p>
                     <p class="card__difficulty">DIFFICULTY: 3</p>
                   </div>
-                  <a href="#" class="btn btn--white">PLAY NOW!</a>
+                  <a href="#popup" class="btn btn--white">PLAY NOW!</a>
                 </div>
               </div>
             </div>
@@ -217,7 +249,7 @@
                     <p class="card__name-only">GAME NAME</p>
                     <p class="card__difficulty">DIFFICULTY: 5</p>
                   </div>
-                  <a href="#" class="btn btn--white">PLAY NOW!</a>
+                  <a href="#popup" class="btn btn--white">PLAY NOW!</a>
                 </div>
               </div>
             </div>
@@ -280,76 +312,133 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--white">p5js サイトへ &rarr;</a>
+          <a href="https://p5js.org/" class="btn btn--white"
+            >p5js サイトへ &rarr;</a
+          >
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <div class="u-center-text u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  入力フォーム
+                </h2>
+              </div>
+
+              <form action="#" class="form">
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email Address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"> </span>
+                      Small</label
+                    >
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"> </span>
+                      Large</label
+                    >
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--pink">Next Step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-
-    <!-- <section class="grid-test">
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-white.svg" alt="Full logo" class="footer__logo" />
+      </div>
       <div class="row">
         <div class="col-1-of-2">
-          Col 1 of 2
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+                <a href="#" class="footer__link">Contact us</a>
+                <a href="#" class="footer__link">Careers</a>
+                <a href="#" class="footer__link">Privacy Policy</a>
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="col-1-of-2">
-          Col 1 of 2
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">SF</a>
+            <a href="#" class="footer__link">CSS</a>. Copyright &copy; by SF.
+            You are 100% allowed to use this webpage.
+          </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-      </div>
+    </footer>
 
-      <div class="row">
-        <div class="col-1-of-3">
-          Col 1 of 3
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/computer2.jpg" alt="computer1" class="popup__img" />
+          <img src="img/computer3.jpg" alt="computer2" class="popup__img" />
         </div>
-        <div class="col-2-of-3">
-          Col 2 of 3
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-2-of-4">
-          Col 2 of 4
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start Gaming Now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before playing
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
+            totam consequuntur distinctio voluptatibus culpa optio sint omnis
+            natus aperiam iusto pariatur quod beatae reiciendis ullam ratione
+            libero nisi ipsa nemo.
+          </p>
+          <a href="#" class="btn btn--pink">Start Playing!</a>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-3-of-4">
-          Col 3 of 4
-        </div>
-      </div>
-    </section> -->
+    </div>
   </body>
 </html>
