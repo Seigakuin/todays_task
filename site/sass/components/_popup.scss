@@ -14,15 +14,16 @@
 
   &__content {
     @include absCenter;
-    width: 75%;
+    width: 90%;
+    height: 90%;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
-    display: table;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
     transition: all 0.5s 0.2s;
+    position: relative;
   }
 
   &__left {
@@ -68,17 +69,26 @@
     &:visited {
       color: $color-grey-dark;
       position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
-      font-size: 3rem;
+      top: 0rem;
+      right: 1rem;
+      font-size: 6rem;
       text-decoration: none;
       display: inline-block;
       transition: all 0.2s;
       line-height: 1;
+      z-index: 100;
     }
 
     &:hover {
       color: $color-primary;
     }
+  }
+  &__iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
   }
 }

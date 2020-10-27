@@ -58,10 +58,15 @@
     </header>
 
     <main>
+      <!--
+        部活紹介
+
+
+       -->
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
-            ゲーム一覧
+            聖学院プログラミング部
           </h2>
         </div>
 
@@ -87,6 +92,7 @@
 
             <a href="#" class="btn-text">詳細 &rarr;</a>
           </div>
+
 
           <div class="col-1-of-2">
             <div class="composition">
@@ -157,7 +163,7 @@
       <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
-            部員
+            プログラミング体験
           </h2>
         </div>
 
@@ -247,7 +253,7 @@
                     <p class="card__name-only">GAME NAME</p>
                     <p class="card__difficulty">DIFFICULTY: 5</p>
                   </div>
-                  <a href="#popup" class="btn btn--white">PLAY NOW!</a>
+                  <a href="#popup"  class="btn btn--white">PLAY NOW!</a>
                 </div>
               </div>
             </div>
@@ -259,6 +265,11 @@
         </div>
       </section>
 
+      <!--
+        p5.jsライブラリを紹介する
+
+
+       -->
       <section class="section-stories">
         <div class="bg-img"></div>
         <div class="u-center-text u-margin-top-big">
@@ -280,9 +291,7 @@
                 Made with Javascript
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci et libero quidem, sint quaerat assumenda perferendis
-                facilis, accusantium
+                p5jsはJavascriptを使用したライブラリです。Javascriptはウェブ上のサイトを動かしている言語です。現在でウェブだけでなく、デスクトップアプリ、モバイルアプリなどの分野でも活躍しています。
               </p>
             </div>
           </div>
@@ -301,9 +310,7 @@
                 VISUAL LIBRARY
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci et libero quidem, sint quaerat assumenda perferendis
-                facilis, accusantium
+                p5jsは主にVisualに特化したライブラリで、Javascriptを使い、デジタルアートの描画や、ゲームなどを作ることができます。本来、映像プログラミングに必要な複雑なプログラミングをしなくて良いように設計されているライブラリです。
               </p>
             </div>
           </div>
@@ -417,7 +424,8 @@
 
     <div class="popup" id="popup">
       <div class="popup__content">
-        <div class="popup__left">
+          <a id="btn" href="#section-tours" class="popup__close">&times;</a>
+        <!-- <div class="popup__left">
           <img src="img/computer2.jpg" alt="computer1" class="popup__img" />
           <img src="img/computer3.jpg" alt="computer2" class="popup__img" />
         </div>
@@ -435,7 +443,23 @@
             natus aperiam iusto pariatur quod beatae reiciendis ullam ratione
             libero nisi ipsa nemo.
           </p>
-          <a href="#" class="btn btn--pink">Start Playing!</a>
+              src="https://editor.p5js.org/sf_/embed/KUI4Yi5MJ"
+          <a href="#" class="btn btn--pink">Start Playing!</a> -->
+          <iframe
+          id="iframeid"
+            class="popup__iframe"
+
+            src="https://editor.p5js.org/sf_/sketches/KUI4Yi5MJ"
+            width="100%"
+            height="100%"
+            scrolling="no"
+          ></iframe>
+          <script>
+            function reload() {
+              document.getElementById("iframeid").src += '';
+            }
+            btn.onclick = reload;
+          </script>
         </div>
       </div>
     </div>
