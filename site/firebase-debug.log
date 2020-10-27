@@ -1,0 +1,37 @@
+[debug] [2020-10-27T09:29:57.408Z] ----------------------------------------------------------------------
+[debug] [2020-10-27T09:29:57.411Z] Command:       /usr/local/Cellar/node/14.10.1/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-10-27T09:29:57.411Z] CLI Version:   8.14.0
+[debug] [2020-10-27T09:29:57.411Z] Platform:      darwin
+[debug] [2020-10-27T09:29:57.412Z] Node Version:  v14.10.1
+[debug] [2020-10-27T09:29:57.413Z] Time:          Tue Oct 27 2020 18:29:57 GMT+0900 (Japan Standard Time)
+[debug] [2020-10-27T09:29:57.413Z] ----------------------------------------------------------------------
+[debug] [2020-10-27T09:29:57.413Z] 
+[debug] [2020-10-27T09:29:57.422Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-27T09:29:57.423Z] > authorizing via signed-in user
+[debug] [2020-10-27T09:29:57.423Z] [iam] checking project prog-club-site-2020 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-27T09:29:57.427Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-27T09:29:57.427Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-27T09:29:57.593Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 27 Oct 2020 09:29:57 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-27T09:29:57.606Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/prog-club-site-2020:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-27T09:29:58.277Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Oct 2020 09:29:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=572","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-27T09:29:58.278Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/prog-club-site-2020  
+ 
+[debug] [2020-10-27T09:29:58.739Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Oct 2020 09:29:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'prog-club-site-2020'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-27T09:29:58.744Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/prog-club-site-2020/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-27T09:30:00.642Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Oct 2020 09:30:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[prog-club-site-2020]: beginning deploy... 
+[info] i  hosting[prog-club-site-2020]: found 23 files in public 
+[debug] [2020-10-27T09:30:00.670Z] [hosting] hash cache [cHVibGlj] stored for 23 files
+[debug] [2020-10-27T09:30:00.670Z] [hosting][hash queue][FINAL] {"max":12,"min":0,"avg":1.2173913043478262,"active":0,"complete":23,"success":23,"errored":0,"retried":0,"total":23,"elapsed":16}
+[debug] [2020-10-27T09:30:00.670Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/prog-club-site-2020/versions/36d8950fe53f74ec:populateFiles  
+ <request body omitted>
+[debug] [2020-10-27T09:30:01.691Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Oct 2020 09:30:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-27T09:30:01.694Z] [hosting][populate queue][FINAL] {"max":1023,"min":1023,"avg":1023,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1025}
+[debug] [2020-10-27T09:30:01.694Z] [hosting] uploads queued: 3

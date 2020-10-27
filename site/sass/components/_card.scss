@@ -88,7 +88,7 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url("../img/computer1.jpg");
+        url("../img/computer3.jpg");
     }
 
     &--2 {
@@ -202,8 +202,12 @@
   }
 
   &__name-only {
-    font-size: 1.4rem;
+    font-size: 4rem;
     text-transform: uppercase;
+  }
+  &__number {
+    font-size: 4rem;
+    font-weight: 100;
   }
 
   &__difficulty {
