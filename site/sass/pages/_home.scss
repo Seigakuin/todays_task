@@ -39,12 +39,12 @@
 
 .section-tours {
   background-color: $color-grey-light-1;
-  padding: 25rem 0 15rem 0;
-  margin-top: -17vh;
+  padding: 25rem 0 1rem 0;
+  margin-top: -12vh;
 
   @include respond(tab-port) {
-    margin-top: -10vh;
-    padding: 20rem 0 10rem 0;
+    margin-top: -5vh;
+    padding: 20rem 0 5rem 0;
   }
 }
 
@@ -55,7 +55,7 @@
   z-index: 0;
 
   @include respond(tab-port) {
-    padding: 10rem 0;
+    padding: 5rem 0;
   }
 }
 

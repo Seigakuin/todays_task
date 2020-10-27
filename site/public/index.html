@@ -28,17 +28,25 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>01</span>About</a>
+            <a href="#" class="navigation__link" onclick="clickNav()"><span>01</span>TOP</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>02</span>Games</a>
+            <a href="#section-about" class="navigation__link" onclick="clickNav()"><span>02</span>活動内容</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>03</span>Members</a>
+            <a href="#section-features" class="navigation__link"  onclick="clickNav()"><span>03</span>プログラミング体験</a>
           </li>
         </ul>
       </nav>
     </div>
+    <script>
+      function clickNav() {
+        const checkBox = document.getElementById("navi-toggle")
+        console.log(checkBox)
+        checkBox.checked = false
+        // alert("Hello")
+      }
+    </script>
 
     <header class="header">
       <div class="header__logo-box">
@@ -52,7 +60,7 @@
           <span class="heading-primary--sub2">2020年度 記念祭企画</span>
         </h1>
         <a href="#section-tours" class="btn btn--white btn--animated"
-          >ゲームを体験する<span style="font-size: 1.5rem;">&nbsp;</span></a
+          >プログラミングを体験する<span style="font-size: 1.5rem;">&nbsp;</span></a
         >
       </div>
     </header>
@@ -64,7 +72,7 @@
 
        -->
       <section class="section-about">
-        <div class="u-center-text u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-big" id="section-about">
           <h2 class="heading-secondary">
             聖学院プログラミング部
           </h2>
@@ -97,17 +105,17 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/person1.jpg"
+                src="img/kid-prog1.png"
                 alt="person1"
                 class="composition__photo composition__photo--p1"
               />
               <img
-                src="img/person2.jpg"
+                src="img/kid-prog2.png"
                 alt="person2"
                 class="composition__photo composition__photo--p2"
               />
               <img
-                src="img/person3.jpg"
+                src="img/kid-prog3.png"
                 alt="person3"
                 class="composition__photo composition__photo--p3"
               />
@@ -117,7 +125,7 @@
       </section>
 
       <section class="section-features">
-        <div class="row">
+        <div class="row" id="section-features">
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-joypad"></i>
@@ -168,7 +176,7 @@
         </div>
 
         <div class="row">
-          <div class="col-1-of-3">
+          <!-- <div class="col-1-of-3"> -->
             <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--1">
@@ -182,8 +190,17 @@
                 <div class="card__details">
                   <ul>
                     <li>製作者</li>
+                    <h3 class="card__creatorname">
+                      聖学院太郎
+                    </h3>
                     <li>工夫</li>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus praesentium et nulla tenetur delectus amet cupiditate obcaecati ipsam itaque non similique animi commodi quae, aliquid porro quam dolor dolorem!
+                    </p>
                     <li>難易度</li>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus praesentium et nulla tenetur delectus amet cupiditate obcaecati ipsam itaque non similique animi commodi quae, aliquid porro quam dolor dolorem!
+                    </p>
                   </ul>
                 </div>
               </div>
@@ -193,12 +210,12 @@
                     <p class="card__name-only">GAME NAME</p>
                     <p class="card__difficulty">DIFFICULTY: 2</p>
                   </div>
-                  <a href="#popup" class="btn btn--white">PLAY NOW!</a>
+                  <a href="#popup1" class="btn btn--white">PLAY NOW!</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-1-of-3">
+          <!-- </div> -->
+          <!-- <div class="col-1-of-3"> -->
             <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--2">
@@ -212,8 +229,17 @@
                 <div class="card__details">
                   <ul>
                     <li>製作者</li>
+                    <h3 class="card__creatorname">
+                      聖学院太郎
+                    </h3>
                     <li>工夫</li>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus praesentium et nulla tenetur delectus amet cupiditate obcaecati ipsam itaque non similique animi commodi quae, aliquid porro quam dolor dolorem!
+                    </p>
                     <li>難易度</li>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus praesentium et nulla tenetur delectus amet cupiditate obcaecati ipsam itaque non similique animi commodi quae, aliquid porro quam dolor dolorem!
+                    </p>
                   </ul>
                 </div>
               </div>
@@ -223,12 +249,12 @@
                     <p class="card__name-only">GAME NAME</p>
                     <p class="card__difficulty">DIFFICULTY: 3</p>
                   </div>
-                  <a href="#popup" class="btn btn--white">PLAY NOW!</a>
+                  <a href="#popup2" class="btn btn--white">PLAY NOW!</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-1-of-3">
+          <!-- </div> -->
+          <!-- <div class="col-1-of-3"> -->
             <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--3">
@@ -242,8 +268,17 @@
                 <div class="card__details">
                   <ul>
                     <li>製作者</li>
+                    <h3 class="card__creatorname">
+                      聖学院太郎
+                    </h3>
                     <li>工夫</li>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus praesentium et nulla tenetur delectus amet cupiditate obcaecati ipsam itaque non similique animi commodi quae, aliquid porro quam dolor dolorem!
+                    </p>
                     <li>難易度</li>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus praesentium et nulla tenetur delectus amet cupiditate obcaecati ipsam itaque non similique animi commodi quae, aliquid porro quam dolor dolorem!
+                    </p>
                   </ul>
                 </div>
               </div>
@@ -253,15 +288,52 @@
                     <p class="card__name-only">GAME NAME</p>
                     <p class="card__difficulty">DIFFICULTY: 5</p>
                   </div>
-                  <a href="#popup"  class="btn btn--white">PLAY NOW!</a>
+                  <a href="#popup3"  class="btn btn--white">PLAY NOW!</a>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--4">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--4">
+                    GAME 4
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>製作者</li>
+                    <h3 class="card__creatorname">
+                      聖学院太郎
+                    </h3>
+                    <li>工夫</li>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus praesentium et nulla tenetur delectus amet cupiditate obcaecati ipsam itaque non similique animi commodi quae, aliquid porro quam dolor dolorem!
+                    </p>
+                    <li>難易度</li>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus praesentium et nulla tenetur delectus amet cupiditate obcaecati ipsam itaque non similique animi commodi quae, aliquid porro quam dolor dolorem!
+                    </p>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-4">
+                <div class="card__cta">
+                  <div class="card__game-box">
+                    <p class="card__name-only">GAME NAME</p>About
+                    <p class="card__difficulty">DIFFICULTY: 5</p>
+                  </div>
+                  <a href="#popup4"  class="btn btn--white">PLAY NOW!</a>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--pink">DISCOVER ALL GAMES</a>
+          <a href="#" class="btn btn--pink">TOPに戻る</a>
         </div>
       </section>
 
@@ -272,7 +344,7 @@
        -->
       <section class="section-stories">
         <div class="bg-img"></div>
-        <div class="u-center-text u-margin-top-big">
+        <div class="u-center-text u-margin-top-big u-margin-bottom-big">
           <h2 class="heading-secondary">
             p5.jsとは？
           </h2>
@@ -323,7 +395,7 @@
         </div>
       </section>
 
-      <section class="section-book">
+      <!-- <section class="section-book">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -391,7 +463,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
@@ -403,48 +475,67 @@
           <div class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="#" class="footer__link">Company</a>
-                <a href="#" class="footer__link">Contact us</a>
-                <a href="#" class="footer__link">Careers</a>
-                <a href="#" class="footer__link">Privacy Policy</a>
-                <a href="#" class="footer__link">Terms</a>
+                <a href="#" class="footer__link">TOP</a>
+                <a href="#section-about" class="footer__link">活動内容</a>
+                <a href="#section-features" class="footer__link">プログラミング体験</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built by <a href="#" class="footer__link">SF</a>
-            <a href="#" class="footer__link">CSS</a>. Copyright &copy; by SF.
-            You are 100% allowed to use this webpage.
+            Copyright &copy; 2020 SEIGAKUIN PROGRAMMING CLUB
           </p>
         </div>
       </div>
     </footer>
 
-    <div class="popup" id="popup">
+    <div class="popup" id="popup1">
       <div class="popup__content">
-          <a id="btn" href="#section-tours" class="popup__close">&times;</a>
-        <!-- <div class="popup__left">
-          <img src="img/computer2.jpg" alt="computer1" class="popup__img" />
-          <img src="img/computer3.jpg" alt="computer2" class="popup__img" />
+          <a id="btn" href="#section-tours" class="popup__close">&times;</a>zw
+          <iframe
+          id="iframeid"
+            class="popup__iframe"
+
+            src="https://editor.p5js.org/sf_/sketches/s1NXVCckD7"
+            width="100%"
+            height="100%"
+            scrolling="no"
+          ></iframe>
+          <script>
+            function reload() {
+              document.getElementById("iframeid").src += '';
+            }
+            btn.onclick = reload;
+          </script>
         </div>
-        <div class="popup__right">
-          <a href="#section-tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-small">
-            Start Gaming Now
-          </h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">
-            Important &ndash; Please read these terms before playing
-          </h3>
-          <p class="popup__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
-            totam consequuntur distinctio voluptatibus culpa optio sint omnis
-            natus aperiam iusto pariatur quod beatae reiciendis ullam ratione
-            libero nisi ipsa nemo.
-          </p>
-              src="https://editor.p5js.org/sf_/embed/KUI4Yi5MJ"
-          <a href="#" class="btn btn--pink">Start Playing!</a> -->
+      </div>
+    </div> <!-- popup end-->
+
+    <div class="popup" id="popup2">
+      <div class="popup__content">
+          <a id="btn" href="#section-tours" class="popup__close">&times;</a>zw
+          <iframe
+          id="iframeid"
+            class="popup__iframe"
+
+            src="https://editor.p5js.org/sf_/sketches/Sk3aAsCpQ"
+            width="100%"
+            height="100%"
+            scrolling="no"
+          ></iframe>
+          <script>
+            function reload() {
+              document.getElementById("iframeid").src += '';
+            }
+            btn.onclick = reload;
+          </script>
+        </div>
+      </div>
+    </div> <!-- popup end-->
+    <div class="popup" id="popup3">
+      <div class="popup__content">
+          <a id="btn" href="#section-tours" class="popup__close">&times;</a>zw
           <iframe
           id="iframeid"
             class="popup__iframe"
@@ -462,6 +553,27 @@
           </script>
         </div>
       </div>
-    </div>
+    </div> <!-- popup end-->
+    <div class="popup" id="popup4">
+      <div class="popup__content">
+          <a id="btn" href="#section-tours" class="popup__close">&times;</a>zw
+          <iframe
+          id="iframeid"
+            class="popup__iframe"
+
+            src="https://editor.p5js.org/sf_/sketches/KUI4Yi5MJ"
+            width="100%"
+            height="100%"
+            scrolling="no"
+          ></iframe>
+          <script>
+            function reload() {
+              document.getElementById("iframeid").src += '';
+            }
+            btn.onclick = reload;
+          </script>
+        </div>
+      </div>
+    </div> <!-- popup end-->
   </body>
 </html>

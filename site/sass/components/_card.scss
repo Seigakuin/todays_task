@@ -3,13 +3,14 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: 72rem;
+  margin-bottom: 8rem;
 
   &__side {
     color: #fff;
     font-size: 2rem;
 
-    height: 52rem;
+    height: 72rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -50,7 +51,19 @@
           $color-tertiary-dark
         );
       }
+
+      &-4 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-four-light,
+          $color-four-dark
+        );
+      }
     }
+  }
+  &__creatorname {
+    font-weight: 200;
+    text-align: center;
   }
 
   &:hover &__side--front {
@@ -95,6 +108,15 @@
         ),
         url("../img/computer3.jpg");
     }
+
+    &--4 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-four-light,
+          $color-four-dark
+        ),
+        url("../img/computer2.jpg");
+    }
   }
 
   &__heading {
@@ -134,6 +156,14 @@
         to right bottom,
         rgba($color-tertiary-light, 0.85),
         rgba($color-tertiary-dark, 0.85)
+      );
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
       );
     }
   }

@@ -71,7 +71,7 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 200;
   display: inline-block;
   background-image: linear-gradient(
     to right,
@@ -99,7 +99,7 @@ body {
 
 .heading-tertiary {
   font-size: $default-font-size;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
