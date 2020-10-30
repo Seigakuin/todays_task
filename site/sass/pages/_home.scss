@@ -10,7 +10,7 @@
 }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 16rem 0;
 
   background-image: linear-gradient(
       to right bottom,
@@ -23,7 +23,7 @@
 
   transform: skewY(-7deg);
 
-  margin-top: -9rem;
+  margin-top: -11rem;
 
   // direct child all (which is class row)
   & > * {
