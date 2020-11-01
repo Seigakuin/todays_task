@@ -135,6 +135,17 @@ body {
       .heading-primary--sub2 {
         letter-spacing: 1.5rem;
         font-size: 1.5rem; } }
+  .heading-primary--sub3 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 1rem;
+    text-align: center;
+    animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub3 {
+        letter-spacing: 1.5rem;
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -159,7 +170,7 @@ body {
 
 .heading-tertiary {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase; }
 
 .paragraph {
@@ -699,7 +710,7 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 10rem 0;
+  padding: 10rem 2rem;
   font-size: 1.4rem;
   color: #f7f7f7; }
   @media (max-width: 56.25em) {
@@ -776,6 +787,13 @@ body {
     width: 100%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  .header__notice-box {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff; }
 
 .row {
   max-width: 114rem;
@@ -948,7 +966,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 2rem;
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
@@ -956,7 +974,7 @@ body {
       padding: 20rem 0; } }
 
 .section-features {
-  padding: 16rem 0;
+  padding: 16rem 2rem;
   background-image: linear-gradient(to right bottom, rgba(255, 194, 194, 0.81), rgba(255, 46, 99, 0.824)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
