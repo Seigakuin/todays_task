@@ -2,14 +2,15 @@
 
 ## p5.js 学習
 
-### Step17: 雪を降らせよう
+### Step18: 雪をたくさん降らせよう
 
 
 
-#### Task: 1粒の雪をループで表示する
+#### Task: たくさん雪を表示する
 
 ##### Hint: 
-* `circleY`: `circle`のY座標を格納
+* `circleY`: `circle`のY座標を配列（array）に格納
+* `circleX` : `circle`のX座標を重ならないように工夫をする
 
 ```js
 // Step18
