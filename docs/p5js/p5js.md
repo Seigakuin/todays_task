@@ -78,7 +78,9 @@
 
 * 1粒の雪をループで表示する
 
-## [Step18](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-step18.md
+  
+
+## [Step18](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-step18.md)
 
 * たくさん雪を表示する
 * 配列(array)を利用する
