@@ -6,31 +6,44 @@
 
 
 
-#### Task: 1粒の雪をループで表示する
+#### Task: 雪を画面に出現させる
 
 ##### Hint: 
-* `circleY`: `circle`のY座標を格納
+* 
 
 ```js
 // Step17
-let circleY = 0;
+let snowList = []  // Snowインスタンスを格納する配列
 
 function setup() {
-  createCanvas(300, 300);
+  createCanvas(400, 400)
 }
 
 function draw() {
-  background(50);
+  background(0)
+  snowList.???(new ???()) // Snowインスタンスを作成
 
-  // circleを描く
-  circle(???, ???, ???);
-  // circleを下方向にすすめる
-  ???;
-  // circleが下まで行ったら、上に戻す
-  if (??? > ???) {
-    circleY = ???;
+  // snowList配列の中にある、一つずつsnowとして取り出す
+  for (let snow of snowList) {
+    snow.???()
   }
 }
+
+class Snow {
+  constructor() {
+    let x = random(width) // x位置をランダムに設定
+    let y = random(height) // y位置をランダムに設定
+    this.pos = createVector(x, y) // 位置Vectorのプロパティ
+  }
+
+  draw() {
+    stroke(255) // 色は白
+    strokeWeight(4) // pointの大きさは４
+    point(???, ???)
+  }
+}
+
+
 
 
 ```

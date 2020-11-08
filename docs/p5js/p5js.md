@@ -78,12 +78,24 @@
 
 * 1粒の雪をループで表示する
 
+* 配列(array)を利用する
+
+* `for(let ??? of 配列)`文法を利用する
+
   
 
 ## [Step18](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-step18.md)
 
 * たくさん雪を表示する
 * 配列(array)を利用する
+
+
+
+## [Step19](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js-step19.md)
+
+* 加速Vectorを加える
+* 雪のサイズをランダムに表示
+* 画面外にで雪を`snowList`から消す (`offScreen()`メソッド)
 
 
 
