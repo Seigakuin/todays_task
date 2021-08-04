@@ -7,6 +7,7 @@
 
 * 
 
+以下のコードから始めても良い
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,11 @@
   <body>
     <script>
       "use strict"
-      console.log("Hello World!")
+      let i = 1
+      while (i <= 10) {
+        console.log(i)
+        i += 1
+      }
     </script>
   </body>
 </html>
@@ -27,5 +32,5 @@
 ```
 
 
-<image src="./pics/step5.png" alt="house" width="300"  />
+<image src="./pics/work-01-01.png" alt="house" width="300"  />
 
