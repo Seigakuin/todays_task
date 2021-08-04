@@ -27,10 +27,14 @@
     <h2>Work 01</h2>
     <script>
       "use strict"
-      let i = 1
-      while (i <= 10) {
-        console.log(i)
-        i += 1
+      let enemyWins = 0
+      let myWins = 0
+      let count = 0
+
+      window.alert("戦争カードゲームスタート！")
+      while (count < 10) {
+        
+        count += 1
       }
     </script>
   </body>
