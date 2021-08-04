@@ -39,7 +39,7 @@
 ```
 
 <details>
-<summary><b style="font-size: 36px">ヒント</b></summary>
+<summary><b style="font-size: 44px">ヒント</b></summary>
 <image src="./pics/work-02-02.png" alt="house" width="500"  />
 </details>
 
