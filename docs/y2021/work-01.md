@@ -9,7 +9,7 @@
 
 <image src="./pics/work-01-01.png" alt="house" width="300"  />
 
-<br>
+<br/>
 以下のコードから始めても良い
 ```html
 <!DOCTYPE html>
