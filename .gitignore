@@ -15,3 +15,5 @@ classes.py
 
 **/img/*.png
 .DS_Store
+
+answers/

@@ -2,7 +2,8 @@
 
 ## HTML/CSS/Javascript 学習
 
-### Step1: を理解しよう
+### Work 01
+#### `While`の理解
 
 * 
 
