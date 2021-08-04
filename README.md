@@ -4,6 +4,7 @@
 
 ## ![jslogo](docs/p5js/pics/jslogo.png)
 
+## [学習ページへ](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/starter.md)
 
 
 
