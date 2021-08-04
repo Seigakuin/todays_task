@@ -5,8 +5,11 @@
 ### Work 01
 #### `While`の理解
 
-* 
+* 教科書の3-6(p94-100)を読み、以下の画面になるように`while`文を使ったコードを書こう！
 
+<image src="./pics/work-01-01.png" alt="house" width="300"  />
+
+<br>
 以下のコードから始めても良い
 ```html
 <!DOCTYPE html>
@@ -32,5 +35,5 @@
 ```
 
 
-<image src="./pics/work-01-01.png" alt="house" width="300"  />
+
 
