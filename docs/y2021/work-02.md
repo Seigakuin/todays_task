@@ -2,12 +2,12 @@
 
 ## HTML/CSS/Javascript 学習
 
-### Work 01 - 九九を作ろう！
+### Work 02 - 戦争カードゲームを作ろう！
 #### `While`の理解
 
-* 教科書の3-6(p94-100)を読み、以下の画面になるように`while`文を使ったコードを書こう！
+* 教科書の3-7(p101-109)を読み、以下の画面になるように`while`文を使ったコードを書こう！
 
-<image src="./pics/work-01-01.png" alt="house" width="300"  />
+<image src="./pics/work-02-01.png" alt="house" width="300"  />
 
 <br></br>
 
@@ -38,6 +38,9 @@
 
 ```
 
-
+<details>
+<summary><b style="font-size: 36px">ヒント</b></summary>
+<image src="./pics/work-02-02.png" alt="house" width="300"  />
+</details>
 
 
