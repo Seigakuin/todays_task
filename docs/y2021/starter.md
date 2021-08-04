@@ -4,7 +4,9 @@
 
 
 ## 課題一覧
-### [Work 01](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-01.md)
+### [Work 01 - 九九を作ろう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-01.md)
+
+### [Work 02 - 戦争カードゲームを作ろう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-02.md)
 
 ----
 
