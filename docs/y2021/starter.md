@@ -15,6 +15,8 @@
 
 ### [Work 05 - 配列(array)を使って好き嫌いを表現しよう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-05.md)
 
+### [Work 06 - （続）配列(array)を使って好き嫌いを表現しよう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-06.md)
+
 
 ----
 
