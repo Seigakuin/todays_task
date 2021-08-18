@@ -11,7 +11,7 @@
 * 出力するときは配列を`for(let a of b){}`文を使って出力しよう！(p127)
 * `for`文の中に`if`を使って条件をつけよう！
 
-<image src="./pics/work-05-01.png" alt="work" width="300"  />
+<image src="./pics/work-05-01.png" alt="work" width="500" style="border: solid royalblue;"   />
 
 <br></br>
 

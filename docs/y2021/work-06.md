@@ -13,7 +13,7 @@
 * `insertAdjacentHTML()`を使用(p134)
 * `if`文を使用
 
-<image src="./pics/work-06-01.png" alt="work" width="300"  />
+<image src="./pics/work-06-01.png" alt="work" width="500" style="border: solid royalblue;" />
 
 <br></br>
 
