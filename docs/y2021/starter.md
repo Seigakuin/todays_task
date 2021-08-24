@@ -17,6 +17,11 @@
 
 ### [Work 06 - （続）配列(array)を使って好き嫌いを表現しよう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-06.md)
 
+### [Work 07 - オブジェクトを使って生徒情報を表示しよう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-07.md)
+
+### [Work 08 - オブジェクトを使って複数の生徒情報を表示しよう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-08.md)
+
+
 
 ----
 
