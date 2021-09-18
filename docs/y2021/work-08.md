@@ -33,14 +33,23 @@
     <h2>Work 07</h2>
     <script>
       "use strict"
-       let homeroom = "C"
-
-      let student = {
-        name: "Seigakuin Taro",
-        homeroom: "C",
-        num: 31,
-      }
-      console.log(`${homeroom}組の生徒情報`)
+      let students = [
+        {
+          name: "Seigakuin Taro",
+          homeroom: "C",
+          num: 31,
+        },
+        {
+          name: "Seigakuin Jiro",
+          homeroom: "B",
+          num: 14,
+        },
+        {
+          name: "Seigakuin Saburo",
+          homeroom: "B",
+          num: 19,
+        },
+      ]
       // この下にコードを書こう！
 
     </script>
