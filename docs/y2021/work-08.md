@@ -30,7 +30,7 @@
   </head>
   <body>
     <h1>SEIGAKUIN PROGRAMMING CLUB</h1>
-    <h2>Work 07</h2>
+    <h2>Work 08</h2>
     <script>
       "use strict"
       let students = [
