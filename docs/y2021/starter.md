@@ -21,7 +21,7 @@
 
 ### [Work 08 - オブジェクトを使って複数の生徒情報を表示しよう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-08.md)
 
-
+### [Work 09 - 計算機を作ろう！](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/work-09.md)
 
 ----
 
