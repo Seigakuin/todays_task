@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MONSTER CRUSHER!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- TITLE -->
+    <div class="title">
+      <span class="monster">Monster</span>
+      <span class="crusher"> Crusher </span>
+    </div>
+
+    <div class="container">
+      <div class="dialog">
+        <p>モンスターが現れました！</p>
+      </div>
+
+      <!-- STATUS CARDS -->
+      <section class="status-cards">
+        <div class="yusha-card">
+          <h2>勇者</h2>
+          <ul>
+            <li>
+              <p class="status-title">ヒットポイント</p>
+              <p class="points">
+                <span id="y-hp">100</span> / <span id="y-max-hp">120</span>
+              </p>
+            </li>
+            <li>
+              <p class="status-title">マジック</p>
+              <p class="points">
+                <span id="y-mp">40</span> / <span id="y-max-mp">60</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="monster-card">
+          <h2>モンスター</h2>
+          <ul>
+            <li>
+              <p class="status-title">ヒットポイント</p>
+              <p class="points">
+                <span id="m-hp">300</span> / <span id="m-max-hp">700</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SELECTION CARD -->
+      <div class="selection-card">
+        <button class="fight" onclick="handleFight()">戦う</button>
+        <button class="guard" onclick="handleGuard()">守る</button>
+        <button class="special" onclick="handleSpecial()">必殺技</button>
+      </div>
+
+      <!-- BATTLE SCRIPT -->
+      <div class="battle-script" id="battle-script">
+        <p>勇者はモンスターに40のダメージを与えました！</p>
+        <p>モンスターは勇者に15のダメージを与えました！</p>
+        <p>勇者は身を守っています。</p>
+        <p>勇者は必殺技を使いました！</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
