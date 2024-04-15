@@ -1,4 +1,4 @@
-##  <span style="background: #1aafd0">2021年度 プログラミング部</span>
+##  <span style="background: #1aafd0">プログラミング部 JS練習問題</span>
 
 ## HTML/CSS/Javascript 学習
 
