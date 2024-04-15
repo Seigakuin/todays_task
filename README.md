@@ -1,12 +1,10 @@
 # :computer: 聖学院プログラミング部 :computer:
 
-## 2021年度 プログラミング部
+## プログラミング部
 
 ## ![jslogo](docs/p5js/pics/jslogo.png)
 
 ## [学習ページへ](https://github.com/Seigakuin/todays_task/tree/master/docs/y2021/starter.md)
-
-
 
 ----
 
@@ -19,27 +17,23 @@
 
 ## [p5.js 学習ページ](https://github.com/Seigakuin/todays_task/tree/master/docs/p5js/p5js.md)
 
-
-
 ### LINKS
 
 ### [JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript) 
 
 * 使用する言語
 
-### [p5.js](https://p5js.org/) 
+### [p5.js](https://p5js.org/)
 
 * 使用するJavaScriptライブラリ
 
-### [p5.js リファレンス](https://p5js.org/reference/) 
+### [p5.js リファレンス](https://p5js.org/reference/)
 
 * 関数や定数の説明
 
-### [p5.js Web Editor](https://editor.p5js.org/) 
+### [p5.js Web Editor](https://editor.p5js.org/)
 
 * ブラウザ上でコードを書くことができる
-
-## 
 
 </details>
 
@@ -47,13 +41,7 @@
 
 <details>
 <summary><b style="font-size: 40px"> 2019年度 プログラミング部 </b></summary>
-
-
-
-
-
 <p>
-
 :imp: [**始め方**](https://github.com/Seigakuin/todays_task/blob/master/Environment.md) :smiling_imp:
 
 ## :sparkles: 本日の課題
@@ -67,7 +55,6 @@
 ### :game_die: [すごろくゲーム](https://github.com/Seigakuin/todays_task/blob/master/projects/sugoroku/sugoroku.md) :game_die:
 
 <br></br>
-
 
 ### :us: [Target1900クイズアプリ](https://github.com/Seigakuin/todays_task/blob/master/projects/back_to_basics/back_to_basics.md) :gb:
 
